@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /credit-week-2026
+
+Sitemap: https://www.likuid.ai/sitemap.xml
