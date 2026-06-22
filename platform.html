@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="theme-color" content="#08090a" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <meta name="description" content="The Likuid platform — one connected system for credit risk and payments. Originate, Unify, Decide, Pay, Act and measure Performance, with AI agents native to every module." />
@@ -103,9 +104,7 @@
 
       <nav class="hidden lg:flex items-center gap-9" aria-label="Main">
         <a href="/platform" class="nav-link text-white">Platform</a>
-        <a href="/#agents" class="nav-link">AI Agents</a>
-        <a href="#modules" class="nav-link">Modules</a>
-        <a href="/#early-access" class="nav-link">Contact</a>
+        <a href="/developers" class="nav-link">Developers</a>
       </nav>
 
       <div class="flex items-center gap-3">
@@ -125,9 +124,7 @@
   <div id="mobile-menu" class="hidden lg:hidden border-t border-white/5 bg-ink/95 backdrop-blur-xl">
     <div class="px-6 py-5 space-y-1">
       <a href="/platform" class="block py-3 text-sm font-medium text-slate-200">Platform</a>
-      <a href="/#agents" class="block py-3 text-sm font-medium text-slate-200">AI Agents</a>
-      <a href="#modules" class="block py-3 text-sm font-medium text-slate-200">Modules</a>
-      <a href="/#early-access" class="block py-3 text-sm font-medium text-slate-200">Contact</a>
+      <a href="/developers" class="block py-3 text-sm font-medium text-slate-200">Developers</a>
       <div class="pt-3 border-t border-white/5 mt-2">
         <a href="https://www.veepveep.co.uk/book/jim" class="btn-primary block text-center text-sm font-semibold px-4 py-3 rounded-xl">Book a demo</a>
       </div>
@@ -170,58 +167,56 @@
       <p class="text-lg text-slate-400 max-w-2xl mx-auto">A single point of connectivity into a framework of modules — deploy one, or run the whole credit journey end to end.</p>
     </div>
 
-    <div class="flex flex-col lg:flex-row items-stretch gap-5">
-      <!-- One API -->
-      <div class="lg:w-48 flex-shrink-0 card p-5 flex flex-col items-center justify-center text-center">
-        <div class="w-11 h-11 rounded-2xl bg-white/[0.04] hairline flex items-center justify-center mb-3"><svg class="w-5 h-5 text-brand-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/></svg></div>
+    <!-- Top rail: One API → platform → outputs -->
+    <div class="flex flex-col lg:flex-row items-stretch gap-4 mb-4">
+      <div class="lg:w-56 flex-shrink-0 rounded-2xl border border-brand-blue/30 bg-brand-blue/[0.06] p-5 flex flex-col items-center justify-center text-center">
+        <div class="w-11 h-11 rounded-2xl bg-brand-blue/15 border border-brand-blue/30 flex items-center justify-center mb-3"><svg class="w-5 h-5 text-brand-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/></svg></div>
         <div class="font-extrabold text-white text-sm">One API</div>
-        <div class="text-xs text-slate-500 leading-snug mt-1">A single point of connectivity</div>
+        <div class="text-xs text-slate-400 leading-snug mt-1">A single point of connectivity</div>
       </div>
-
-      <!-- Platform box -->
-      <div class="flex-1 rounded-2xl overflow-hidden hairline bg-white/[0.015]">
-        <div class="px-6 py-4 text-center border-b border-white/8 bg-white/[0.02]">
+      <div class="flex-1 rounded-2xl border border-white/10 bg-white/[0.02] px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <div>
           <div class="font-extrabold text-white text-base">The Likuid platform</div>
-          <div class="text-xs text-slate-500 mt-0.5">Modules that compound the value of one another</div>
+          <div class="text-xs text-slate-500 mt-0.5">Six modules. Deploy one, or run the whole credit journey.</div>
         </div>
-        <div class="grid grid-cols-2 sm:grid-cols-3 gap-px bg-white/5">
-          <div class="bg-ink-800 px-4 py-4"><div class="flex items-center gap-2 mb-1.5"><span class="w-2 h-2 rounded-full bg-brand-cyan"></span><span class="font-bold text-white text-sm">Originate</span></div><p class="text-xs text-slate-500 leading-relaxed">Optimised application journeys with eligibility, affordability and broker connectivity</p></div>
-          <div class="bg-ink-800 px-4 py-4"><div class="flex items-center gap-2 mb-1.5"><span class="w-2 h-2 rounded-full bg-brand-blue"></span><span class="font-bold text-white text-sm">Unify</span></div><p class="text-xs text-slate-500 leading-relaxed">Enrich and assemble every data source into one validated customer view</p></div>
-          <div class="bg-ink-800 px-4 py-4"><div class="flex items-center gap-2 mb-1.5"><span class="w-2 h-2 rounded-full bg-brand-cyan"></span><span class="font-bold text-white text-sm">Decide</span></div><p class="text-xs text-slate-500 leading-relaxed">AI scoring and real-time decisioning that learns from live book performance</p></div>
-          <div class="bg-ink-800 px-4 py-4"><div class="flex items-center gap-2 mb-1.5"><span class="w-2 h-2 rounded-full bg-brand-blue"></span><span class="font-bold text-white text-sm">Pay</span></div><p class="text-xs text-slate-500 leading-relaxed">Payment orchestration across all rails with automated retry and reconciliation</p></div>
-          <div class="bg-ink-800 px-4 py-4"><div class="flex items-center gap-2 mb-1.5"><span class="w-2 h-2 rounded-full bg-orange-400"></span><span class="font-bold text-white text-sm">Act</span></div><p class="text-xs text-slate-500 leading-relaxed">Proactive engagement and automated collections, hardship and forbearance</p></div>
-          <div class="bg-ink-800 px-4 py-4"><div class="flex items-center gap-2 mb-1.5"><span class="w-2 h-2 rounded-full bg-brand-cyan"></span><span class="font-bold text-white text-sm">Performance</span></div><p class="text-xs text-slate-500 leading-relaxed">Aggregated portfolio insight and continuous strategy recommendations</p></div>
-        </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 bg-white/[0.02] border-t border-white/8">
-          <div class="px-5 py-4 text-center border-b sm:border-b-0 sm:border-r border-white/8">
-            <div class="flex items-center justify-center gap-2"><span class="dot pulse"></span><span class="text-sm font-extrabold text-white">AI agents</span></div>
-            <div class="text-xs text-slate-500 mt-1">Native to every module — end-to-end automation</div>
-          </div>
-          <div class="px-5 py-4 text-center">
-            <div class="flex items-center justify-center gap-2"><svg class="w-3.5 h-3.5 text-brand-cyan" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg><span class="text-sm font-extrabold text-white">Continuous learning</span></div>
-            <div class="text-xs text-slate-500 mt-1">Every decision makes the next one smarter</div>
-          </div>
+        <div class="flex items-center gap-4 flex-shrink-0">
+          <div class="flex items-center gap-2"><span class="dot pulse"></span><span class="text-xs font-semibold text-white">AI agents native</span></div>
+          <div class="hidden sm:flex items-center gap-2"><svg class="w-3.5 h-3.5 text-brand-cyan" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg><span class="text-xs font-semibold text-white">Continuous learning</span></div>
         </div>
       </div>
+    </div>
 
-      <!-- Data + integrations -->
-      <div class="lg:w-64 flex-shrink-0 space-y-5">
-        <div class="card p-4">
-          <div class="font-bold text-brand-cyan text-sm mb-3">Data marketplace</div>
-          <div class="grid grid-cols-5 gap-1.5 mb-2">
-            <span class="aspect-square rounded-md bg-white/[0.04] hairline"></span><span class="aspect-square rounded-md bg-white/[0.04] hairline"></span><span class="aspect-square rounded-md bg-white/[0.04] hairline"></span><span class="aspect-square rounded-md bg-white/[0.04] hairline"></span><span class="aspect-square rounded-md bg-white/[0.04] hairline"></span>
-            <span class="aspect-square rounded-md bg-white/[0.04] hairline"></span><span class="aspect-square rounded-md bg-white/[0.04] hairline"></span><span class="aspect-square rounded-md bg-white/[0.04] hairline"></span><span class="aspect-square rounded-md bg-white/[0.04] hairline"></span><span class="aspect-square rounded-md bg-white/[0.04] hairline"></span>
-          </div>
-          <p class="text-xs text-slate-500 text-center">Open banking, bureau, identity &amp; more</p>
+    <!-- Modular grid: 6 distinct module blocks -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
+      <div class="card p-5"><div class="flex items-center gap-3 mb-2"><span class="w-9 h-9 rounded-xl bg-brand-cyan/12 border border-brand-cyan/25 flex items-center justify-center"><svg class="w-4 h-4 text-brand-cyan" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg></span><span class="font-bold text-white">Originate</span></div><p class="text-xs text-slate-400 leading-relaxed">Optimised application journeys with eligibility, affordability and broker connectivity.</p></div>
+      <div class="card p-5"><div class="flex items-center gap-3 mb-2"><span class="w-9 h-9 rounded-xl bg-brand-blue/12 border border-brand-blue/25 flex items-center justify-center"><svg class="w-4 h-4 text-brand-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg></span><span class="font-bold text-white">Unify</span></div><p class="text-xs text-slate-400 leading-relaxed">Enrich and assemble every data source into one validated customer view.</p></div>
+      <div class="card p-5"><div class="flex items-center gap-3 mb-2"><span class="w-9 h-9 rounded-xl bg-brand-cyan/12 border border-brand-cyan/25 flex items-center justify-center"><svg class="w-4 h-4 text-brand-cyan" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></span><span class="font-bold text-white">Decide</span></div><p class="text-xs text-slate-400 leading-relaxed">AI scoring and real-time decisioning that learns from live book performance.</p></div>
+      <div class="card p-5"><div class="flex items-center gap-3 mb-2"><span class="w-9 h-9 rounded-xl bg-brand-blue/12 border border-brand-blue/25 flex items-center justify-center"><svg class="w-4 h-4 text-brand-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg></span><span class="font-bold text-white">Pay</span></div><p class="text-xs text-slate-400 leading-relaxed">Payment orchestration across all rails with automated retry and reconciliation.</p></div>
+      <div class="card p-5"><div class="flex items-center gap-3 mb-2"><span class="w-9 h-9 rounded-xl bg-orange-400/12 border border-orange-400/25 flex items-center justify-center"><svg class="w-4 h-4 text-orange-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/></svg></span><span class="font-bold text-white">Act</span></div><p class="text-xs text-slate-400 leading-relaxed">Proactive engagement and automated collections, hardship and forbearance.</p></div>
+      <div class="card p-5"><div class="flex items-center gap-3 mb-2"><span class="w-9 h-9 rounded-xl bg-brand-cyan/12 border border-brand-cyan/25 flex items-center justify-center"><svg class="w-4 h-4 text-brand-cyan" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg></span><span class="font-bold text-white">Performance</span></div><p class="text-xs text-slate-400 leading-relaxed">Aggregated portfolio insight and continuous strategy recommendations.</p></div>
+    </div>
+
+    <!-- Inputs rail -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+      <div class="card p-5">
+        <div class="flex items-center justify-between mb-3"><div class="font-bold text-brand-cyan text-sm">Data marketplace</div><span class="text-xs text-slate-500">Open banking · bureau · identity</span></div>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-xs font-semibold text-slate-300 bg-white/[0.04] hairline rounded-lg px-3 py-1.5">Open Banking</span>
+          <span class="text-xs font-semibold text-slate-300 bg-white/[0.04] hairline rounded-lg px-3 py-1.5">TransUnion</span>
+          <span class="text-xs font-semibold text-slate-300 bg-white/[0.04] hairline rounded-lg px-3 py-1.5">Experian</span>
+          <span class="text-xs font-semibold text-slate-300 bg-white/[0.04] hairline rounded-lg px-3 py-1.5">HMRC</span>
+          <span class="text-xs font-semibold text-slate-300 bg-white/[0.04] hairline rounded-lg px-3 py-1.5">Companies House</span>
+          <span class="text-xs font-semibold text-slate-300 bg-white/[0.04] hairline rounded-lg px-3 py-1.5">ID&amp;V</span>
+          <span class="text-xs font-semibold text-slate-500 bg-white/[0.02] hairline rounded-lg px-3 py-1.5">+ more</span>
         </div>
-        <div class="card p-4">
-          <div class="font-bold text-brand-blue text-sm mb-3">Integrations library</div>
-          <ul class="space-y-2 text-xs font-semibold text-slate-300">
-            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-blue"></span>REST API</li>
-            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-blue"></span>Webhooks</li>
-            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-blue"></span>Core banking &amp; LMS</li>
-            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-blue"></span>Cloud integrations</li>
-          </ul>
+      </div>
+      <div class="card p-5">
+        <div class="flex items-center justify-between mb-3"><div class="font-bold text-brand-blue text-sm">Integrations library</div><span class="text-xs text-slate-500">Connect to your stack</span></div>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-xs font-semibold text-slate-300 bg-white/[0.04] hairline rounded-lg px-3 py-1.5">REST API</span>
+          <span class="text-xs font-semibold text-slate-300 bg-white/[0.04] hairline rounded-lg px-3 py-1.5">Webhooks</span>
+          <span class="text-xs font-semibold text-slate-300 bg-white/[0.04] hairline rounded-lg px-3 py-1.5">Core banking &amp; LMS</span>
+          <span class="text-xs font-semibold text-slate-300 bg-white/[0.04] hairline rounded-lg px-3 py-1.5">Cloud integrations</span>
         </div>
       </div>
     </div>
@@ -424,7 +419,7 @@
           <div class="text-xs font-bold uppercase tracking-widest text-slate-500 mb-4">Platform</div>
           <ul class="space-y-2.5">
             <li><a href="/platform" class="text-sm text-slate-400 hover:text-white transition-colors">Overview</a></li>
-            <li><a href="/#agents" class="text-sm text-slate-400 hover:text-white transition-colors">AI Agents</a></li>
+            <li><a href="/developers" class="text-sm text-slate-400 hover:text-white transition-colors">Developers</a></li>
             <li><a href="#modules" class="text-sm text-slate-400 hover:text-white transition-colors">Modules</a></li>
           </ul>
         </div>
@@ -446,8 +441,9 @@
       </div>
     </div>
 
-    <div class="border-t border-white/5 pt-6">
-      <p class="text-xs text-slate-500">© 2026 Likuid. All rights reserved.</p>
+    <div class="border-t border-white/5 pt-6 flex flex-col sm:flex-row gap-2 sm:items-center sm:justify-between">
+      <p class="text-xs text-slate-500">© 2026 Likuid Limited. Registered in England &amp; Wales, company no. 17095414.</p>
+      <p class="text-xs text-slate-500"><a href="/privacy" class="hover:text-white">Privacy</a> · <a href="/terms" class="hover:text-white">Terms</a></p>
     </div>
   </div>
 </footer>

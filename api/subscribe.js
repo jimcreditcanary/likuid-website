@@ -65,13 +65,24 @@ function buildText() {
 }
 
 // Push the lead into the Veepveep CRM. Fail-open: never throws.
-async function pushLeadToCrm({ email, company, pageUrl }) {
+async function pushLeadToCrm({ email, name, jobTitle, company, phone, source, asset, pageUrl }) {
   const key = (process.env.LEAD_API_KEY || "").trim();
   if (!key) {
     console.warn("LEAD_API_KEY not set — skipping CRM lead push");
     return;
   }
   try {
+    const payload = {
+      email,
+      name: name || undefined,
+      job_title: jobTitle || undefined,
+      company: company || undefined,
+      phone: phone || undefined,
+      source: source || "likuid-website",
+      asset: asset || "Website enquiry",
+      kind: "enquiry",
+      url: pageUrl || `${SITE_URL}/`,
+    };
     const crmRes = await fetch("https://www.veepveep.co.uk/api/leads", {
       method: "POST",
       headers: {
@@ -79,15 +90,7 @@ async function pushLeadToCrm({ email, company, pageUrl }) {
         Accept: "application/json",
         Authorization: `Bearer ${key}`,
       },
-      body: JSON.stringify({
-        email,
-        company,
-        source: "likuid-website",
-        asset: "Home page enquiry",
-        kind: "enquiry",
-        message: "Likuid home-page lead capture",
-        url: pageUrl || `${SITE_URL}/`,
-      }),
+      body: JSON.stringify(payload),
     });
     if (!crmRes.ok) {
       const detail = await crmRes.text().catch(() => "");
@@ -152,10 +155,18 @@ module.exports = async function handler(req, res) {
   }
   body = body || {};
 
-  const email = typeof body.email === "string" ? body.email.trim().toLowerCase() : "";
-  const company = typeof body.company === "string" ? body.company.trim() : "";
-  const pageUrl = typeof body.url === "string" ? body.url.trim() : "";
-  const honeypot = typeof body.website === "string" ? body.website.trim() : "";
+  const str = (v) => (typeof v === "string" ? v.trim() : "");
+  const email = str(body.email).toLowerCase();
+  const firstName = str(body.firstName || body.first_name);
+  const lastName = str(body.lastName || body.last_name);
+  const name = str(body.name) || [firstName, lastName].filter(Boolean).join(" ");
+  const jobTitle = str(body.jobTitle || body.job_title);
+  const company = str(body.company);
+  const phone = str(body.mobile || body.phone);
+  const source = str(body.source);
+  const asset = str(body.asset);
+  const pageUrl = str(body.url);
+  const honeypot = str(body.website);
 
   // Honeypot: a filled hidden field means a bot — fake success, do nothing.
   if (honeypot) {
@@ -170,7 +181,7 @@ module.exports = async function handler(req, res) {
 
   try {
     // CRM push + optional confirmation email, both fail-open.
-    await pushLeadToCrm({ email, company, pageUrl });
+    await pushLeadToCrm({ email, name, jobTitle, company, phone, source, asset, pageUrl });
     await sendConfirmation(email, company);
     res.status(200).json({ ok: true });
   } catch (err) {

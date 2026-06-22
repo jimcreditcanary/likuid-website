@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="theme-color" content="#08090a" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <meta name="description" content="Likuid is your all-in-one financial platform for managing risk, making smarter decisions, and getting paid — AI credit decisioning and payments infrastructure in one place." />
@@ -70,6 +71,11 @@
     .nav-link { color: #b7bbc2; font-size: 14px; font-weight: 500; transition: color .15s; }
     .nav-link:hover { color: #fff; }
 
+    .lbl { display:block; font-size:11px; font-weight:600; letter-spacing:.04em; text-transform:uppercase; color:#8a8f98; margin-bottom:6px; }
+    .fld { width:100%; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.10); border-radius:12px; padding:11px 14px; font-size:14px; color:#fff; transition:border-color .15s; }
+    .fld::placeholder { color:#6b7280; }
+    .fld:focus { outline:none; border-color:rgba(63,169,245,0.6); }
+
     @keyframes pulse-dot { 0%,100%{opacity:1} 50%{opacity:.35} }
     .pulse { animation: pulse-dot 2s ease-in-out infinite; }
     @keyframes scroll-x { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
@@ -111,9 +117,7 @@
 
       <nav class="hidden lg:flex items-center gap-9" aria-label="Main">
         <a href="/platform" class="nav-link">Platform</a>
-        <a href="#agents" class="nav-link">AI Agents</a>
-        <a href="#journey" class="nav-link">Product</a>
-        <a href="#early-access" class="nav-link">Contact</a>
+        <a href="/developers" class="nav-link">Developers</a>
       </nav>
 
       <div class="flex items-center gap-3">
@@ -134,9 +138,7 @@
   <div id="mobile-menu" class="hidden lg:hidden border-t border-white/5 bg-ink/95 backdrop-blur-xl">
     <div class="px-6 py-5 space-y-1">
       <a href="/platform" class="block py-3 text-sm font-medium text-slate-200">Platform</a>
-      <a href="#agents" class="block py-3 text-sm font-medium text-slate-200">AI Agents</a>
-      <a href="#journey" class="block py-3 text-sm font-medium text-slate-200">Product</a>
-      <a href="#early-access" class="block py-3 text-sm font-medium text-slate-200">Contact</a>
+      <a href="/developers" class="block py-3 text-sm font-medium text-slate-200">Developers</a>
       <div class="pt-3 border-t border-white/5 mt-2">
         <a href="https://www.veepveep.co.uk/book/jim" class="btn-primary block text-center text-sm font-semibold px-4 py-3 rounded-xl">Book a demo</a>
       </div>
@@ -176,46 +178,95 @@
       </a>
     </div>
 
-    <!-- Product preview -->
-    <div class="relative max-w-4xl mx-auto">
+    <!-- Product preview — console mockup -->
+    <div class="relative max-w-5xl mx-auto text-left">
       <div class="absolute -inset-x-10 -top-10 h-40 bg-brand-blue/20 blur-3xl rounded-full pointer-events-none"></div>
       <div class="relative rounded-2xl overflow-hidden hairline bg-ink-800 shadow-glow">
-        <div class="flex items-center gap-2 px-4 py-3 border-b border-white/5 bg-white/[0.02]">
+        <!-- browser chrome -->
+        <div class="flex items-center gap-2 px-4 py-2.5 border-b border-white/5 bg-white/[0.02]">
           <div class="flex gap-1.5"><span class="w-3 h-3 rounded-full bg-white/15"></span><span class="w-3 h-3 rounded-full bg-white/15"></span><span class="w-3 h-3 rounded-full bg-white/15"></span></div>
           <div class="flex-1 max-w-xs mx-auto text-center text-[11px] text-slate-500 font-medium">app.likuid.ai</div>
         </div>
-        <div class="grid grid-cols-3 gap-px bg-white/5 p-px">
-          <div class="bg-ink-800 p-5 text-left">
-            <div class="text-[11px] uppercase tracking-widest text-slate-500 mb-2">Approvals today</div>
-            <div class="text-3xl font-extrabold text-white">1,284</div>
-            <div class="text-xs text-brand-cyan mt-1 font-semibold">+18% vs last week</div>
-          </div>
-          <div class="bg-ink-800 p-5 text-left">
-            <div class="text-[11px] uppercase tracking-widest text-slate-500 mb-2">Collected</div>
-            <div class="text-3xl font-extrabold text-white">£3.9m</div>
-            <div class="text-xs text-brand-cyan mt-1 font-semibold">98.2% on first attempt</div>
-          </div>
-          <div class="bg-ink-800 p-5 text-left">
-            <div class="text-[11px] uppercase tracking-widest text-slate-500 mb-2">Avg decision time</div>
-            <div class="text-3xl font-extrabold text-white">1.4s</div>
-            <div class="text-xs text-brand-cyan mt-1 font-semibold">Fully automated</div>
-          </div>
-        </div>
-        <div class="bg-ink-800 p-6 text-left border-t border-white/5">
-          <div class="flex items-center justify-between mb-4">
-            <span class="text-xs font-bold uppercase tracking-widest text-slate-500">Credit journey — live</span>
-            <span class="inline-flex items-center gap-1.5 text-xs text-brand-cyan font-semibold"><span class="dot pulse"></span>6 agents active</span>
-          </div>
-          <div class="flex items-center gap-2 overflow-hidden">
-            <span class="flex-1 text-center text-xs font-semibold text-slate-300 bg-white/[0.04] hairline rounded-lg py-2.5">Originate</span>
-            <span class="text-slate-600">→</span>
-            <span class="flex-1 text-center text-xs font-semibold text-slate-300 bg-white/[0.04] hairline rounded-lg py-2.5">Unify</span>
-            <span class="text-slate-600">→</span>
-            <span class="flex-1 text-center text-xs font-semibold text-white bg-brand-blue/15 border border-brand-blue/40 rounded-lg py-2.5">Decide</span>
-            <span class="text-slate-600">→</span>
-            <span class="flex-1 text-center text-xs font-semibold text-slate-300 bg-white/[0.04] hairline rounded-lg py-2.5">Pay</span>
-            <span class="text-slate-600">→</span>
-            <span class="flex-1 text-center text-xs font-semibold text-slate-300 bg-white/[0.04] hairline rounded-lg py-2.5">Act</span>
+
+        <div class="flex" style="min-height:430px;">
+          <!-- sidebar -->
+          <aside class="hidden sm:flex w-44 flex-shrink-0 flex-col border-r border-white/5 bg-white/[0.015] py-3">
+            <div class="flex items-center gap-2 px-4 pb-3 mb-2 border-b border-white/5">
+              <span class="w-6 h-6 rounded-lg bg-gradient-to-br from-brand-cyan to-brand-blue flex items-center justify-center text-[10px] font-black text-ink">G</span>
+              <span class="text-xs font-semibold text-slate-200">GMB Credit Union</span>
+            </div>
+            <nav class="px-2 space-y-0.5 text-[12px]">
+              <div class="flex items-center gap-2 px-2.5 py-1.5 rounded-lg text-slate-400">Applications</div>
+              <div class="flex items-center gap-2 px-2.5 py-1.5 rounded-lg text-slate-400">Customers</div>
+              <div class="flex items-center justify-between px-2.5 py-1.5 rounded-lg bg-brand-blue/15 text-white font-semibold">Payments <span class="text-brand-cyan">›</span></div>
+              <div class="flex items-center gap-2 px-2.5 py-1.5 rounded-lg text-slate-400">Agents <span class="ml-auto w-4 h-4 rounded-full bg-brand-cyan/20 text-brand-cyan text-[9px] font-bold flex items-center justify-center">6</span></div>
+              <div class="flex items-center gap-2 px-2.5 py-1.5 rounded-lg text-slate-400">Decisioning</div>
+              <div class="flex items-center gap-2 px-2.5 py-1.5 rounded-lg text-slate-400">Analytics</div>
+              <div class="flex items-center gap-2 px-2.5 py-1.5 rounded-lg text-slate-400">Settings</div>
+            </nav>
+          </aside>
+
+          <!-- main -->
+          <div class="flex-1 min-w-0">
+            <!-- customer header + decision actions -->
+            <div class="flex items-center justify-between px-5 py-3 border-b border-white/5">
+              <div class="flex items-center gap-3 text-xs">
+                <span class="font-semibold text-white">Member loan · F5R43F</span>
+                <span class="hidden md:inline text-slate-500">James Fell</span>
+              </div>
+              <div class="flex items-center gap-1.5">
+                <span class="text-[11px] font-semibold text-slate-300 bg-white/[0.04] hairline rounded-md px-2.5 py-1">Refer</span>
+                <span class="text-[11px] font-semibold text-rose-300 bg-rose-400/10 border border-rose-400/30 rounded-md px-2.5 py-1">Decline</span>
+                <span class="text-[11px] font-semibold text-ink bg-gradient-to-b from-brand-cyan to-brand-blue rounded-md px-2.5 py-1">Approve</span>
+              </div>
+            </div>
+            <!-- tabs -->
+            <div class="flex items-center gap-5 px-5 pt-3 text-[12px] border-b border-white/5">
+              <span class="pb-2 text-white font-semibold border-b-2 border-brand-blue">Summary</span>
+              <span class="pb-2 text-slate-500">Decisioning</span>
+              <span class="pb-2 text-slate-500">Income &amp; Expenditure</span>
+              <span class="pb-2 text-slate-500 hidden md:inline">Credit Risk</span>
+            </div>
+
+            <div class="p-5 space-y-4">
+              <!-- metric cards -->
+              <div class="grid grid-cols-2 lg:grid-cols-4 gap-3">
+                <div class="rounded-xl hairline bg-white/[0.02] p-3"><div class="text-[10px] uppercase tracking-wider text-slate-500 mb-1">Monthly income</div><div class="text-lg font-extrabold text-white">£2,343</div></div>
+                <div class="rounded-xl hairline bg-white/[0.02] p-3"><div class="text-[10px] uppercase tracking-wider text-slate-500 mb-1">Card balance</div><div class="text-lg font-extrabold text-white">£1,224</div></div>
+                <div class="rounded-xl hairline bg-white/[0.02] p-3"><div class="text-[10px] uppercase tracking-wider text-slate-500 mb-1">Credit utilisation</div><div class="text-lg font-extrabold text-brand-cyan">24%</div></div>
+                <div class="rounded-xl hairline bg-white/[0.02] p-3"><div class="text-[10px] uppercase tracking-wider text-slate-500 mb-1">Surplus / mo</div><div class="text-lg font-extrabold text-white">£612</div></div>
+              </div>
+
+              <!-- decision progress stepper -->
+              <div class="rounded-xl hairline bg-white/[0.02] p-4">
+                <div class="flex items-center justify-between mb-3">
+                  <span class="text-[11px] font-bold uppercase tracking-widest text-slate-500">Decision progress</span>
+                  <span class="inline-flex items-center gap-1.5 text-[11px] text-brand-cyan font-semibold"><span class="dot pulse"></span>Final decision pending</span>
+                </div>
+                <div class="flex items-center">
+                  <div class="flex flex-col items-center gap-1"><span class="w-6 h-6 rounded-full bg-brand-cyan/15 border border-brand-cyan/40 flex items-center justify-center text-brand-cyan text-xs">✓</span><span class="text-[9px] text-slate-400">KYC</span></div>
+                  <div class="flex-1 h-px bg-brand-cyan/30 mx-1"></div>
+                  <div class="flex flex-col items-center gap-1"><span class="w-6 h-6 rounded-full bg-brand-cyan/15 border border-brand-cyan/40 flex items-center justify-center text-brand-cyan text-xs">✓</span><span class="text-[9px] text-slate-400">Affordability</span></div>
+                  <div class="flex-1 h-px bg-brand-cyan/30 mx-1"></div>
+                  <div class="flex flex-col items-center gap-1"><span class="w-6 h-6 rounded-full bg-brand-cyan/15 border border-brand-cyan/40 flex items-center justify-center text-brand-cyan text-xs">✓</span><span class="text-[9px] text-slate-400">Credit risk</span></div>
+                  <div class="flex-1 h-px bg-white/10 mx-1"></div>
+                  <div class="flex flex-col items-center gap-1"><span class="w-6 h-6 rounded-full bg-brand-blue/15 border border-brand-blue/50 flex items-center justify-center text-brand-blue text-[10px] font-bold pulse">4</span><span class="text-[9px] text-slate-400">Decision</span></div>
+                </div>
+              </div>
+
+              <!-- payments table strip -->
+              <div class="rounded-xl hairline bg-white/[0.02] overflow-hidden">
+                <div class="flex items-center justify-between px-4 py-2.5 border-b border-white/5">
+                  <span class="text-[11px] font-bold uppercase tracking-widest text-slate-500">Faster Payments</span>
+                  <span class="text-[10px] text-slate-500">CoP verified</span>
+                </div>
+                <div class="divide-y divide-white/5 text-[11px]">
+                  <div class="grid grid-cols-4 gap-2 px-4 py-2 items-center"><span class="text-slate-300 font-medium">Member Saver</span><span class="text-white font-semibold">£230.00</span><span class="text-brand-cyan font-semibold">✓ Full match</span><span class="text-right"><span class="bg-brand-cyan/15 text-brand-cyan font-bold px-2 py-0.5 rounded-full">Collected</span></span></div>
+                  <div class="grid grid-cols-4 gap-2 px-4 py-2 items-center"><span class="text-slate-300 font-medium">Member Saver</span><span class="text-white font-semibold">£145.50</span><span class="text-brand-cyan font-semibold">✓ Full match</span><span class="text-right"><span class="bg-amber-400/15 text-amber-300 font-bold px-2 py-0.5 rounded-full">Retry 6pm</span></span></div>
+                  <div class="grid grid-cols-4 gap-2 px-4 py-2 items-center"><span class="text-slate-300 font-medium">Pay by Bank</span><span class="text-white font-semibold">£312.00</span><span class="text-brand-cyan font-semibold">✓ Full match</span><span class="text-right"><span class="bg-brand-blue/15 text-brand-blue font-bold px-2 py-0.5 rounded-full">Link sent</span></span></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -251,27 +302,17 @@
 <!-- ================= STATS ================= -->
 <section class="py-20">
   <div class="max-w-6xl mx-auto px-6 lg:px-8">
-    <p class="text-center text-xs font-bold uppercase tracking-widest text-slate-500 mb-12">What unified risk &amp; payments unlocks</p>
-    <div class="grid grid-cols-2 lg:grid-cols-4 gap-px rounded-2xl overflow-hidden hairline bg-white/5">
-      <div class="bg-ink-800 px-6 py-10 text-center">
-        <div class="text-4xl lg:text-5xl font-black text-brand-gradient mb-2 tracking-tight">80%+</div>
-        <div class="text-sm font-semibold text-white mb-1">Journey completion</div>
-        <div class="text-xs text-slate-500">More applicants reach a decision</div>
+    <p class="text-center text-xs font-bold uppercase tracking-widest text-slate-500 mb-12">Proven results</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-4xl mx-auto">
+      <div class="card p-8 lg:p-10">
+        <div class="text-5xl lg:text-6xl font-black text-brand-gradient mb-3 tracking-tight">28%</div>
+        <div class="text-lg font-bold text-white mb-2">more growth &amp; profit</div>
+        <div class="text-sm text-slate-400 leading-relaxed">For an ethical lender — with no additional staff or marketing investment.</div>
       </div>
-      <div class="bg-ink-800 px-6 py-10 text-center">
-        <div class="text-4xl lg:text-5xl font-black text-brand-gradient mb-2 tracking-tight">40%</div>
-        <div class="text-sm font-semibold text-white mb-1">More approvals</div>
-        <div class="text-xs text-slate-500">Smarter decisions, same risk appetite</div>
-      </div>
-      <div class="bg-ink-800 px-6 py-10 text-center">
-        <div class="text-4xl lg:text-5xl font-black text-brand-gradient mb-2 tracking-tight">98%</div>
-        <div class="text-sm font-semibold text-white mb-1">Collected first time</div>
-        <div class="text-xs text-slate-500">Payments orchestrated automatically</div>
-      </div>
-      <div class="bg-ink-800 px-6 py-10 text-center">
-        <div class="text-4xl lg:text-5xl font-black text-brand-gradient mb-2 tracking-tight">50%</div>
-        <div class="text-sm font-semibold text-white mb-1">Lower cost to serve</div>
-        <div class="text-xs text-slate-500">From onboarding to collection</div>
+      <div class="card p-8 lg:p-10">
+        <div class="text-5xl lg:text-6xl font-black text-brand-gradient mb-3 tracking-tight">40%</div>
+        <div class="text-lg font-bold text-white mb-2">of declines converted to approvals</div>
+        <div class="text-sm text-slate-400 leading-relaxed">For a Tier 1 bank — unlocking business previously lost.</div>
       </div>
     </div>
   </div>
@@ -488,22 +529,24 @@
         <h2 class="text-3xl lg:text-4xl font-extrabold text-white mb-3">Move faster with Likuid.</h2>
         <p class="text-slate-400 max-w-xl mx-auto mb-8">Real-time data, automation and intelligent insights in one platform. Leave your details and we'll be in touch — or book a demo to see it live.</p>
 
-        <form id="lead-form" class="max-w-md mx-auto text-left" novalidate>
+        <form id="lead-form" class="max-w-xl mx-auto text-left" data-source="likuid-website" data-asset="Home page enquiry" novalidate>
           <!-- Honeypot -->
           <div style="position:absolute;left:-9999px;" aria-hidden="true">
             <label>Leave this empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
           </div>
-          <div class="flex flex-col sm:flex-row gap-3 mb-3">
-            <input id="lead-email" name="email" type="email" required autocomplete="email" placeholder="you@company.com"
-              class="flex-1 bg-white/[0.04] border border-white/10 rounded-xl px-4 py-3.5 text-sm text-white placeholder:text-slate-500 focus:outline-none focus:border-brand-blue/60 transition-colors" />
-            <button type="submit" id="lead-submit" class="btn-primary inline-flex items-center justify-center gap-2 font-semibold px-6 py-3.5 rounded-xl text-sm whitespace-nowrap">
-              Get in touch
-              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-            </button>
+          <div class="grid sm:grid-cols-2 gap-4 mb-4">
+            <div><label class="lbl" for="f-first">First name</label><input id="f-first" name="firstName" type="text" required autocomplete="given-name" class="fld" /></div>
+            <div><label class="lbl" for="f-last">Last name</label><input id="f-last" name="lastName" type="text" required autocomplete="family-name" class="fld" /></div>
+            <div><label class="lbl" for="f-job">Job title</label><input id="f-job" name="jobTitle" type="text" required autocomplete="organization-title" class="fld" /></div>
+            <div><label class="lbl" for="f-company">Company</label><input id="f-company" name="company" type="text" required autocomplete="organization" class="fld" /></div>
+            <div><label class="lbl" for="f-email">Email</label><input id="f-email" name="email" type="email" required autocomplete="email" class="fld" /></div>
+            <div><label class="lbl" for="f-mobile">Mobile</label><input id="f-mobile" name="mobile" type="tel" required autocomplete="tel" class="fld" /></div>
           </div>
-          <input id="lead-company" name="company" type="text" autocomplete="organization" placeholder="Company (optional)"
-            class="w-full bg-white/[0.04] border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:outline-none focus:border-brand-blue/60 transition-colors mb-3" />
-          <p id="lead-message" class="text-sm text-center min-h-[20px]" role="status" aria-live="polite"></p>
+          <button type="submit" id="lead-submit" class="btn-primary w-full inline-flex items-center justify-center gap-2 font-semibold px-6 py-3.5 rounded-xl text-sm">
+            Get in touch
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </button>
+          <p id="lead-message" class="text-sm text-center min-h-[20px] mt-3" role="status" aria-live="polite"></p>
           <p class="text-xs text-slate-500 text-center">By submitting you agree to be contacted about Likuid. No spam.</p>
         </form>
       </div>
@@ -541,6 +584,7 @@
           <div class="text-xs font-bold uppercase tracking-widest text-slate-500 mb-4">Platform</div>
           <ul class="space-y-2.5">
             <li><a href="/platform" class="text-sm text-slate-400 hover:text-white transition-colors">Overview</a></li>
+            <li><a href="/developers" class="text-sm text-slate-400 hover:text-white transition-colors">Developers</a></li>
             <li><a href="#agents" class="text-sm text-slate-400 hover:text-white transition-colors">AI Agents</a></li>
             <li><a href="#journey" class="text-sm text-slate-400 hover:text-white transition-colors">Credit journey</a></li>
           </ul>
@@ -563,8 +607,9 @@
       </div>
     </div>
 
-    <div class="border-t border-white/5 pt-6">
-      <p class="text-xs text-slate-500">© 2026 Likuid. All rights reserved.</p>
+    <div class="border-t border-white/5 pt-6 flex flex-col sm:flex-row gap-2 sm:items-center sm:justify-between">
+      <p class="text-xs text-slate-500">© 2026 Likuid Limited. Registered in England &amp; Wales, company no. 17095414.</p>
+      <p class="text-xs text-slate-500"><a href="/privacy" class="hover:text-white">Privacy</a> · <a href="/terms" class="hover:text-white">Terms</a></p>
     </div>
   </div>
 </footer>
@@ -595,34 +640,34 @@
     }
   })();
 
-  // Lead capture → /api/subscribe (Veepveep CRM)
+  // Lead capture → /api/subscribe (Veepveep CRM). Works on any page with #lead-form.
   (function(){
     var form=document.getElementById('lead-form');
     if(!form) return;
     var msg=document.getElementById('lead-message');
     var submit=document.getElementById('lead-submit');
+    function val(n){ var el=form.querySelector('[name="'+n+'"]'); return el?el.value.trim():''; }
     form.addEventListener('submit',function(e){
       e.preventDefault();
-      var email=document.getElementById('lead-email').value.trim();
-      var company=document.getElementById('lead-company').value.trim();
-      var website=form.querySelector('input[name="website"]').value.trim();
-      if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
-        msg.textContent='Please enter a valid email address.'; msg.style.color='#fda4af'; return;
-      }
+      var data={
+        firstName:val('firstName'), lastName:val('lastName'), jobTitle:val('jobTitle'),
+        company:val('company'), email:val('email'), mobile:val('mobile'),
+        website:val('website'),
+        source:form.getAttribute('data-source')||'likuid-website',
+        asset:form.getAttribute('data-asset')||'Website enquiry',
+        url:window.location.href
+      };
+      var required=['firstName','lastName','jobTitle','company','email','mobile'];
+      for(var i=0;i<required.length;i++){ if(!data[required[i]]){ msg.textContent='Please complete all fields.'; msg.style.color='#fda4af'; return; } }
+      if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)){ msg.textContent='Please enter a valid email address.'; msg.style.color='#fda4af'; return; }
       submit.disabled=true; submit.style.opacity='0.6';
       msg.textContent='Sending…'; msg.style.color='#8a8f98';
       fetch('/api/subscribe',{
-        method:'POST',
-        headers:{'Content-Type':'application/json'},
-        body:JSON.stringify({email:email,company:company,website:website,url:window.location.href})
+        method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(data)
       }).then(function(r){ return r.json().then(function(d){ return {ok:r.ok,d:d}; }); })
         .then(function(res){
-          if(res.ok){
-            form.reset();
-            msg.textContent='Thanks — we\'ll be in touch shortly.'; msg.style.color='#44D9DE';
-          } else {
-            msg.textContent=(res.d&&res.d.error)||'Something went wrong. Please email hello@likuid.ai.'; msg.style.color='#fda4af';
-          }
+          if(res.ok){ form.reset(); msg.textContent='Thanks — we\'ll be in touch shortly.'; msg.style.color='#44D9DE'; }
+          else { msg.textContent=(res.d&&res.d.error)||'Something went wrong. Please email hello@likuid.ai.'; msg.style.color='#fda4af'; }
         }).catch(function(){
           msg.textContent='Something went wrong. Please email hello@likuid.ai.'; msg.style.color='#fda4af';
         }).finally(function(){ submit.disabled=false; submit.style.opacity='1'; });

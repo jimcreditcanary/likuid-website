@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="theme-color" content="#08090a" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="robots" content="noindex" />
+  <meta name="description" content="Likuid at Credit Week 2026 — leave your details and we'll be in touch." />
+  <title>Likuid · Credit Week 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      fontFamily: { sans: ['Inter','sans-serif'] },
+      colors: { ink:{DEFAULT:'#08090a',900:'#0a0b0d',800:'#101113',700:'#16181b',600:'#1d1f23'}, brand:{cyan:'#44D9DE',sky:'#43CFE2',blue:'#3FA9F5'}, mute:'#8a8f98' },
+      boxShadow: { glow:'0 0 80px -20px rgba(63,169,245,0.45)' } } } };
+  </script>
+  <link rel="stylesheet" href="/css/likuid.css">
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body class="bg-ink text-slate-100 antialiased selection:bg-brand-blue/30 grain">
+
+<div class="min-h-screen flex flex-col">
+  <header class="px-6 py-5 flex items-center justify-between max-w-3xl mx-auto w-full">
+    <a href="/" aria-label="Likuid home"><img src="/logo.svg" alt="Likuid" style="height:26px;width:auto;display:block;" /></a>
+    <span class="text-xs font-semibold uppercase tracking-widest text-brand-cyan">Credit Week 2026</span>
+  </header>
+
+  <main class="flex-1 flex items-center justify-center px-6 py-8">
+    <div class="w-full max-w-lg">
+      <div class="text-center mb-8">
+        <h1 class="text-3xl lg:text-4xl font-extrabold text-white mb-3">Great to meet you 👋</h1>
+        <p class="text-slate-400">Leave your details and we'll follow up after the show. <span class="text-slate-300">One platform — AI credit decisioning &amp; payments infrastructure.</span></p>
+      </div>
+
+      <div class="relative rounded-3xl overflow-hidden hairline bg-gradient-to-b from-white/[0.05] to-white/[0.01] p-7 lg:p-8">
+        <div class="absolute -top-16 left-1/2 -translate-x-1/2 w-80 h-40 bg-brand-blue/20 blur-3xl rounded-full pointer-events-none"></div>
+        <div class="relative">
+          <form id="lead-form" data-source="credit-week-2026" data-asset="Credit Week 2026" data-mode="rapid" data-success="✓ Saved — ready for the next one." novalidate>
+            <div style="position:absolute;left:-9999px;" aria-hidden="true"><label>Leave this empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+            <div class="grid sm:grid-cols-2 gap-3 mb-3">
+              <div><label class="lbl" for="f-first">First name</label><input id="f-first" name="firstName" type="text" required autocomplete="off" class="fld" /></div>
+              <div><label class="lbl" for="f-last">Last name</label><input id="f-last" name="lastName" type="text" required autocomplete="off" class="fld" /></div>
+              <div><label class="lbl" for="f-job">Job title</label><input id="f-job" name="jobTitle" type="text" required autocomplete="off" class="fld" /></div>
+              <div><label class="lbl" for="f-company">Company</label><input id="f-company" name="company" type="text" required autocomplete="off" class="fld" /></div>
+              <div><label class="lbl" for="f-email">Email</label><input id="f-email" name="email" type="email" required autocomplete="off" class="fld" /></div>
+              <div><label class="lbl" for="f-mobile">Mobile</label><input id="f-mobile" name="mobile" type="tel" required autocomplete="off" class="fld" /></div>
+            </div>
+            <button type="submit" id="lead-submit" class="btn-primary w-full inline-flex items-center justify-center gap-2 font-semibold px-6 py-4 rounded-xl text-base">Save lead
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></button>
+            <p id="lead-message" class="text-sm text-center min-h-[22px] mt-3 font-semibold" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+      <p class="text-center text-xs text-slate-600 mt-5">The form clears after each save so you can capture the next person straight away.</p>
+    </div>
+  </main>
+</div>
+
+<script src="/js/likuid.js"></script>
+</body>
+</html>

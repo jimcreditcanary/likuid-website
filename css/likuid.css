@@ -1,0 +1,50 @@
+/* ============================================================
+   Likuid shared styles — dark, Linear-style theme
+   Used by demo / developers / credit-week / privacy / terms.
+   (index.html + platform.html inline their own copy.)
+   ============================================================ */
+
+html { scroll-behavior: smooth; }
+* { font-family: 'Inter', sans-serif; }
+body { background: #08090a; }
+
+.grain { background-image:
+    radial-gradient(60% 40% at 50% 0%, rgba(63,169,245,0.10) 0%, transparent 60%),
+    radial-gradient(40% 30% at 85% 10%, rgba(68,217,222,0.07) 0%, transparent 60%); }
+.grid-faint { background-image:
+    linear-gradient(to right, rgba(255,255,255,0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.035) 1px, transparent 1px);
+  background-size: 56px 56px;
+  -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 40%, transparent 100%);
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 40%, transparent 100%); }
+
+.text-brand-gradient { background: linear-gradient(110deg, #44D9DE 0%, #3FA9F5 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+
+.hairline { border: 1px solid rgba(255,255,255,0.08); }
+.card { background: linear-gradient(180deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.015) 100%); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; transition: border-color .2s, transform .2s; }
+.card:hover { border-color: rgba(63,169,245,0.4); transform: translateY(-3px); }
+
+.btn-primary { background: linear-gradient(180deg, #4ab4fb 0%, #3FA9F5 100%); color: #04121f; box-shadow: 0 1px 0 rgba(255,255,255,0.25) inset, 0 8px 30px -10px rgba(63,169,245,0.6); }
+.btn-primary:hover { filter: brightness(1.06); }
+.btn-ghost { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.10); color: #f7f8f8; }
+.btn-ghost:hover { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.2); }
+
+.nav-link { color: #b7bbc2; font-size: 14px; font-weight: 500; transition: color .15s; }
+.nav-link:hover { color: #fff; }
+
+.lbl { display:block; font-size:11px; font-weight:600; letter-spacing:.04em; text-transform:uppercase; color:#8a8f98; margin-bottom:6px; }
+.fld { width:100%; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.10); border-radius:12px; padding:11px 14px; font-size:14px; color:#fff; transition:border-color .15s; }
+.fld::placeholder { color:#6b7280; }
+.fld:focus { outline:none; border-color:rgba(63,169,245,0.6); }
+
+@keyframes pulse-dot { 0%,100%{opacity:1} 50%{opacity:.35} }
+.pulse { animation: pulse-dot 2s ease-in-out infinite; }
+.dot { width:8px; height:8px; border-radius:50%; background:#44D9DE; display:inline-block; flex-shrink:0; }
+
+/* Legal / prose pages */
+.prose-likuid h2 { color:#fff; font-size:1.25rem; font-weight:800; margin:2rem 0 .75rem; }
+.prose-likuid h3 { color:#e5e7eb; font-size:1rem; font-weight:700; margin:1.25rem 0 .4rem; }
+.prose-likuid p, .prose-likuid li { color:#9aa0aa; line-height:1.7; font-size:.95rem; }
+.prose-likuid ul { list-style:disc; padding-left:1.25rem; margin:.5rem 0 1rem; }
+.prose-likuid a { color:#3FA9F5; }
+.prose-likuid strong { color:#e5e7eb; }
