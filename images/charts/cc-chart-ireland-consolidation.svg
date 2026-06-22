@@ -1,0 +1,79 @@
+<svg viewBox="0 0 720 382" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Combination chart showing the number of Irish credit unions falling while their total loan book rises, 2014 to 2025.">
+  <title>Ireland: fewer credit unions, far more lending</title>
+  <desc>Bars show the number of credit unions in Ireland falling from 380 in 2014 to 274 in 2017, 228 in 2020, 192 in 2023 and 172 in 2025. The line shows total lending rising over the same period from 3.8 billion euro in 2014 to 4.2 in 2017, 5.09 in 2020, 6.28 in 2023 and 7.66 in 2025. Consolidation and growth happened together.</desc>
+  <rect x="1" y="1" width="718" height="380" rx="12" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+  <g font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <text x="32" y="44" font-size="20" font-weight="700" fill="#003566">Ireland: fewer credit unions, far more lending</text>
+    <text x="32" y="66" font-size="13" fill="#64748b">Number of credit unions and total loan book, 2014–2025</text>
+
+    <rect x="394" y="34" width="14" height="11" rx="2" fill="#aac6e0"/>
+    <text x="414" y="43" font-size="12" fill="#475569">Number of credit unions</text>
+    <line x1="566" y1="39.5" x2="588" y2="39.5" stroke="#003566" stroke-width="3"/>
+    <circle cx="577" cy="39.5" r="3.5" fill="#003566"/>
+    <text x="594" y="43" font-size="12" fill="#475569">Total lending (€bn)</text>
+
+    <g stroke="#eef2f6" stroke-width="1">
+      <line x1="80" y1="269.5" x2="660" y2="269.5"/>
+      <line x1="80" y1="213" x2="660" y2="213"/>
+      <line x1="80" y1="156.5" x2="660" y2="156.5"/>
+      <line x1="80" y1="100" x2="660" y2="100"/>
+    </g>
+    <line x1="80" y1="100" x2="80" y2="326" stroke="#cbd5e1" stroke-width="1"/>
+    <line x1="660" y1="100" x2="660" y2="326" stroke="#cbd5e1" stroke-width="1"/>
+    <line x1="80" y1="326" x2="660" y2="326" stroke="#cbd5e1" stroke-width="1"/>
+
+    <g fill="#94a3b8" font-size="11" text-anchor="end">
+      <text x="70" y="330">0</text>
+      <text x="70" y="273.5">100</text>
+      <text x="70" y="217">200</text>
+      <text x="70" y="160.5">300</text>
+      <text x="70" y="104">400</text>
+    </g>
+    <g fill="#1f5c8f" font-size="11" text-anchor="start">
+      <text x="670" y="330">0</text>
+      <text x="670" y="273.5">2</text>
+      <text x="670" y="217">4</text>
+      <text x="670" y="160.5">6</text>
+      <text x="670" y="104">8</text>
+    </g>
+
+    <rect x="110" y="111.3" width="56" height="214.7" fill="#aac6e0"/>
+    <rect x="226" y="171.2" width="56" height="154.8" fill="#aac6e0"/>
+    <rect x="342" y="197.2" width="56" height="128.8" fill="#aac6e0"/>
+    <rect x="458" y="217.5" width="56" height="108.5" fill="#aac6e0"/>
+    <rect x="574" y="228.8" width="56" height="97.2" fill="#aac6e0"/>
+    <g font-size="12" fill="#1f3a56" text-anchor="middle" font-weight="700">
+      <text x="138" y="127">380</text>
+      <text x="254" y="187">274</text>
+      <text x="370" y="213">228</text>
+      <text x="486" y="233.5">192</text>
+      <text x="602" y="244.8">172</text>
+    </g>
+
+    <polyline points="138,218.65 254,207.35 370,182.21 486,148.59 602,109.60" fill="none" stroke="#003566" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+    <g fill="#003566">
+      <circle cx="138" cy="218.65" r="4.5"/>
+      <circle cx="254" cy="207.35" r="4.5"/>
+      <circle cx="370" cy="182.21" r="4.5"/>
+      <circle cx="486" cy="148.59" r="4.5"/>
+      <circle cx="602" cy="109.60" r="4.5"/>
+    </g>
+    <g font-size="11" fill="#003566" text-anchor="middle" font-weight="700">
+      <text x="138" y="208">€3.8bn</text>
+      <text x="254" y="197">€4.2bn</text>
+      <text x="370" y="172">€5.1bn</text>
+      <text x="486" y="138.5">€6.3bn</text>
+      <text x="602" y="99.5">€7.7bn</text>
+    </g>
+
+    <g font-size="12.5" fill="#1f3a56" text-anchor="middle" font-weight="600">
+      <text x="138" y="344">2014</text>
+      <text x="254" y="344">2017</text>
+      <text x="370" y="344">2020</text>
+      <text x="486" y="344">2023</text>
+      <text x="602" y="344">2025</text>
+    </g>
+
+    <text x="32" y="370" font-size="10.5" fill="#94a3b8">Source: Central Bank of Ireland, via Fair4All Finance Credit Union Transformation Roadshow delegate pack</text>
+  </g>
+</svg>

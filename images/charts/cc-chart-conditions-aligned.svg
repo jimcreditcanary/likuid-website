@@ -1,0 +1,50 @@
+<svg viewBox="0 0 720 322" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Three conditions aligned for credit union transformation: policy and political will, sector ambition, and funding.">
+  <title>Conditions are aligned for transformation</title>
+  <desc>Three pillars. Policy and political will: government ambition to double the mutuals sector, Financial Inclusion Strategy names credit unions, common-bond cap rising from 3 million to 10 million. Sector ambition: the Credit Union Growth Plan to double membership to 4.4 million and treble lending to 8 billion pounds by 2035. Funding: 30 million pounds committed by the Treasury, delivered through Fair4All Finance.</desc>
+  <rect x="1" y="1" width="718" height="320" rx="12" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+  <text x="32" y="44" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="20" font-weight="700" fill="#003566">Conditions are aligned for transformation</text>
+  <text x="32" y="66" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" fill="#64748b">Policy, sector ambition and funding pointing the same way at the same time</text>
+
+  <g font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <rect x="32" y="86" width="208" height="34" rx="6" fill="#003566"/>
+    <text x="136" y="108" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">Policy &amp; political will</text>
+    <rect x="32" y="120" width="208" height="172" rx="6" fill="#eef3f8"/>
+    <circle cx="50" cy="146" r="3.5" fill="#FFD600"/>
+    <text x="64" y="150" font-size="12" fill="#1f3a56">Government ambition to</text>
+    <text x="64" y="165" font-size="12" fill="#1f3a56">double the mutuals sector</text>
+    <circle cx="50" cy="196" r="3.5" fill="#FFD600"/>
+    <text x="64" y="200" font-size="12" fill="#1f3a56">Financial Inclusion Strategy</text>
+    <text x="64" y="215" font-size="12" fill="#1f3a56">now names credit unions</text>
+    <circle cx="50" cy="246" r="3.5" fill="#FFD600"/>
+    <text x="64" y="250" font-size="12" fill="#1f3a56">Common-bond cap rising</text>
+    <text x="64" y="265" font-size="12" fill="#1f3a56">from 3m to 10m people</text>
+
+    <rect x="256" y="86" width="208" height="34" rx="6" fill="#003566"/>
+    <text x="360" y="108" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">Sector ambition</text>
+    <rect x="256" y="120" width="208" height="172" rx="6" fill="#eef3f8"/>
+    <circle cx="274" cy="146" r="3.5" fill="#FFD600"/>
+    <text x="288" y="150" font-size="12" fill="#1f3a56">Credit Union Growth Plan</text>
+    <text x="288" y="165" font-size="12" fill="#1f3a56">running to 2035</text>
+    <circle cx="274" cy="196" r="3.5" fill="#FFD600"/>
+    <text x="288" y="200" font-size="12" fill="#1f3a56">Double membership to</text>
+    <text x="288" y="215" font-size="12" fill="#1f3a56">4.4 million members</text>
+    <circle cx="274" cy="246" r="3.5" fill="#FFD600"/>
+    <text x="288" y="250" font-size="12" fill="#1f3a56">Treble lending to £8bn,</text>
+    <text x="288" y="265" font-size="12" fill="#1f3a56">assets to £15bn</text>
+
+    <rect x="480" y="86" width="208" height="34" rx="6" fill="#003566"/>
+    <text x="584" y="108" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">Funding</text>
+    <rect x="480" y="120" width="208" height="172" rx="6" fill="#eef3f8"/>
+    <circle cx="498" cy="146" r="3.5" fill="#FFD600"/>
+    <text x="512" y="150" font-size="12" fill="#1f3a56">£30m committed by</text>
+    <text x="512" y="165" font-size="12" fill="#1f3a56">HM Treasury</text>
+    <circle cx="498" cy="196" r="3.5" fill="#FFD600"/>
+    <text x="512" y="200" font-size="12" fill="#1f3a56">Delivered through</text>
+    <text x="512" y="215" font-size="12" fill="#1f3a56">Fair4All Finance</text>
+    <circle cx="498" cy="246" r="3.5" fill="#FFD600"/>
+    <text x="512" y="250" font-size="12" fill="#1f3a56">Funded from Dormant</text>
+    <text x="512" y="265" font-size="12" fill="#1f3a56">Assets</text>
+  </g>
+
+  <text x="32" y="310" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" fill="#94a3b8">Source: Fair4All Finance Credit Union Transformation Roadshow delegate pack, May 2026</text>
+</svg>

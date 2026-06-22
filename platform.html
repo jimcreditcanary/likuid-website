@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="theme-color" content="#003566" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHKSURBVHgB7Ze/UsJAEIe/w78lvU0aZ9TRGXwC9Q1srMXKUm1t1MZWeQJh7B0fIdYWpgI701jL2ClD4ubAgZAjJJCIBd/MTS7JZfeX3eRuD2ZMGcUY+C9YLLBLgSK+tI4lhy8ctY2bwlRyAeK0yDIn0i2LUytmqIvHFS3sJGISCfBfxbHHpXSLJEcLUZtUpW9J25VWTS3Ar3Mjh1NS4L5D5R6cBtjPNOkId6RtD46djzPkN7iTcJdJibUCH5/aOfSi5pjGFhju/GIc579Ur+Fwv3d+fGAeZ0yB/sqXeCMDyudQe4SXByitsqe2sPvvm1OwrEOfCUEkAkpr+nAhze6/H4lAlm9vpB2OQvQbWBw/74ko6N+x7zQ6YIc8UWH7UQE+JfLFIlZAutkuFwF/ikmAS740mbIAJ16AzxN5MmA/KsALz1SZUwgvyREB3VnKJh9stR5OsfkvaEtFkweKo8FLRgE6Cn7GIsTe4Nt3NMU9U9f5OmRyamrDvMbETkT6IY8Kk1EZ5nykAC1iU+pBT+fOJR3BhHMmzmPryeRleUPm8LbeCwRFhRUz1JV81/jmVsry5ii7421MAjEtWTXnuiunEkeetIR7gRn/ih/93XeZdEnmcgAAAABJRU5ErkJggg==">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="description" content="Explore the Credit Canary platform — six integrated modules covering origination, underwriting, decisioning, payments, engagement, and portfolio performance."s unified platform — six AI-powered modules covering origination, data unification, decisioning, payments, engagement, and performance analytics." />
+  <meta property="og:title" content="Platform Overview | Credit Canary" />
+  <meta property="og:description" content="Explore Credit Canary's unified platform — six AI-powered modules covering origination, data unification, decisioning, payments, engagement, and performance analytics." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://credit-canary-website.vercel.app/platform" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Platform Overview | Credit Canary" />
+  <meta name="twitter:description" content="Explore Credit Canary's unified platform — six AI-powered modules covering origination, data unification, decisioning, payments, engagement, and performance analytics." />
+
+  <meta property="og:image" content="https://credit-canary-website.vercel.app/images/og-default.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Credit Canary — AI-first credit risk and payments platform" />
+  <meta name="twitter:image" content="https://credit-canary-website.vercel.app/images/og-default.png" />
+  <title>Platform Overview | Credit Canary</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="/dist/tailwind.css">
+    <link rel="stylesheet" href="/css/shared.css">
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<style>
+    @keyframes pulse-dot { 0%,100%{opacity:1} 50%{opacity:.4} }
+
+    .pulse   { animation:pulse-dot 2s ease-in-out infinite; }
+
+    .hero-bg   { background:linear-gradient(155deg,#ffffff 0%,#f8fafc 55%,#eff6ff 100%); }
+    .hero-grid { background-image:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%23003566' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+
+    .ai-card { background:#fff; border:1px solid #e2e8f0; transition:all .25s; border-radius:16px; }
+    .ai-card:hover { border-color:#003566; box-shadow:0 16px 48px rgba(0,53,102,.12); transform:translateY(-4px); }
+    .ai-agent-dot { width:8px; height:8px; border-radius:50%; background:#22c55e; display:inline-block; flex-shrink:0; }
+
+    .ai-tab-btn { display:flex; align-items:center; gap:8px; padding:10px 16px; border-radius:10px; font-size:13px; font-weight:500; color:#94a3b8; cursor:pointer; transition:all .2s; border:1px solid transparent; white-space:nowrap; }
+    .ai-tab-btn:hover { color:#e2e8f0; background:rgba(255,255,255,.06); }
+    .ai-tab-btn.active { background:rgba(255,255,255,.1); border-color:rgba(255,255,255,.15); color:#fff; font-weight:600; }
+    .ai-panel { display:none; }
+    .ai-panel.active { display:grid; }
+
+    @keyframes spin-slow { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    @keyframes spin-slow-rev { from { transform: rotate(0deg); } to { transform: rotate(-360deg); } }
+  </style>
+
+  <!-- Platform page extra styles -->
+  <style>
+    .module-tab { display:flex; align-items:center; gap:8px; padding:12px 20px; border-radius:12px; font-size:13.5px; font-weight:500; color:#64748b; cursor:pointer; transition:all .2s; border:2px solid transparent; white-space:nowrap; }
+    .module-tab:hover { color:#003566; background:#f8fafc; }
+    .module-tab.active { background:#003566; color:#fff; font-weight:700; border-color:#003566; }
+    .module-tab .tab-pill { width:8px; height:8px; border-radius:50%; flex-shrink:0; }
+    .module-section { display:none; }
+    .module-section.active { display:block; }
+    .cap-item { display:flex; align-items:flex-start; gap:12px; padding:14px 0; border-bottom:1px solid #f1f5f9; }
+    .cap-item:last-child { border-bottom:none; }
+    .cap-check { width:20px; height:20px; border-radius:6px; background:#eff6ff; display:flex; align-items:center; justify-content:center; flex-shrink:0; margin-top:2px; }
+    .arch-module { border-radius:16px; padding:20px 16px; text-align:center; transition:all .2s; cursor:pointer; border:2px solid transparent; }
+    .arch-module:hover { transform:translateY(-3px); box-shadow:0 12px 32px rgba(0,53,102,.12); }
+    .arch-module.hovered { border-color:#003566; }
+    
+    
+    .integration-chip { display:inline-flex; align-items:center; gap:8px; background:#fff; border:1px solid #e2e8f0; border-radius:999px; padding:8px 16px; font-size:13px; font-weight:500; color:#334155; transition:all .2s; }
+    .integration-chip:hover { border-color:#003566; color:#003566; box-shadow:0 4px 16px rgba(0,53,102,.08); }
+  </style>
+  <script defer src="/_vercel/insights/script.js"></script>
+    <link rel="canonical" href="https://www.creditcanary.co.uk/platform">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Platform Overview | Credit Canary", "description": "Explore Credit Canary", "url": "https://www.creditcanary.co.uk/platform", "publisher": {"@type": "Organization", "name": "Credit Canary", "url": "https://www.creditcanary.co.uk"}}</script>
+</head>
+<body class="bg-white text-slate-900 antialiased">
+
+<header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur border-b border-slate-100">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="flex items-center justify-between h-[68px]">
+      <a href="/" class="flex items-center py-3 pr-8 flex-shrink-0" aria-label="Credit Canary home">
+        <svg height="40" style="width:auto;" viewBox="0 0 533 177" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M216.959 78.6696C211.295 78.6696 206.423 77.4747 202.343 75.0856C198.287 72.6723 195.166 69.3272 192.982 65.0501C190.822 60.7736 189.742 55.8512 189.742 50.2841C189.742 44.6452 190.834 39.6992 193.018 35.4462C195.227 31.1692 198.359 27.836 202.414 25.4467C206.471 23.0334 211.295 21.8268 216.887 21.8268C221.711 21.8268 225.935 22.6989 229.559 24.4432C233.183 26.1874 236.051 28.6365 238.163 31.7904C240.275 34.9444 241.439 38.6479 241.656 42.9009H227.183C226.775 40.1532 225.695 37.943 223.943 36.2705C222.215 34.5741 219.947 33.7258 217.139 33.7258C214.763 33.7258 212.687 34.371 210.911 35.6612C209.159 36.9276 207.791 38.7793 206.807 41.2165C205.823 43.6536 205.331 46.6044 205.331 50.069C205.331 53.5815 205.811 56.5684 206.771 59.0293C207.755 61.4902 209.135 63.3658 210.911 64.6559C212.687 65.9461 214.763 66.5915 217.139 66.5915C218.891 66.5915 220.463 66.2332 221.855 65.5161C223.271 64.7995 224.435 63.7599 225.347 62.398C226.283 61.0125 226.895 59.3517 227.183 57.4161H241.656C241.416 61.6214 240.263 65.3249 238.199 68.527C236.159 71.7045 233.339 74.1896 229.739 75.9816C226.139 77.7736 221.879 78.6696 216.959 78.6696ZM251.475 77.5947V22.5436H266.343V32.1488H266.919C267.927 28.732 269.619 26.1516 271.995 24.4073C274.371 22.6392 277.107 21.7551 280.204 21.7551C280.971 21.7551 281.799 21.8029 282.687 21.8985C283.575 21.9941 284.356 22.1255 285.027 22.2928V35.8404C284.307 35.6254 283.311 35.4342 282.039 35.267C280.767 35.0997 279.603 35.0161 278.547 35.0161C276.291 35.0161 274.275 35.5059 272.499 36.4856C270.747 37.4413 269.355 38.7793 268.323 40.4996C267.315 42.22 266.811 44.2032 266.811 46.4491V77.5947H251.475ZM315.583 78.6696C309.895 78.6696 304.999 77.523 300.895 75.2291C296.814 72.9112 293.67 69.6378 291.463 65.409C289.254 61.1555 288.15 56.126 288.15 50.3199C288.15 44.6571 289.254 39.6873 291.463 35.4103C293.67 31.1334 296.779 27.8002 300.787 25.4108C304.819 23.0215 309.547 21.8268 314.971 21.8268C318.619 21.8268 322.015 22.4122 325.159 23.583C328.327 24.7298 331.087 26.4621 333.439 28.7799C335.816 31.0975 337.664 34.0125 338.984 37.5249C340.303 41.0133 340.963 45.0992 340.963 49.7823V53.9757H294.27V44.5138H326.527C326.527 42.3156 326.047 40.3683 325.087 38.6718C324.127 36.9753 322.795 35.6493 321.091 34.6935C319.411 33.7139 317.455 33.2241 315.223 33.2241C312.895 33.2241 310.831 33.7617 309.031 34.8369C307.255 35.8882 305.863 37.3098 304.855 39.1018C303.847 40.87 303.331 42.8412 303.306 45.0155V54.0116C303.306 56.7355 303.811 59.0887 304.819 61.0719C305.851 63.0551 307.303 64.5842 309.175 65.6596C311.047 66.735 313.267 67.2722 315.835 67.2722C317.539 67.2722 319.099 67.0333 320.515 66.5556C321.931 66.0779 323.143 65.3608 324.151 64.4053C325.159 63.4493 325.927 62.2786 326.455 60.8931L340.64 61.825C339.92 65.2178 338.444 68.1805 336.212 70.7132C334.003 73.2218 331.147 75.1815 327.643 76.5911C324.163 77.9766 320.143 78.6696 315.583 78.6696ZM371.348 78.4907C367.148 78.4907 363.344 77.4153 359.936 75.265C356.552 73.0906 353.864 69.9008 351.872 65.6955C349.904 61.4661 348.92 56.2813 348.92 50.1407C348.92 43.8328 349.94 38.5882 351.98 34.4068C354.02 30.2015 356.732 27.0595 360.116 24.9808C363.524 22.8781 367.256 21.8268 371.312 21.8268C374.408 21.8268 376.988 22.3525 379.052 23.4038C381.141 24.4312 382.82 25.7215 384.092 27.2745C385.388 28.8037 386.372 30.309 387.044 31.7904H387.512V4.19331H402.813V77.5947H387.692V68.7777H387.044C386.324 70.3067 385.304 71.824 383.984 73.3295C382.688 74.8108 380.996 76.0416 378.908 77.0211C376.844 78.0007 374.324 78.4907 371.348 78.4907ZM376.208 66.3403C378.68 66.3403 380.768 65.6714 382.473 64.3335C384.201 62.9716 385.52 61.0719 386.433 58.6351C387.369 56.1977 387.837 53.3426 387.837 50.069C387.837 46.7956 387.38 43.9523 386.469 41.539C385.556 39.1258 384.237 37.2621 382.508 35.9479C380.78 34.6338 378.68 33.9767 376.208 33.9767C373.688 33.9767 371.564 34.6577 369.836 36.0196C368.108 37.3816 366.8 39.2691 365.912 41.6824C365.024 44.0956 364.58 46.8912 364.58 50.069C364.58 53.2708 365.024 56.1024 365.912 58.5633C366.824 61.0002 368.132 62.9116 369.836 64.2977C371.564 65.6596 373.688 66.3403 376.208 66.3403ZM415.422 77.5947V22.5436H430.758V77.5947H415.422ZM423.126 15.4472C420.846 15.4472 418.89 14.6946 417.258 13.1893C415.65 11.6601 414.846 9.83219 414.846 7.70567C414.846 5.60303 415.65 3.79908 417.258 2.29379C418.89 0.764597 420.846 0 423.126 0C425.406 0 427.35 0.764597 428.958 2.29379C430.591 3.79908 431.406 5.60303 431.406 7.70567C431.406 9.83219 430.591 11.6601 428.958 13.1893C427.35 14.6946 425.406 15.4472 423.126 15.4472ZM472.456 22.5436V34.0125H439.155V22.5436H472.456ZM446.716 9.35436H462.052V60.6778C462.052 62.0874 462.268 63.1863 462.7 63.9753C463.132 64.7395 463.732 65.2772 464.5 65.5878C465.292 65.8985 466.204 66.0538 467.236 66.0538C467.956 66.0538 468.676 65.9943 469.396 65.8749C470.116 65.7314 470.668 65.6237 471.052 65.5519L473.465 76.9135C472.696 77.1523 471.616 77.4271 470.224 77.7377C468.832 78.0724 467.14 78.2754 465.148 78.3472C461.452 78.4907 458.212 78.0007 455.428 76.8776C452.668 75.7545 450.52 74.0102 448.984 71.6451C447.448 69.2795 446.692 66.2926 446.716 62.6851V9.35436Z" fill="black"/>
+<path d="M217.273 157.131C211.441 157.131 206.437 155.937 202.261 153.547C198.109 151.158 194.916 147.837 192.684 143.583C190.452 139.306 189.336 134.36 189.336 128.745C189.336 123.106 190.452 118.16 192.684 113.908C194.94 109.631 198.145 106.298 202.297 103.908C206.473 101.519 211.453 100.324 217.237 100.324C222.349 100.324 226.801 101.244 230.593 103.084C234.409 104.923 237.385 107.528 239.521 110.897C241.681 114.242 242.821 118.173 242.941 122.689H226.489C226.153 119.869 225.193 117.659 223.609 116.058C222.049 114.457 220.009 113.657 217.489 113.657C215.449 113.657 213.66 114.23 212.125 115.377C210.589 116.5 209.389 118.173 208.525 120.395C207.684 122.593 207.265 125.317 207.265 128.567C207.265 131.816 207.684 134.564 208.525 136.809C209.389 139.032 210.589 140.716 212.125 141.863C213.66 142.986 215.449 143.547 217.489 143.547C219.121 143.547 220.561 143.201 221.809 142.508C223.081 141.815 224.125 140.8 224.941 139.462C225.757 138.1 226.273 136.451 226.489 134.516H242.941C242.773 139.056 241.633 143.022 239.521 146.415C237.433 149.808 234.493 152.448 230.701 154.335C226.933 156.199 222.457 157.131 217.273 157.131ZM267.539 157.023C264.01 157.023 260.878 156.438 258.142 155.267C255.43 154.073 253.282 152.281 251.699 149.891C250.139 147.478 249.358 144.456 249.358 140.824C249.358 137.765 249.899 135.185 250.978 133.082C252.059 130.98 253.547 129.271 255.442 127.957C257.339 126.643 259.523 125.651 261.995 124.983C264.467 124.29 267.107 123.824 269.915 123.585C273.059 123.298 275.591 122.999 277.511 122.689C279.431 122.354 280.823 121.888 281.687 121.291C282.575 120.67 283.019 119.797 283.019 118.675V118.495C283.019 116.656 282.383 115.234 281.111 114.23C279.839 113.227 278.123 112.725 275.963 112.725C273.635 112.725 271.763 113.227 270.347 114.23C268.931 115.234 268.031 116.62 267.647 118.388L251.41 117.814C251.89 114.469 253.126 111.483 255.118 108.854C257.135 106.202 259.894 104.123 263.399 102.618C266.927 101.089 271.163 100.324 276.107 100.324C279.635 100.324 282.887 100.742 285.863 101.579C288.839 102.391 291.431 103.586 293.639 105.163C295.847 106.715 297.551 108.627 298.752 110.897C299.975 113.167 300.588 115.76 300.588 118.675V156.092H284.027V148.422H283.595C282.611 150.285 281.351 151.863 279.815 153.153C278.303 154.443 276.515 155.411 274.451 156.056C272.411 156.701 270.107 157.023 267.539 157.023ZM272.975 145.555C274.871 145.555 276.575 145.172 278.087 144.408C279.623 143.643 280.847 142.592 281.759 141.254C282.671 139.892 283.127 138.315 283.127 136.523V131.29C282.623 131.553 282.011 131.792 281.291 132.007C280.595 132.222 279.827 132.425 278.987 132.617C278.147 132.808 277.283 132.975 276.395 133.118C275.507 133.261 274.655 133.393 273.839 133.513C272.183 133.775 270.767 134.181 269.591 134.731C268.439 135.28 267.551 135.997 266.927 136.881C266.327 137.741 266.027 138.769 266.027 139.963C266.027 141.78 266.674 143.166 267.971 144.121C269.291 145.077 270.959 145.555 272.975 145.555ZM328.956 124.695V156.092H311.352V101.041H328.092V111.148H328.704C329.928 107.779 332.016 105.139 334.968 103.227C337.92 101.292 341.436 100.324 345.516 100.324C349.405 100.324 352.776 101.196 355.633 102.94C358.513 104.661 360.745 107.074 362.329 110.18C363.937 113.263 364.728 116.87 364.705 121.004V156.092H347.1V124.445C347.124 121.386 346.344 118.997 344.76 117.277C343.2 115.556 341.028 114.696 338.244 114.696C336.396 114.696 334.764 115.102 333.348 115.915C331.956 116.703 330.876 117.838 330.108 119.319C329.364 120.801 328.98 122.593 328.956 124.695ZM391.192 157.023C387.664 157.023 384.532 156.438 381.796 155.267C379.084 154.073 376.936 152.281 375.352 149.891C373.792 147.478 373.012 144.456 373.012 140.824C373.012 137.765 373.552 135.185 374.632 133.082C375.712 130.98 377.2 129.271 379.096 127.957C380.992 126.643 383.176 125.651 385.648 124.983C388.12 124.29 390.76 123.824 393.568 123.585C396.712 123.298 399.244 122.999 401.164 122.689C403.084 122.354 404.476 121.888 405.34 121.291C406.229 120.67 406.672 119.797 406.672 118.675V118.495C406.672 116.656 406.037 115.234 404.764 114.23C403.493 113.227 401.776 112.725 399.617 112.725C397.288 112.725 395.416 113.227 394 114.23C392.584 115.234 391.684 116.62 391.3 118.388L375.064 117.814C375.544 114.469 376.78 111.483 378.772 108.854C380.788 106.202 383.548 104.123 387.052 102.618C390.58 101.089 394.816 100.324 399.76 100.324C403.289 100.324 406.541 100.742 409.517 101.579C412.493 102.391 415.085 103.586 417.293 105.163C419.501 106.715 421.205 108.627 422.405 110.897C423.629 113.167 424.241 115.76 424.241 118.675V156.092H407.681V148.422H407.249C406.265 150.285 405.005 151.863 403.468 153.153C401.957 154.443 400.168 155.411 398.104 156.056C396.064 156.701 393.76 157.023 391.192 157.023ZM396.628 145.555C398.524 145.555 400.228 145.172 401.74 144.408C403.276 143.643 404.501 142.592 405.413 141.254C406.324 139.892 406.781 138.315 406.781 136.523V131.29C406.277 131.553 405.664 131.792 404.944 132.007C404.248 132.222 403.481 132.425 402.64 132.617C401.801 132.808 400.936 132.975 400.048 133.118C399.16 133.261 398.308 133.393 397.492 133.513C395.836 133.775 394.42 134.181 393.244 134.731C392.092 135.28 391.204 135.997 390.58 136.881C389.98 137.741 389.68 138.769 389.68 139.963C389.68 141.78 390.328 143.166 391.624 144.121C392.944 145.077 394.612 145.555 396.628 145.555ZM435.005 156.092V101.041H452.106V111.076H452.681C453.689 107.444 455.333 104.745 457.614 102.976C459.894 101.184 462.546 100.288 465.57 100.288C466.386 100.288 467.226 100.348 468.09 100.468C468.954 100.563 469.758 100.718 470.502 100.933V116.166C469.662 115.879 468.558 115.652 467.19 115.485C465.846 115.317 464.645 115.234 463.589 115.234C461.502 115.234 459.618 115.7 457.938 116.631C456.282 117.539 454.973 118.818 454.014 120.467C453.078 122.091 452.61 124.002 452.61 126.201V156.092H435.005ZM490.122 176.736C488.01 176.736 486.018 176.568 484.146 176.234C482.274 175.924 480.666 175.505 479.322 174.98L483.21 162.256C484.938 162.83 486.498 163.164 487.89 163.26C489.306 163.355 490.518 163.128 491.526 162.579C492.558 162.053 493.35 161.109 493.902 159.747L494.586 158.099L474.93 101.041H493.362L503.55 140.322H504.127L514.459 101.041H532.999L512.155 161.36C511.146 164.371 509.719 167.023 507.871 169.317C506.047 171.635 503.682 173.45 500.778 174.765C497.899 176.079 494.346 176.736 490.122 176.736Z" fill="#FFD600"/>
+<path d="M70.4013 157.962C109.283 157.962 140.803 126.582 140.803 87.8739C140.803 49.1655 109.283 17.7861 70.4013 17.7861C31.5198 17.7861 0 49.1655 0 87.8739C0 126.582 31.5198 157.962 70.4013 157.962Z" fill="#FFD600"/>
+<path d="M129.548 29.23L123.101 60.3269L98.3125 35.649L129.548 29.23Z" fill="black"/>
+        </svg>
+      </a>
+      <nav class="hidden lg:flex items-center gap-7" role="navigation" aria-label="Main navigation">
+        <!-- Platform mega-dropdown -->
+        <div class="relative mega-trigger">
+          <button class="nav-link text-sm font-medium text-slate-600 hover:text-navy flex items-center gap-1" aria-haspopup="true" aria-expanded="false">Platform <svg class="w-3.5 h-3.5 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></button>
+          <div class="mega-dropdown bg-white rounded-2xl border border-slate-100 shadow-2xl z-50 w-auto" role="menu" aria-label="Platform menu">
+            <div class="flex gap-0">
+              <!-- Column 1: Platform (tinted background) -->
+              <div class="mega-col-tinted min-w-[200px] py-3 px-1">
+                <div class="mega-col-heading">Platform</div>
+                <a href="/platform"              class="mega-link featured" role="menuitem">Platform Overview</a>
+                <a href="/platform/originate"    class="mega-link" role="menuitem">Originate</a>
+                <a href="/platform/unify"        class="mega-link" role="menuitem">Unify</a>
+                <a href="/platform/decide"       class="mega-link" role="menuitem">Decide</a>
+                <a href="/platform/pay"          class="mega-link" role="menuitem">Pay</a>
+                <a href="/platform/act"          class="mega-link" role="menuitem">Act</a>
+                <a href="/platform/performance"  class="mega-link" role="menuitem">Performance</a>
+              </div>
+              <div class="mega-divider"></div>
+              <!-- Column 2: Who We Serve -->
+              <div class="min-w-[190px] py-3 px-1">
+                <div class="mega-col-heading">Who We Serve</div>
+                <a href="/audience/banks"              class="mega-link" role="menuitem">Banks</a>
+                <a href="/audience/brokers"            class="mega-link" role="menuitem">Brokers</a>
+                <a href="/audience/building-societies" class="mega-link" role="menuitem">Building Societies</a>
+                <a href="/audience/credit-unions"      class="mega-link" role="menuitem">Credit Unions</a>
+                <a href="/audience/direct-lenders"     class="mega-link" role="menuitem">Direct Lenders</a>
+                <a href="/audience/marketplaces"       class="mega-link" role="menuitem">Marketplaces</a>
+                <a href="/audience/sme-lenders"        class="mega-link" role="menuitem">SME Lenders</a>
+                <a href="/audience/utilities"          class="mega-link" role="menuitem">Utilities</a>
+              </div>
+              <div class="mega-divider"></div>
+              <!-- Column 3: Use Cases -->
+              <div class="min-w-[220px] py-3 px-1">
+                <div class="mega-col-heading">Use Cases</div>
+                <a href="/use-cases/affordability-analysis"      class="mega-link" role="menuitem">Affordability Analysis</a>
+                <a href="/use-cases/collections-optimisation"    class="mega-link" role="menuitem">Collections Optimisation</a>
+                <a href="/use-cases/complex-case-decisioning"    class="mega-link" role="menuitem">Complex Case Decisioning</a>
+                <a href="/use-cases/income-identification"       class="mega-link" role="menuitem">Income Identification</a>
+                <a href="/use-cases/payments-automation"         class="mega-link" role="menuitem">Payments Automation</a>
+                <a href="/use-cases/smart-origination"           class="mega-link" role="menuitem">Smart Origination</a>
+                <a href="/use-cases/straight-through-processing" class="mega-link" role="menuitem">Straight Through Processing</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Connect dropdown -->
+        <div class="relative dropdown-trigger">
+          <a href="/connect" class="nav-link text-sm font-medium text-slate-600 hover:text-navy flex items-center gap-1">Connect <svg class="w-3.5 h-3.5 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></a>
+          <div class="dropdown absolute top-full left-0 mt-3 bg-white rounded-2xl border border-slate-100 shadow-2xl py-3 px-4 z-50" role="menu" aria-label="Connect menu" style="width:520px;">
+            <a href="/connect" class="block px-3 py-2 text-sm text-navy font-semibold hover:bg-slate-50 rounded-lg mb-2" role="menuitem">Connect Overview</a>
+            <div class="grid grid-cols-2 gap-x-6 gap-y-0">
+              <!-- Bank Data -->
+              <div class="mb-3">
+                <div class="px-3 py-1.5 text-[11px] font-bold uppercase tracking-wider text-slate-400">Bank Data</div>
+                <a href="/connect/open-banking" class="block px-3 py-1.5 text-sm text-slate-600 hover:bg-slate-50 hover:text-navy rounded-lg" role="menuitem">Open Banking</a>
+                <a href="/connect/confirmation-of-payee" class="block px-3 py-1.5 text-sm text-slate-600 hover:bg-slate-50 hover:text-navy rounded-lg" role="menuitem">Confirmation of Payee</a>
+              </div>
+              <!-- Credit Data -->
+              <div class="mb-3">
+                <div class="px-3 py-1.5 text-[11px] font-bold uppercase tracking-wider text-slate-400">Credit Data</div>
+                <a href="/connect/call-report" class="block px-3 py-1.5 text-sm text-slate-600 hover:bg-slate-50 hover:text-navy rounded-lg" role="menuitem">Call Report</a>
+                <a href="/connect/tu-affordability" class="block px-3 py-1.5 text-sm text-slate-600 hover:bg-slate-50 hover:text-navy rounded-lg" role="menuitem">Affordability Report</a>
+                <a href="/connect/true-vision" class="block px-3 py-1.5 text-sm text-slate-600 hover:bg-slate-50 hover:text-navy rounded-lg" role="menuitem">True Vision</a>
+              </div>
+              <!-- Identity Data -->
+              <div class="mb-1">
+                <div class="px-3 py-1.5 text-[11px] font-bold uppercase tracking-wider text-slate-400">Identity Data</div>
+                <a href="/connect/call-validate" class="block px-3 py-1.5 text-sm text-slate-600 hover:bg-slate-50 hover:text-navy rounded-lg" role="menuitem">Call Validate</a>
+                <a href="/connect/identity-score" class="block px-3 py-1.5 text-sm text-slate-600 hover:bg-slate-50 hover:text-navy rounded-lg" role="menuitem">Identity Score</a>
+                <a href="/connect/physical-idv" class="block px-3 py-1.5 text-sm text-slate-600 hover:bg-slate-50 hover:text-navy rounded-lg" role="menuitem">Physical ID&amp;V</a>
+              </div>
+              <!-- Other Data -->
+              <div class="mb-1">
+                <div class="px-3 py-1.5 text-[11px] font-bold uppercase tracking-wider text-slate-400">Other Data</div>
+                <a href="/connect/hmrc" class="block px-3 py-1.5 text-sm text-slate-600 hover:bg-slate-50 hover:text-navy rounded-lg" role="menuitem">HMRC Data</a>
+                <a href="/connect/company-information" class="block px-3 py-1.5 text-sm text-slate-600 hover:bg-slate-50 hover:text-navy rounded-lg" role="menuitem">Company Information</a>
+                <a href="/connect/standalone-checks" class="block px-3 py-1.5 text-sm text-slate-600 hover:bg-slate-50 hover:text-navy rounded-lg" role="menuitem">Standalone Checks</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Resources dropdown -->
+        <div class="relative dropdown-trigger">
+          <button class="nav-link text-sm font-medium text-slate-600 hover:text-navy flex items-center gap-1" aria-haspopup="true" aria-expanded="false">Resources <svg class="w-3.5 h-3.5 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></button>
+          <div class="dropdown absolute top-full left-0 mt-3 w-auto bg-white rounded-2xl border border-slate-100 shadow-2xl py-2 z-50" role="menu" aria-label="Resources menu">
+            <a href="/resources/case-studies" class="block px-4 py-2.5 text-sm text-slate-600 hover:bg-slate-50 hover:text-navy rounded-lg mx-1 whitespace-nowrap" role="menuitem">Case Studies</a>
+            <a href="/resources/news"         class="block px-4 py-2.5 text-sm text-slate-600 hover:bg-slate-50 hover:text-navy rounded-lg mx-1 whitespace-nowrap" role="menuitem">News &amp; Opinion</a>
+            <a href="/resources/whitepapers" class="block px-4 py-2.5 text-sm text-slate-600 hover:bg-slate-50 hover:text-navy rounded-lg mx-1 whitespace-nowrap" role="menuitem">Whitepapers</a>
+            <a href="/careers"                class="block px-4 py-2.5 text-sm text-slate-600 hover:bg-slate-50 hover:text-navy rounded-lg mx-1 whitespace-nowrap" role="menuitem">Join the Team</a>
+            <a href="/developers"             class="block px-4 py-2.5 text-sm text-slate-600 hover:bg-slate-50 hover:text-navy rounded-lg mx-1 whitespace-nowrap" role="menuitem">Developer Documentation</a>
+          </div>
+        </div>
+        <!-- About -->
+        <a href="/about" class="nav-link text-sm font-medium text-slate-600 hover:text-navy">About</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a href="https://console.creditcanary.co.uk/login" class="hidden lg:inline-flex items-center text-sm font-semibold text-slate-700 border border-slate-200 px-4 py-2 rounded-xl hover:border-navy hover:text-navy transition-colors">Login</a>
+        <a href="/demo" class="inline-flex items-center gap-2 bg-navy text-white text-sm font-semibold px-4 py-2.5 rounded-xl hover:bg-navy-dark shadow-sm">
+          Book a Demo <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
+        <!-- Mobile hamburger -->
+        <button id="mobile-menu-btn" class="lg:hidden flex items-center justify-center w-10 h-10 rounded-xl border border-slate-200 hover:border-navy transition-colors" aria-label="Open menu">
+          <svg id="hamburger-icon" class="w-5 h-5 text-slate-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg id="close-icon" class="w-5 h-5 text-slate-600 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Mobile nav panel -->
+  <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-slate-100 shadow-xl max-h-[calc(100vh-68px)] overflow-y-auto overscroll-contain" style="-webkit-overflow-scrolling:touch;">
+    <div class="px-6 py-4 space-y-1">
+      <!-- Platform -->
+      <div class="mobile-accordion">
+        <button class="mobile-acc-btn flex items-center justify-between w-full py-3 text-sm font-semibold text-slate-700" aria-expanded="false">Platform <svg class="mobile-acc-chevron w-4 h-4 text-slate-400 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></button>
+        <div class="mobile-acc-panel hidden pl-4 pb-2 space-y-1">
+          <a href="/platform" class="block py-2.5 text-sm text-slate-600 font-semibold">Platform Overview</a>
+          <a href="/platform/originate" class="block py-2 text-sm text-slate-500">Originate</a>
+          <a href="/platform/unify" class="block py-2 text-sm text-slate-500">Unify</a>
+          <a href="/platform/decide" class="block py-2 text-sm text-slate-500">Decide</a>
+          <a href="/platform/pay" class="block py-2 text-sm text-slate-500">Pay</a>
+          <a href="/platform/act" class="block py-2 text-sm text-slate-500">Act</a>
+          <a href="/platform/performance" class="block py-2 text-sm text-slate-500">Performance</a>
+        </div>
+      </div>
+      <!-- Who We Serve -->
+      <div class="mobile-accordion">
+        <button class="mobile-acc-btn flex items-center justify-between w-full py-3 text-sm font-semibold text-slate-700" aria-expanded="false">Who We Serve <svg class="mobile-acc-chevron w-4 h-4 text-slate-400 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></button>
+        <div class="mobile-acc-panel hidden pl-4 pb-2 space-y-1">
+          <a href="/audience/banks" class="block py-2 text-sm text-slate-500">Banks</a>
+          <a href="/audience/brokers" class="block py-2 text-sm text-slate-500">Brokers</a>
+          <a href="/audience/building-societies" class="block py-2 text-sm text-slate-500">Building Societies</a>
+          <a href="/audience/credit-unions" class="block py-2 text-sm text-slate-500">Credit Unions</a>
+          <a href="/audience/direct-lenders" class="block py-2 text-sm text-slate-500">Direct Lenders</a>
+          <a href="/audience/marketplaces" class="block py-2 text-sm text-slate-500">Marketplaces</a>
+          <a href="/audience/sme-lenders" class="block py-2 text-sm text-slate-500">SME Lenders</a>
+          <a href="/audience/utilities" class="block py-2 text-sm text-slate-500">Utilities</a>
+        </div>
+      </div>
+      <!-- Use Cases -->
+      <div class="mobile-accordion">
+        <button class="mobile-acc-btn flex items-center justify-between w-full py-3 text-sm font-semibold text-slate-700" aria-expanded="false">Use Cases <svg class="mobile-acc-chevron w-4 h-4 text-slate-400 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></button>
+        <div class="mobile-acc-panel hidden pl-4 pb-2 space-y-1">
+          <a href="/use-cases/affordability-analysis" class="block py-2 text-sm text-slate-500">Affordability Analysis</a>
+          <a href="/use-cases/collections-optimisation" class="block py-2 text-sm text-slate-500">Collections Optimisation</a>
+          <a href="/use-cases/complex-case-decisioning" class="block py-2 text-sm text-slate-500">Complex Case Decisioning</a>
+          <a href="/use-cases/income-identification" class="block py-2 text-sm text-slate-500">Income Identification</a>
+          <a href="/use-cases/payments-automation" class="block py-2 text-sm text-slate-500">Payments Automation</a>
+          <a href="/use-cases/smart-origination" class="block py-2 text-sm text-slate-500">Smart Origination</a>
+          <a href="/use-cases/straight-through-processing" class="block py-2 text-sm text-slate-500">Straight Through Processing</a>
+        </div>
+      </div>
+      <!-- Connect -->
+      <div class="mobile-accordion">
+        <button class="mobile-acc-btn flex items-center justify-between w-full py-3 text-sm font-semibold text-slate-700" aria-expanded="false">Connect <svg class="mobile-acc-chevron w-4 h-4 text-slate-400 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></button>
+        <div class="mobile-acc-panel hidden pl-4 pb-2 space-y-1">
+                    <a href="/connect" class="block py-2.5 text-sm text-navy font-semibold">Connect Overview</a>
+          <div class="pt-1 pb-0.5 text-[11px] font-bold uppercase tracking-wider text-slate-400">Bank Data</div>
+          <a href="/connect/open-banking" class="block py-2 text-sm text-slate-500">Open Banking</a>
+          <a href="/connect/confirmation-of-payee" class="block py-2 text-sm text-slate-500">Confirmation of Payee</a>
+          <div class="pt-2 pb-0.5 text-[11px] font-bold uppercase tracking-wider text-slate-400">Credit Data</div>
+          <a href="/connect/call-report" class="block py-2 text-sm text-slate-500">Call Report</a>
+          <a href="/connect/tu-affordability" class="block py-2 text-sm text-slate-500">Affordability Report</a>
+          <a href="/connect/true-vision" class="block py-2 text-sm text-slate-500">True Vision</a>
+          <div class="pt-2 pb-0.5 text-[11px] font-bold uppercase tracking-wider text-slate-400">Identity Data</div>
+          <a href="/connect/call-validate" class="block py-2 text-sm text-slate-500">Call Validate</a>
+          <a href="/connect/identity-score" class="block py-2 text-sm text-slate-500">Identity Score</a>
+          <a href="/connect/physical-idv" class="block py-2 text-sm text-slate-500">Physical ID&amp;V</a>
+          <div class="pt-2 pb-0.5 text-[11px] font-bold uppercase tracking-wider text-slate-400">Other Data</div>
+          <a href="/connect/hmrc" class="block py-2 text-sm text-slate-500">HMRC Data</a>
+          <a href="/connect/company-information" class="block py-2 text-sm text-slate-500">Company Information</a>
+          <a href="/connect/standalone-checks" class="block py-2 text-sm text-slate-500">Standalone Checks</a>
+        </div>
+      </div>
+      <!-- Resources -->
+      <div class="mobile-accordion">
+        <button class="mobile-acc-btn flex items-center justify-between w-full py-3 text-sm font-semibold text-slate-700" aria-expanded="false">Resources <svg class="mobile-acc-chevron w-4 h-4 text-slate-400 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></button>
+        <div class="mobile-acc-panel hidden pl-4 pb-2 space-y-1">
+          <a href="/resources/case-studies" class="block py-2.5 text-sm text-slate-500">Case Studies</a>
+          <a href="/resources/news" class="block py-2.5 text-sm text-slate-500">News &amp; Opinion</a>
+          <a href="/resources/whitepapers" class="block py-2.5 text-sm text-slate-500">Whitepapers</a>
+          <a href="/careers" class="block py-2.5 text-sm text-slate-500">Join the Team</a>
+          <a href="/developers" class="block py-2.5 text-sm text-slate-500">Developer Documentation</a>
+        </div>
+      </div>
+      <!-- About (direct link) -->
+      <a href="/about" class="block py-3 text-sm font-semibold text-slate-700">About</a>
+      <!-- Mobile CTAs -->
+      <div class="pt-3 pb-2 border-t border-slate-100 mt-2 space-y-2">
+        <a href="https://console.creditcanary.co.uk/login" class="block text-center text-sm font-semibold text-navy border border-slate-200 px-4 py-2.5 rounded-xl hover:border-navy transition-colors">Login</a>
+        <a href="/demo" class="block text-center text-sm font-semibold bg-navy text-white px-4 py-2.5 rounded-xl">Book a Demo</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero-bg hero-grid pt-32 pb-16 text-center relative overflow-hidden">
+  <div class="absolute inset-0 pointer-events-none">
+    <div class="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-gradient-to-bl from-blue-50/60 to-transparent blur-3xl"></div>
+    <div class="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full bg-canary/5 blur-3xl"></div>
+  </div>
+  <div class="max-w-4xl mx-auto px-6 lg:px-8 relative">
+    <div class="inline-flex items-center gap-2 bg-white/90 border border-slate-200 rounded-full px-4 py-2 text-xs font-semibold text-slate-500 mb-6 shadow-sm">
+      <span class="ai-agent-dot pulse"></span>
+      <span class="font-bold text-navy">Platform</span>
+    </div>
+    <h1 class="text-5xl lg:text-6xl font-extrabold text-slate-900 leading-[1.05] tracking-tight mb-6">
+      The only platform where risk and payments <span class="text-navy">work as one.</span>
+    </h1>
+    <p class="text-xl text-slate-500 leading-relaxed mb-10 max-w-2xl mx-auto">
+      Credit risk and payment outcomes share one data layer — continuous feedback for smarter decisions and higher success.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-3 justify-center">
+      <a href="/demo" class="inline-flex items-center justify-center gap-2 bg-navy text-white text-sm font-semibold px-6 py-3.5 rounded-xl hover:bg-navy-dark shadow-lg shadow-navy/20 transition-all">
+        Book a Demo <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PLATFORM DIAGRAM ===================== -->
+<section class="pt-20 pb-10 bg-white border-b border-slate-100">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+    <div class="text-center mb-14">
+      <span class="inline-block text-xs font-bold uppercase tracking-widest text-slate-400 mb-4">The Platform</span>
+      <h2 class="text-3xl lg:text-4xl font-extrabold text-slate-900 leading-tight mb-4">
+        Credit Canary automates, end-to-end to <span style="background:linear-gradient(135deg,#003566 0%,#0066cc 50%,#0099ff 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">unlock new value.</span>
+      </h2>
+      <p class="text-lg text-slate-500 max-w-2xl mx-auto">A modular framework that, when combined, drives powerful outcomes — accessible via a single point of connectivity.</p>
+    </div>
+
+    <!-- Diagram -->
+    <div class="flex flex-col lg:flex-row items-center gap-6">
+
+      <!-- Left: One API + horizontal connector -->
+      <div class="flex flex-row items-center gap-0 flex-shrink-0 self-center">
+        <div class="flex flex-col items-center gap-2 text-center w-28">
+          <div class="w-12 h-12 rounded-2xl bg-slate-100 border border-slate-200 flex items-center justify-center">
+            <svg class="w-6 h-6 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/></svg>
+          </div>
+          <div class="font-extrabold text-navy text-sm">One API</div>
+          <div class="text-xs text-slate-400 leading-snug">Simple point of connectivity</div>
+        </div>
+        <!-- Horizontal circle-line-circle -->
+        <div class="flex items-center gap-0 flex-shrink-0">
+          <div class="w-3 h-3 rounded-full border-2 border-slate-400 bg-white flex-shrink-0"></div>
+          <div class="w-8 h-0.5 bg-slate-300"></div>
+          <div class="w-3 h-3 rounded-full bg-slate-400 flex-shrink-0"></div>
+        </div>
+      </div>
+
+      <!-- Centre: Platform box -->
+      <div class="flex-1 border-2 border-navy/20 rounded-2xl overflow-hidden">
+        <!-- Header -->
+        <div class="bg-slate-50 border-b border-navy/10 px-6 py-4 text-center">
+          <div class="font-extrabold text-navy text-base">Credit Canary Platform</div>
+          <div class="text-xs text-slate-500 mt-0.5">Modular framework that, when combined, drives powerful outcomes</div>
+        </div>
+
+        <!-- 6 Module grid -->
+        <div class="grid grid-cols-2 gap-px bg-navy/10 border-b border-navy/10">
+          <div class="bg-white px-5 py-5 hover:bg-violet-50 transition-colors cursor-pointer group">
+            <div class="flex items-center gap-2.5 mb-2">
+              <div class="w-7 h-7 rounded-lg bg-violet-100 flex items-center justify-center flex-shrink-0">
+                <svg class="w-3.5 h-3.5 text-violet-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+              </div>
+              <span class="font-bold text-slate-800 text-sm">Originate</span>
+            </div>
+            <p class="text-xs text-slate-500 leading-relaxed">Optimised application journeys with eligibility, affordability calculators and broker connectivity</p>
+          </div>
+          <div class="bg-white px-5 py-5 hover:bg-teal-50 transition-colors cursor-pointer group">
+            <div class="flex items-center gap-2.5 mb-2">
+              <div class="w-7 h-7 rounded-lg bg-teal-100 flex items-center justify-center flex-shrink-0">
+                <svg class="w-3.5 h-3.5 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+              </div>
+              <span class="font-bold text-slate-800 text-sm">Unify</span>
+            </div>
+            <p class="text-xs text-slate-500 leading-relaxed">Enrich and assemble all data sources into a single, validated customer view</p>
+          </div>
+          <div class="bg-white px-5 py-5 hover:bg-blue-50 transition-colors cursor-pointer group">
+            <div class="flex items-center gap-2.5 mb-2">
+              <div class="w-7 h-7 rounded-lg bg-blue-100 flex items-center justify-center flex-shrink-0">
+                <svg class="w-3.5 h-3.5 text-blue-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </div>
+              <span class="font-bold text-slate-800 text-sm">Decide</span>
+            </div>
+            <p class="text-xs text-slate-500 leading-relaxed">AI credit scoring and real-time decisioning engine that learns continuously from book performance</p>
+          </div>
+          <div class="bg-white px-5 py-5 hover:bg-cyan-50 transition-colors cursor-pointer group">
+            <div class="flex items-center gap-2.5 mb-2">
+              <div class="w-7 h-7 rounded-lg bg-cyan-100 flex items-center justify-center flex-shrink-0">
+                <svg class="w-3.5 h-3.5 text-cyan-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg>
+              </div>
+              <span class="font-bold text-slate-800 text-sm">Pay</span>
+            </div>
+            <p class="text-xs text-slate-500 leading-relaxed">Intelligent payment orchestration across all rails with automated retry and full reconciliation</p>
+          </div>
+          <div class="bg-white px-5 py-5 hover:bg-orange-50 transition-colors cursor-pointer group">
+            <div class="flex items-center gap-2.5 mb-2">
+              <div class="w-7 h-7 rounded-lg bg-orange-100 flex items-center justify-center flex-shrink-0">
+                <svg class="w-3.5 h-3.5 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/></svg>
+              </div>
+              <span class="font-bold text-slate-800 text-sm">Act</span>
+            </div>
+            <p class="text-xs text-slate-500 leading-relaxed">Proactive AI-driven engagement and automated collections, hardship and forbearance workflows</p>
+          </div>
+          <div class="bg-white px-5 py-5 hover:bg-purple-50 transition-colors cursor-pointer group">
+            <div class="flex items-center gap-2.5 mb-2">
+              <div class="w-7 h-7 rounded-lg bg-purple-100 flex items-center justify-center flex-shrink-0">
+                <svg class="w-3.5 h-3.5 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+              </div>
+              <span class="font-bold text-slate-800 text-sm">Performance</span>
+            </div>
+            <p class="text-xs text-slate-500 leading-relaxed">Unrivalled aggregated portfolio insights and strategy recommendations</p>
+          </div>
+        </div>
+
+        <!-- Footer bar: AI Agents heading + Continuous Learning benefit -->
+        <div class="grid grid-cols-2 bg-navy min-h-[70px]">
+          <div class="flex flex-col justify-center gap-0.5 px-5 py-4 border-r border-white/10">
+            <div class="flex items-center justify-center gap-2">
+              <span style="width:7px;height:7px;background:#22c55e;border-radius:50%;display:inline-block;flex-shrink:0;animation:pulse-dot 2s ease-in-out infinite;"></span>
+              <span class="text-sm font-extrabold text-white">AI Agents</span>
+            </div>
+            <div class="text-xs text-white/50 mt-0.5">Native to every module, delivering end-to-end automation</div>
+          </div>
+          <div class="flex flex-col justify-center gap-0.5 px-5 py-4">
+            <div class="flex items-center justify-center gap-2">
+              <svg class="w-3.5 h-3.5 text-canary flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+              <span class="text-sm font-extrabold text-white">Continuous Learning</span>
+            </div>
+            <div class="text-xs text-white/50 mt-0.5">Every decision makes the next decision quicker and smarter</div>
+          </div>
+        </div>
+      </div>
+
+<!-- Right: Data Marketplace + Integrations Library -->
+      <div class="flex-shrink-0 w-72 xl:w-80 space-y-5">
+
+        <!-- Data Marketplace -->
+        <div class="relative">
+          <div class="absolute top-1/2 -translate-y-1/2 flex items-center" style="right:100%;width:2.5rem;">
+            <div class="w-3 h-3 rounded-full bg-slate-400 flex-shrink-0"></div>
+            <div class="flex-1 h-0.5 bg-slate-300"></div>
+            <div class="w-2.5 h-2.5 rounded-full border-2 border-slate-400 bg-white flex-shrink-0"></div>
+          </div>
+          <div class="border-2 border-dashed border-teal-300 rounded-2xl p-4 bg-teal-50/40">
+            <div class="font-extrabold text-teal-800 text-sm mb-3">Data Marketplace</div>
+            <div class="grid grid-cols-5 gap-2 mb-3">
+              <div class="w-8 h-8 rounded-lg bg-white border border-slate-200 flex items-center justify-center overflow-hidden flex-shrink-0"><img fetchpriority="high" width="225" height="225" src="images/platform-img-1.png" class="w-full h-full object-contain" alt="Open Banking"/></div>
+              <div class="w-8 h-8 rounded-lg bg-white border border-slate-200 flex items-center justify-center overflow-hidden flex-shrink-0"><img decoding="async" loading="lazy" width="90" height="90" src="images/home-img-21.jpg" class="w-full h-full object-contain" alt="ID Verification"/></div>
+              <div class="w-8 h-8 rounded-lg bg-white border border-slate-200 flex items-center justify-center overflow-hidden flex-shrink-0"><img decoding="async" loading="lazy" width="316" height="316" src="images/platform-img-3.png" class="w-full h-full object-contain" alt="Experian"/></div>
+              <div class="w-8 h-8 rounded-lg bg-white border border-slate-200 flex items-center justify-center overflow-hidden flex-shrink-0"><img decoding="async" loading="lazy" width="400" height="400" src="images/home-img-22.jpg" class="w-full h-full object-contain" alt="Companies House"/></div>
+              <div class="w-8 h-8 rounded-lg bg-white border border-slate-200 flex items-center justify-center overflow-hidden flex-shrink-0"><img decoding="async" loading="lazy" width="400" height="400" src="images/platform-img-5.jpg" class="w-full h-full object-contain" alt="Finestra"/></div>
+              <div class="w-8 h-8 rounded-lg bg-white border border-slate-200 flex items-center justify-center overflow-hidden flex-shrink-0"><img decoding="async" loading="lazy" width="179" height="179" src="images/platform-img-6.jpg" class="w-full h-full object-contain" alt="Salt Edge"/></div>
+              <div class="w-8 h-8 rounded-lg bg-white border border-slate-200 flex items-center justify-center overflow-hidden flex-shrink-0"><img decoding="async" loading="lazy" width="400" height="400" src="images/home-img-24.jpg" class="w-full h-full object-contain" alt="TransUnion"/></div>
+              <div class="w-8 h-8 rounded-lg bg-white border border-slate-200 flex items-center justify-center overflow-hidden flex-shrink-0"><img decoding="async" loading="lazy" width="400" height="400" src="images/home-img-25.jpg" class="w-full h-full object-contain" alt="HMRC"/></div>
+              <div class="w-8 h-8 rounded-lg bg-white border border-slate-200 flex items-center justify-center overflow-hidden flex-shrink-0"><img decoding="async" loading="lazy" width="500" height="500" src="images/platform-img-9.webp" class="w-full h-full object-contain" alt="Postcoder"/></div>
+              <div class="w-8 h-8 rounded-lg bg-white border border-slate-200 flex items-center justify-center overflow-hidden flex-shrink-0"><img decoding="async" loading="lazy" width="349" height="349" src="images/platform-img-10.jpg" class="w-full h-full object-contain" alt="Twilio"/></div>
+            </div>
+            <p class="text-xs text-teal-700 text-center">New integrations added regularly</p>
+          </div>
+        </div>
+
+        <!-- Integrations Library -->
+        <div class="relative">
+          <div class="absolute top-1/2 -translate-y-1/2 flex items-center" style="right:100%;width:2.5rem;">
+            <div class="w-3 h-3 rounded-full bg-slate-400 flex-shrink-0"></div>
+            <div class="flex-1 h-0.5 bg-slate-300"></div>
+            <div class="w-2.5 h-2.5 rounded-full border-2 border-slate-400 bg-white flex-shrink-0"></div>
+          </div>
+          <div class="border-2 border-dashed border-blue-300 rounded-2xl p-4 bg-blue-50/40">
+            <div class="font-extrabold text-blue-800 text-sm mb-2">Integrations Library</div>
+            <div class="divide-y divide-slate-100">
+              <div class="flex items-center gap-2 py-1.5 border-b border-slate-100 last:border-0">
+                <div class="w-7 h-7 rounded-lg bg-white border border-slate-200 flex items-center justify-center overflow-hidden flex-shrink-0"><img decoding="async" loading="lazy" width="220" height="220" src="images/platform-img-11.png" class="w-full h-full object-contain" alt="REST API"/></div>
+                <span class="text-xs font-semibold text-slate-800">REST API</span>
+              </div>
+              <div class="flex items-center gap-2 py-1.5 border-b border-slate-100 last:border-0">
+                <div class="w-7 h-7 rounded-lg bg-white border border-slate-200 flex items-center justify-center overflow-hidden flex-shrink-0"><img decoding="async" loading="lazy" width="1200" height="1200" src="images/platform-img-12.jpg" class="w-full h-full object-contain" alt="Webhooks"/></div>
+                <span class="text-xs font-semibold text-slate-800">Webhooks</span>
+              </div>
+              <div class="flex items-center gap-2 py-1.5 border-b border-slate-100 last:border-0">
+                <div class="w-7 h-7 rounded-lg bg-white border border-slate-200 flex items-center justify-center overflow-hidden flex-shrink-0"><img decoding="async" loading="lazy" width="360" height="360" src="images/platform-img-13.jpg" class="w-full h-full object-contain" alt="Platforms"/></div>
+                <span class="text-xs font-semibold text-slate-800">Platforms</span>
+              </div>
+              <div class="flex items-center gap-2 py-1.5 border-b border-slate-100 last:border-0">
+                <div class="w-7 h-7 rounded-lg bg-white border border-slate-200 flex items-center justify-center overflow-hidden flex-shrink-0"><img decoding="async" loading="lazy" width="220" height="220" src="images/platform-img-14.png" class="w-full h-full object-contain" alt="Core Banking"/></div>
+                <span class="text-xs font-semibold text-slate-800">Core Banking &amp; LMS</span>
+              </div>
+              <div class="flex items-center gap-2 py-1.5 border-b border-slate-100 last:border-0">
+                <div class="w-7 h-7 rounded-lg bg-white border border-slate-200 flex items-center justify-center overflow-hidden flex-shrink-0"><img decoding="async" loading="lazy" width="400" height="400" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAMAAAC3Ycb+AAAAD1BMVEX////yUCJ/ugAApO//uQAik5v9AAACdElEQVR4nO3RuQ3AIAAEQfz0X7NTh0SwSDMNnHQ7BgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAhrvV+6/dy246eJUiMIDGCxAgSI0iMIDGCxAgSI0iMIDGCxAgSI0iMIDGCxAgSI0iMIDGCxAgSI0iMIDGCxAgSI0iMIDGCxAgSI0iMIDGCxAgSI0iMIDGCxAgSI0iMIDGCxAgSI0iMIDGCxAgSI0iMIDGCxAgSI0iMIDGCxAgSI0iMIDGCxAgSI0iMIDGCxAgSI0iMIDGCxAgSI0iMIDGCxAgSI0iMIDGCxAgSI0iMIDGCxAgSI0iMIDGCxAgSI0iMIDGCxAgSI0iMIDGCxAgSI0iMIDGCxAgSI0iMIDGCxAgSI0iMIDGCxAgSI0iMIDGCxAgSI0iMIDGCxAgSI0iMIDGCxAgSI0iMIAAAAACc4lnvt/4ut+3oWYLECBIjSIwgMYLECBIjSIwgMYLECBIjSIwgMYLECBIjSIwgMYLECBIjSIwgMYLECBIjSIwgMYLECBIjSIwgMYLECBIjSIwgMYLECBIjSIwgMYLECBIjSIwgMYLECBIjSIwgMYLECBIjSIwgMYLECBIjSIwgMYLECBIjSIwgMYLECBIjSIwgMYLECBIjSIwgMYLECBIjSIwgMYLECBIjSIwgMYLECBIjSIwgMYLECBIjSIwgMYLECBIjSIwgMYLECBIjSIwgMYLECBIjSIwgMYLECBIjSIwgMYLECBIjSIwgMYLECBIjSIwgMYLECBIjSIwgMYLECBIjSIwgMYIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANH0X9/7XE6gUIwAAAABJRU5ErkJggg==" class="w-full h-full object-contain" alt="Microsoft"/></div>
+                <span class="text-xs font-semibold text-slate-800">Cloud Integrations</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div><!-- /diagram -->
+  </div>
+</section>
+
+<!-- ===================== MODULE FEATURES ===================== -->
+<section class="py-20 bg-slate-50 border-b border-slate-100">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+    <div class="text-center mb-12">
+      <h2 class="text-3xl lg:text-4xl font-extrabold text-slate-900 mb-4">Everything you need, in one place</h2>
+      <p class="text-lg text-slate-500 max-w-2xl mx-auto">Six purpose-built modules — deploy individually or as a complete platform. Each one compounds the value of the others.</p>
+    </div>
+
+    <!-- Sub-nav — coloured pill tabs -->
+    <div class="flex flex-wrap justify-center gap-2 sm:gap-3 mb-12">
+      <button class="module-feat-tab active rounded-full px-5 py-2.5 text-sm font-semibold whitespace-nowrap transition-all duration-200" data-module="originate" style="background:#7c3aed;color:#fff;box-shadow:0 4px 14px -3px rgba(124,58,237,.4)" onclick="switchFeat('originate')">Originate</button>
+      <button class="module-feat-tab rounded-full px-5 py-2.5 text-sm font-semibold whitespace-nowrap transition-all duration-200" data-module="unify" style="background:#f0fdfa;color:#0f766e" onclick="switchFeat('unify')">Unify</button>
+      <button class="module-feat-tab rounded-full px-5 py-2.5 text-sm font-semibold whitespace-nowrap transition-all duration-200" data-module="decide" style="background:#eff6ff;color:#1d4ed8" onclick="switchFeat('decide')">Decide</button>
+      <button class="module-feat-tab rounded-full px-5 py-2.5 text-sm font-semibold whitespace-nowrap transition-all duration-200" data-module="pay" style="background:#ecfeff;color:#0e7490" onclick="switchFeat('pay')">Pay</button>
+      <button class="module-feat-tab rounded-full px-5 py-2.5 text-sm font-semibold whitespace-nowrap transition-all duration-200" data-module="act" style="background:#fff7ed;color:#c2410c" onclick="switchFeat('act')">Act</button>
+      <button class="module-feat-tab rounded-full px-5 py-2.5 text-sm font-semibold whitespace-nowrap transition-all duration-200" data-module="performance" style="background:#faf5ff;color:#7e22ce" onclick="switchFeat('performance')">Performance</button>
+    </div>
+
+    <!-- ========== ORIGINATE ========== -->
+    <div id="feat-originate" class="module-feat-panel">
+      <div class="grid lg:grid-cols-5 gap-10 items-start mb-10">
+        <div class="lg:col-span-2">
+          <div class="inline-flex items-center gap-2 bg-violet-100 text-violet-700 text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full mb-5"><span class="w-2 h-2 rounded-full bg-violet-500"></span>Originate</div>
+          <h3 class="text-2xl font-extrabold text-slate-900 mb-4">Branded application journeys, built to convert</h3>
+          <p class="text-slate-500 leading-relaxed mb-4">Deploy whitelabel journeys across web, app or embedded. Built-in verification and Open Banking injection maximise data quality.</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="inline-flex items-center gap-1.5 bg-white border border-slate-200 rounded-full px-3 py-1 text-xs font-semibold text-slate-600"><svg class="w-3.5 h-3.5 text-violet-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>Responsive</span>
+            <span class="inline-flex items-center gap-1.5 bg-white border border-slate-200 rounded-full px-3 py-1 text-xs font-semibold text-slate-600"><svg class="w-3.5 h-3.5 text-violet-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/></svg>Whitelabel</span>
+            <span class="inline-flex items-center gap-1.5 bg-white border border-slate-200 rounded-full px-3 py-1 text-xs font-semibold text-slate-600"><svg class="w-3.5 h-3.5 text-violet-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/></svg>Embeddable</span>
+            <span class="inline-flex items-center gap-1.5 bg-white border border-slate-200 rounded-full px-3 py-1 text-xs font-semibold text-slate-600"><svg class="w-3.5 h-3.5 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>Verified Data</span>
+            <span class="inline-flex items-center gap-1.5 bg-white border border-slate-200 rounded-full px-3 py-1 text-xs font-semibold text-slate-600"><svg class="w-3.5 h-3.5 text-violet-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg>Custom Domain</span>
+          </div>
+        </div>
+        <div class="lg:col-span-3">
+          <div class="flex gap-4 items-end">
+            <!-- Mobile mockup -->
+            <div class="w-48 flex-shrink-0 bg-white border-2 border-slate-200 rounded-2xl overflow-hidden shadow-xl">
+              <div class="bg-violet-600 px-3 py-2 flex items-center gap-2"><div class="w-5 h-5 rounded-full bg-white/20 flex items-center justify-center"><svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"/></svg></div><span class="text-white text-[10px] font-bold">Member Loan</span></div>
+              <div class="px-3 py-2 space-y-2">
+                <div class="text-[9px] font-bold text-slate-700">You are applying for</div>
+                <div class="flex justify-between"><span class="text-[9px] text-slate-500">Amount</span><span class="text-[10px] font-bold text-violet-700">£1,000</span></div>
+                <div class="flex justify-between"><span class="text-[9px] text-slate-500">Term</span><span class="text-[10px] font-bold text-slate-700">24 months</span></div>
+                <div class="flex justify-between"><span class="text-[9px] text-slate-500">APR</span><span class="text-[10px] font-bold text-slate-700">42.6%</span></div>
+                <div class="h-px bg-slate-100"></div>
+                <div class="text-[9px] font-bold text-slate-700">Confirm your details</div>
+                <div class="space-y-1">
+                  <div class="bg-slate-50 rounded px-2 py-1 text-[8px] text-slate-600">Mr James Fell</div>
+                  <div class="bg-slate-50 rounded px-2 py-1 text-[8px] text-slate-600 flex justify-between">07590571361 <span class="text-emerald-600 font-bold">✓ Verified</span></div>
+                  <div class="bg-slate-50 rounded px-2 py-1 text-[8px] text-slate-600 flex justify-between">james.a.fell@gmail.com <span class="text-emerald-600 font-bold">✓</span></div>
+                </div>
+                <div class="bg-violet-600 text-white text-center py-1.5 rounded-lg text-[9px] font-bold">Continue</div>
+              </div>
+            </div>
+            <!-- Web/tablet mockup -->
+            <div class="flex-1 bg-white border-2 border-slate-200 rounded-2xl overflow-hidden shadow-xl">
+              <div class="bg-slate-100 px-3 py-1.5 flex items-center gap-2 border-b border-slate-200">
+                <div class="flex gap-1"><div class="w-2 h-2 rounded-full bg-red-400"></div><div class="w-2 h-2 rounded-full bg-yellow-400"></div><div class="w-2 h-2 rounded-full bg-green-400"></div></div>
+                <div class="flex-1 bg-white rounded px-2 py-0.5 text-[8px] text-slate-400">apply.yourcreditunion.co.uk</div>
+              </div>
+              <div class="px-4 py-3 space-y-3">
+                <div class="text-center"><div class="text-[10px] font-bold text-slate-800">I would like to apply for:</div>
+                <div class="mt-2 flex items-center justify-center gap-2"><span class="bg-slate-100 rounded px-2 py-0.5 text-[9px] font-bold">£</span><span class="text-lg font-extrabold text-slate-900">2,000</span></div>
+                <div class="text-[8px] text-slate-400 mt-1">You can borrow between £200 and £1,200</div></div>
+                <div class="h-1.5 bg-slate-100 rounded-full"><div class="h-full bg-violet-500 rounded-full" style="width:55%"></div></div>
+                <div class="flex gap-2 justify-center">
+                  <span class="bg-violet-100 text-violet-700 text-[8px] font-bold px-2 py-0.5 rounded-full">Monthly</span>
+                  <span class="bg-slate-100 text-slate-500 text-[8px] font-bold px-2 py-0.5 rounded-full">Fortnightly</span>
+                  <span class="bg-slate-100 text-slate-500 text-[8px] font-bold px-2 py-0.5 rounded-full">Weekly</span>
+                </div>
+                <div class="bg-slate-50 rounded-xl p-3 text-center">
+                  <div class="text-[9px] text-slate-500">36 monthly payments of:</div>
+                  <div class="text-xl font-extrabold text-violet-700">£150.23</div>
+                  <div class="flex justify-between mt-2"><span class="text-[8px] text-slate-500">Total Repayable</span><span class="text-[9px] font-bold text-slate-700">£12,232.32</span></div>
+                  <div class="flex justify-between"><span class="text-[8px] text-slate-500">Indicative APR</span><span class="text-[9px] font-bold text-slate-700">32.2%</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Full-width features -->
+      <div>
+        <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">Key Features</div>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3">
+          <div class="bg-white border border-slate-100 rounded-xl p-4"><div class="font-bold text-slate-800 text-sm mb-1">Whitelabel Journeys</div><div class="text-sm text-slate-500">Responsive flows for web, app &amp; embedded — fully branded via Product &amp; Brand APIs</div></div>
+          <div class="bg-white border border-slate-100 rounded-xl p-4"><div class="font-bold text-slate-800 text-sm mb-1">Live Data Injection</div><div class="text-sm text-slate-500">Open Banking data served directly into journeys for real-time eligibility &amp; affordability</div></div>
+          <div class="bg-white border border-slate-100 rounded-xl p-4"><div class="font-bold text-slate-800 text-sm mb-1">Verification Built-in</div><div class="text-sm text-slate-500">Mobile, email &amp; address verification at point of capture for maximum data quality</div></div>
+          <div class="bg-white border border-slate-100 rounded-xl p-4"><div class="font-bold text-slate-800 text-sm mb-1">Event-Driven Tracking</div><div class="text-sm text-slate-500">Every interaction tracked &amp; optimised — unified ID across every touchpoint</div></div>
+        </div>
+        <div class="mt-6 text-center"><a href="/platform/originate" class="inline-flex items-center gap-2 text-sm font-semibold text-violet-600 hover:text-violet-800 transition-colors">Learn more about Originate <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a></div>
+      </div>
+    </div>
+
+    <!-- ========== UNIFY ========== -->
+    <div id="feat-unify" class="module-feat-panel hidden">
+      <div class="grid lg:grid-cols-5 gap-10 items-start mb-10">
+        <div class="lg:col-span-2">
+          <div class="inline-flex items-center gap-2 bg-teal-100 text-teal-700 text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full mb-5"><span class="w-2 h-2 rounded-full bg-teal-500"></span>Unify</div>
+          <h3 class="text-2xl font-extrabold text-slate-900 mb-4">One enriched view of every customer</h3>
+          <p class="text-slate-500 leading-relaxed">Unified profile from bureaus, Open Banking and lending history. AI categorisation, income ID and risk flags.</p>
+        </div>
+        <div class="lg:col-span-3">
+          <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-xl">
+            <div class="bg-slate-50 border-b border-slate-200 px-4 py-2.5 flex items-center justify-between">
+              <div class="flex items-center gap-2"><div class="w-5 h-5 rounded bg-teal-500 flex items-center justify-center"><svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"/></svg></div><span class="text-xs font-bold text-slate-700">Income &amp; Expenditure</span></div>
+              <span class="text-[10px] bg-teal-100 text-teal-700 font-bold px-2.5 py-0.5 rounded-full">94% Quality</span>
+            </div>
+            <div class="px-4 py-3 border-b border-slate-100">
+              <div class="text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-2">Connected Sources</div>
+              <div class="flex gap-2">
+                <span class="inline-flex items-center gap-1 bg-teal-50 border border-teal-200 text-teal-700 text-[10px] font-semibold px-2.5 py-1 rounded-lg"><span class="w-1.5 h-1.5 rounded-full bg-teal-500"></span>Barclays</span>
+                <span class="inline-flex items-center gap-1 bg-slate-50 border border-slate-200 text-slate-500 text-[10px] font-semibold px-2.5 py-1 rounded-lg"><span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>Metro Bank</span>
+                <span class="inline-flex items-center gap-1 bg-slate-50 border border-slate-200 text-slate-500 text-[10px] font-semibold px-2.5 py-1 rounded-lg"><span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>Monzo</span>
+              </div>
+            </div>
+            <div class="px-4 py-3 border-b border-slate-100">
+              <div class="text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-2">Income Breakdown</div>
+              <div class="space-y-1.5">
+                <div class="flex items-center justify-between text-[11px]"><div class="flex items-center gap-2"><span class="text-slate-600">Greggs Bakery</span><span class="bg-emerald-100 text-emerald-700 text-[9px] font-bold px-1.5 py-0.5 rounded">Best Match</span><span class="bg-red-100 text-red-600 text-[9px] font-bold px-1.5 py-0.5 rounded">High Risk</span></div><span class="font-bold text-slate-800">£2,200.00</span></div>
+                <div class="flex items-center justify-between text-[11px]"><div class="flex items-center gap-2"><span class="text-slate-600">HMRC Child...</span><span class="bg-slate-100 text-slate-500 text-[9px] font-bold px-1.5 py-0.5 rounded">Benefits</span></div><span class="font-bold text-slate-800">£100.00</span></div>
+                <div class="flex items-center justify-between text-[11px]"><div class="flex items-center gap-2"><span class="text-slate-600">HMRC Child Benefit</span><span class="bg-slate-100 text-slate-500 text-[9px] font-bold px-1.5 py-0.5 rounded">Benefits</span></div><span class="font-bold text-slate-800">£2,200.00</span></div>
+              </div>
+            </div>
+            <div class="px-4 py-3">
+              <div class="text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-2">Surplus Calculation</div>
+              <div class="space-y-1.5">
+                <div class="flex justify-between text-[11px]"><span class="text-slate-600">Total Income</span><span class="font-bold text-emerald-600">£2,343.45</span></div>
+                <div class="flex justify-between text-[11px]"><span class="text-slate-600">Total Expenditure</span><span class="font-bold text-red-500">(£2,343.45)</span></div>
+                <div class="h-px bg-slate-100"></div>
+                <div class="flex justify-between text-[11px]"><span class="font-bold text-slate-700">Monthly Surplus</span><span class="font-bold text-teal-600">£1,500.00</span></div>
+                <div class="flex justify-between text-[11px]"><span class="text-slate-600">After Repayment</span><span class="font-bold text-teal-600">£1,500.00</span></div>
+              </div>
+              <div class="mt-3 bg-amber-50 border border-amber-200 rounded-lg px-3 py-2 text-[10px] text-amber-700"><span class="font-bold">12% uncategorised transactions</span> — review recommended before decisioning</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">Key Features</div>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3">
+          <div class="bg-white border border-slate-100 rounded-xl p-4"><div class="font-bold text-slate-800 text-sm mb-1">AI Categorisation</div><div class="text-sm text-slate-500">RAG-powered transaction categorisation with continual learning</div></div>
+          <div class="bg-white border border-slate-100 rounded-xl p-4"><div class="font-bold text-slate-800 text-sm mb-1">Enrichment Engine</div><div class="text-sm text-slate-500">Flags, ratios &amp; calculations across any time horizon</div></div>
+          <div class="bg-white border border-slate-100 rounded-xl p-4"><div class="font-bold text-slate-800 text-sm mb-1">Income Identification</div><div class="text-sm text-slate-500">Automatic detection of salary, benefits &amp; other income sources</div></div>
+          <div class="bg-white border border-slate-100 rounded-xl p-4"><div class="font-bold text-slate-800 text-sm mb-1">Risk &amp; Opportunity Flags</div><div class="text-sm text-slate-500">Spot risks early and surface cross-sell &amp; upsell opportunities</div></div>
+        </div>
+        <div class="mt-6 text-center"><a href="/platform/unify" class="inline-flex items-center gap-2 text-sm font-semibold text-teal-600 hover:text-teal-800 transition-colors">Learn more about Unify <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a></div>
+      </div>
+    </div>
+
+    <!-- ========== DECIDE ========== -->
+    <div id="feat-decide" class="module-feat-panel hidden">
+      <div class="grid lg:grid-cols-5 gap-10 items-start mb-10">
+        <div class="lg:col-span-2">
+          <div class="inline-flex items-center gap-2 bg-blue-100 text-blue-700 text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full mb-5"><span class="w-2 h-2 rounded-full bg-blue-600"></span>Decide</div>
+          <h3 class="text-2xl font-extrabold text-slate-900 mb-4">Scorecards that adapt to any use case</h3>
+          <p class="text-slate-500 leading-relaxed">Weighted, score-based or rules-based scorecards with risk pricing. Governance controls make every change auditable.</p>
+        </div>
+        <div class="lg:col-span-3 space-y-4">
+          <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-xl">
+            <div class="bg-slate-50 border-b border-slate-200 px-4 py-2.5 flex items-center justify-between">
+              <div class="flex items-center gap-2"><span class="text-xs font-bold text-slate-700">Member Loan</span><span class="bg-slate-200 text-slate-600 text-[9px] font-bold px-1.5 py-0.5 rounded">v2</span></div>
+              <span class="text-[10px] bg-emerald-100 text-emerald-700 font-bold px-2.5 py-0.5 rounded-full">✓ Live</span>
+            </div>
+            <div class="px-4 py-3">
+              <div class="text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-2">Decision Inputs</div>
+              <div class="space-y-1.5">
+                <div class="flex items-center justify-between text-[11px]"><div class="flex items-center gap-2"><span class="w-5 h-5 rounded bg-blue-100 flex items-center justify-center text-[8px] font-bold text-blue-600">TU</span><span class="text-slate-600">Call Report Soft Search</span></div><div class="flex gap-1"><span class="text-emerald-500">✓</span><span class="text-emerald-500">✓</span><span class="text-emerald-500">✓</span></div></div>
+                <div class="flex items-center justify-between text-[11px]"><div class="flex items-center gap-2"><span class="w-5 h-5 rounded bg-teal-100 flex items-center justify-center text-[8px] font-bold text-teal-600">OB</span><span class="text-slate-600">Open Banking</span></div><div class="flex gap-1"><span class="text-emerald-500">✓</span><span class="text-emerald-500">✓</span><span class="text-emerald-500">✓</span></div></div>
+                <div class="flex items-center justify-between text-[11px]"><div class="flex items-center gap-2"><span class="w-5 h-5 rounded bg-blue-100 flex items-center justify-center text-[8px] font-bold text-blue-600">TU</span><span class="text-slate-600">Affordability Report</span></div><div class="flex gap-1"><span class="text-emerald-500">✓</span><span class="text-slate-300">—</span><span class="text-emerald-500">✓</span></div></div>
+                <div class="flex items-center justify-between text-[11px]"><div class="flex items-center gap-2"><span class="w-5 h-5 rounded bg-purple-100 flex items-center justify-center text-[8px] font-bold text-purple-600">PP</span><span class="text-slate-600">Confirmation of Payee</span></div><div class="flex gap-1"><span class="text-emerald-500">✓</span><span class="text-emerald-500">✓</span><span class="text-emerald-500">✓</span></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-xl">
+            <div class="px-4 py-2.5 border-b border-slate-200 flex items-center gap-2">
+              <svg class="w-4 h-4 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z"/></svg>
+              <span class="text-xs font-bold text-slate-700">4 Issues to Resolve</span>
+            </div>
+            <div class="px-4 py-2 space-y-2">
+              <div class="flex items-center justify-between text-[11px] py-1.5 border-b border-slate-50"><div><span class="font-semibold text-slate-700">Debt-to-Income Ratio Exceeded</span><div class="text-[9px] text-slate-400 mt-0.5">Actual: 48.2% · Target: Max 40%</div></div><span class="bg-blue-100 text-blue-700 text-[9px] font-bold px-1.5 py-0.5 rounded">Credit</span></div>
+              <div class="flex items-center justify-between text-[11px] py-1.5 border-b border-slate-50"><div><span class="font-semibold text-slate-700">Credit Score Below Minimum</span><div class="text-[9px] text-slate-400 mt-0.5">Actual: 540 · Target: Min 568</div></div><span class="bg-blue-100 text-blue-700 text-[9px] font-bold px-1.5 py-0.5 rounded">Credit</span></div>
+              <div class="flex items-center justify-between text-[11px] py-1.5"><div><span class="font-semibold text-slate-700">Returned Direct Debits Exceeded</span><div class="text-[9px] text-slate-400 mt-0.5">Actual: 16 · Target: Max 3</div></div><span class="bg-orange-100 text-orange-700 text-[9px] font-bold px-1.5 py-0.5 rounded">Affordability</span></div>
+            </div>
+            <div class="px-4 py-2.5 bg-slate-50 border-t border-slate-200 flex items-center justify-between">
+              <label class="flex items-center gap-2 text-[11px] text-slate-600"><input type="checkbox" class="rounded" checked disabled> Override and approve with issues</label>
+              <div class="flex gap-2"><button class="text-[10px] font-semibold text-slate-500 px-3 py-1 rounded-lg border border-slate-200">Cancel</button><button class="text-[10px] font-semibold text-white bg-emerald-600 px-3 py-1 rounded-lg">✓ Approve</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">Key Features</div>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3">
+          <div class="bg-white border border-slate-100 rounded-xl p-4"><div class="font-bold text-slate-800 text-sm mb-1">Multi-Scorecard Engine</div><div class="text-sm text-slate-500">Weighted, score-based &amp; rules-based — no code required</div></div>
+          <div class="bg-white border border-slate-100 rounded-xl p-4"><div class="font-bold text-slate-800 text-sm mb-1">Risk-Based Pricing</div><div class="text-sm text-slate-500">Tiered pricing driven by customer risk across product variants</div></div>
+          <div class="bg-white border border-slate-100 rounded-xl p-4"><div class="font-bold text-slate-800 text-sm mb-1">Case Triage</div><div class="text-sm text-slate-500">Assign, triage &amp; resolve complex cases with full underwriter tooling</div></div>
+          <div class="bg-white border border-slate-100 rounded-xl p-4"><div class="font-bold text-slate-800 text-sm mb-1">Override Governance</div><div class="text-sm text-slate-500">Rules-based overrides with designated approvers &amp; full audit trail</div></div>
+        </div>
+        <div class="mt-6 text-center"><a href="/platform/decide" class="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors">Learn more about Decide <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a></div>
+      </div>
+    </div>
+
+    <!-- ========== PAY ========== -->
+    <div id="feat-pay" class="module-feat-panel hidden">
+      <div class="grid lg:grid-cols-5 gap-10 items-start mb-10">
+        <div class="lg:col-span-2">
+          <div class="inline-flex items-center gap-2 bg-cyan-100 text-cyan-700 text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full mb-5"><span class="w-2 h-2 rounded-full bg-cyan-500"></span>Pay</div>
+          <h3 class="text-2xl font-extrabold text-slate-900 mb-4">Every payment method, fully orchestrated</h3>
+          <p class="text-slate-500 leading-relaxed mb-6">Collect and reconcile across Direct Debit, Faster Payments and Pay by Bank. Automation handles missed payments and forbearance.</p>
+          <!-- Payment method logos -->
+          <div class="text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-3">Supported Methods</div>
+          <div class="flex flex-wrap gap-3">
+            <!-- Direct Debit -->
+            <div class="bg-white border border-slate-200 rounded-xl px-3 py-2 flex items-center gap-2">
+              <svg viewBox="0 0 48 24" class="h-5 w-auto" fill="none"><rect width="48" height="24" rx="4" fill="#fff"/><rect x="0.5" y="0.5" width="47" height="23" rx="3.5" stroke="#e2e8f0"/><path d="M8 8h5v2H8zM8 12h8v2H8zM8 16h3v2H8z" fill="#1a1a1a" opacity=".7"/><text x="20" y="15" font-family="Inter,sans-serif" font-size="7" font-weight="700" fill="#1a1a1a">Direct Debit</text></svg>
+            </div>
+            <!-- Faster Payments -->
+            <div class="bg-white border border-slate-200 rounded-xl px-3 py-2 flex items-center gap-2">
+              <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none"><circle cx="12" cy="12" r="11" stroke="#6366f1" stroke-width="2"/><path d="M8 12h8M12 8l4 4-4 4" stroke="#6366f1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span class="text-[10px] font-bold text-slate-700">Faster Payments</span>
+            </div>
+            <!-- Pay by Bank -->
+            <div class="bg-white border border-slate-200 rounded-xl px-3 py-2 flex items-center gap-2">
+              <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none"><rect x="2" y="4" width="20" height="16" rx="3" stroke="#0891b2" stroke-width="2"/><path d="M2 10h20" stroke="#0891b2" stroke-width="2"/><circle cx="7" cy="15" r="1.5" fill="#0891b2"/></svg>
+              <span class="text-[10px] font-bold text-slate-700">Pay by Bank</span>
+            </div>
+            <!-- Standing Order -->
+            <div class="bg-white border border-slate-200 rounded-xl px-3 py-2 flex items-center gap-2">
+              <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none"><path d="M12 2v20M8 6l4-4 4 4M8 18l4 4 4-4" stroke="#0d9488" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span class="text-[10px] font-bold text-slate-700">Standing Order</span>
+            </div>
+            <!-- Sweeping VRP -->
+            <div class="bg-white border border-slate-200 rounded-xl px-3 py-2 flex items-center gap-2">
+              <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none"><path d="M4 12a8 8 0 0116 0" stroke="#7c3aed" stroke-width="2" stroke-linecap="round"/><path d="M16 8l4 4-4 4" stroke="#7c3aed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="2" fill="#7c3aed"/></svg>
+              <span class="text-[10px] font-bold text-slate-700">Sweeping VRP</span>
+            </div>
+          </div>
+        </div>
+        <div class="lg:col-span-3">
+          <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-xl">
+            <div class="px-4 py-2.5 border-b border-slate-200 flex items-center justify-between">
+              <span class="text-xs font-bold text-slate-700">Collection Queue — Today</span>
+              <span class="text-[10px] bg-emerald-100 text-emerald-700 font-bold px-2.5 py-0.5 rounded-full">0 manual interventions</span>
+            </div>
+            <div class="px-4 py-3 space-y-2.5">
+              <div class="bg-emerald-50 border border-emerald-100 rounded-xl px-4 py-3 flex items-center justify-between"><div><div class="text-xs font-bold text-slate-700">Emma J. — Faster Payment</div><div class="text-[10px] text-slate-500">£89.00 collected</div></div><span class="text-[10px] font-bold text-emerald-600">✓ Done</span></div>
+              <div class="bg-amber-50 border border-amber-100 rounded-xl px-4 py-3 flex items-center justify-between"><div><div class="text-xs font-bold text-slate-700">David K. — Direct Debit retry</div><div class="text-[10px] text-slate-500">£145.50 — risk-adjusted retry at 6pm</div></div><span class="text-[10px] font-bold text-amber-600">⏱ Queued</span></div>
+              <div class="bg-cyan-50 border border-cyan-100 rounded-xl px-4 py-3 flex items-center justify-between"><div><div class="text-xs font-bold text-slate-700">Marcus T. — Pay by Bank</div><div class="text-[10px] text-slate-500">£312.00 — SMS + WhatsApp link sent</div></div><span class="text-[10px] font-bold text-cyan-600">→ Link sent</span></div>
+              <div class="bg-violet-50 border border-violet-100 rounded-xl px-4 py-3 flex items-center justify-between"><div><div class="text-xs font-bold text-slate-700">Sarah L. — Standing Order</div><div class="text-[10px] text-slate-500">£220.00 — monthly collection</div></div><span class="text-[10px] font-bold text-emerald-600">✓ Done</span></div>
+            </div>
+            <div class="px-4 py-2.5 bg-slate-50 border-t border-slate-100 text-[10px] text-slate-400 flex items-center gap-1.5">
+              <svg class="w-3.5 h-3.5 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+              4 near-misses handled automatically — payment methods communicating interdependently
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">Key Features</div>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3">
+          <div class="bg-white border border-slate-100 rounded-xl p-4"><div class="font-bold text-slate-800 text-sm mb-1">Multi-Method Collection</div><div class="text-sm text-slate-500">DD, FPS, Pay by Bank, Standing Orders &amp; VRP — one integration</div></div>
+          <div class="bg-white border border-slate-100 rounded-xl p-4"><div class="font-bold text-slate-800 text-sm mb-1">Risk-Driven Actions</div><div class="text-sm text-slate-500">Missed payments trigger automated forbearance &amp; in-app resolution</div></div>
+          <div class="bg-white border border-slate-100 rounded-xl p-4"><div class="font-bold text-slate-800 text-sm mb-1">Comms Engine</div><div class="text-sm text-slate-500">Branded engagement across email, SMS, WhatsApp &amp; push</div></div>
+          <div class="bg-white border border-slate-100 rounded-xl p-4"><div class="font-bold text-slate-800 text-sm mb-1">Auto Reconciliation</div><div class="text-sm text-slate-500">Real-time reconciliation across all settlement accounts</div></div>
+        </div>
+        <div class="mt-6 text-center"><a href="/platform/pay" class="inline-flex items-center gap-2 text-sm font-semibold text-cyan-600 hover:text-cyan-800 transition-colors">Learn more about Pay <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a></div>
+      </div>
+    </div>
+
+    <!-- ========== ACT ========== -->
+    <div id="feat-act" class="module-feat-panel hidden">
+      <div class="grid lg:grid-cols-5 gap-10 items-start mb-10">
+        <div class="lg:col-span-2">
+          <div class="inline-flex items-center gap-2 bg-orange-100 text-orange-700 text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full mb-5"><span class="w-2 h-2 rounded-full bg-orange-500"></span>Act</div>
+          <h3 class="text-2xl font-extrabold text-slate-900 mb-4">Automated monitoring. Personalised action.</h3>
+          <p class="text-slate-500 leading-relaxed">Monitoring interprets risk and surfaces opportunities. Automated workflows, vulnerability detection and Gen AI power engagement.</p>
+        </div>
+        <div class="lg:col-span-3">
+          <div class="flex gap-4 items-start">
+            <div class="w-48 flex-shrink-0 bg-white border-2 border-slate-200 rounded-2xl overflow-hidden shadow-xl">
+              <div class="bg-white px-3 py-2 border-b border-slate-100 flex items-center justify-center"><div class="bg-slate-200 rounded px-3 py-0.5 text-[9px] font-bold text-slate-500">YOUR LOGO</div></div>
+              <div class="px-3 py-2.5 space-y-2">
+                <div class="text-[10px] font-bold text-slate-800">Member Loan</div>
+                <div class="text-lg font-extrabold text-slate-900">-£1,240</div>
+                <div class="text-[8px] text-slate-400">Left to pay</div>
+                <div class="space-y-1.5 mt-2">
+                  <div class="bg-slate-50 border border-slate-200 rounded-lg px-2 py-1.5 text-center text-[9px] font-semibold text-slate-600">↓ Pay Extra</div>
+                  <div class="bg-slate-50 border border-slate-200 rounded-lg px-2 py-1.5 text-center text-[9px] font-semibold text-slate-600">+ Borrow More</div>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-lg p-2 mt-2">
+                  <div class="flex items-center justify-between mb-1"><span class="text-[9px] font-bold text-slate-700">Progress</span><span class="text-[8px] font-bold text-emerald-600">66%</span><span class="bg-emerald-100 text-emerald-700 text-[7px] font-bold px-1 py-0.5 rounded">On Track</span></div>
+                  <div class="h-1.5 bg-slate-100 rounded-full overflow-hidden"><div class="h-full bg-emerald-500 rounded-full" style="width:66%"></div></div>
+                  <div class="mt-1.5 text-[8px] text-slate-500">Next payment in 14 days</div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-1 space-y-3">
+              <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-xl">
+                <div class="px-3 py-2 border-b border-slate-200 flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-orange-500" style="animation:pulse-dot 2s ease-in-out infinite"></span>
+                  <span class="text-[11px] font-bold text-slate-700">Monitoring Active</span>
+                </div>
+                <div class="px-3 py-2 space-y-1.5">
+                  <div class="bg-orange-50 border border-orange-100 rounded-lg px-2.5 py-2 text-[10px] text-orange-700">⚠ 3× reduced payment amounts in 6 weeks</div>
+                  <div class="bg-orange-50 border border-orange-100 rounded-lg px-2.5 py-2 text-[10px] text-orange-700">⚠ Credit utilisation up 38% in 90 days</div>
+                  <div class="bg-red-50 border border-red-100 rounded-lg px-2.5 py-2 text-[10px] text-red-600">🛡 Vulnerability flag — income shock</div>
+                </div>
+              </div>
+              <div class="bg-white border border-slate-200 rounded-2xl p-3 shadow-xl">
+                <div class="text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-2">Workflow Triggered</div>
+                <div class="bg-orange-50 border border-orange-100 rounded-lg p-2.5 text-[10px] text-slate-600 italic">"Hi Emma, we have flexible options — including a payment holiday or adjusted terms."</div>
+                <div class="mt-2 flex flex-wrap gap-1.5">
+                  <span class="bg-slate-100 text-slate-600 text-[9px] font-semibold px-2 py-0.5 rounded-full">📧 Email</span>
+                  <span class="bg-slate-100 text-slate-600 text-[9px] font-semibold px-2 py-0.5 rounded-full">💬 SMS</span>
+                  <span class="bg-emerald-100 text-emerald-700 text-[9px] font-semibold px-2 py-0.5 rounded-full">✓ WhatsApp</span>
+                  <span class="bg-slate-100 text-slate-600 text-[9px] font-semibold px-2 py-0.5 rounded-full">🔔 Push</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">Key Features</div>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3">
+          <div class="bg-white border border-slate-100 rounded-xl p-4"><div class="font-bold text-slate-800 text-sm mb-1">Continuous Monitoring</div><div class="text-sm text-slate-500">Real-time risk interpretation from the moment data enters</div></div>
+          <div class="bg-white border border-slate-100 rounded-xl p-4"><div class="font-bold text-slate-800 text-sm mb-1">Vulnerability Detection</div><div class="text-sm text-slate-500">Automatic identification with tailored support responses</div></div>
+          <div class="bg-white border border-slate-100 rounded-xl p-4"><div class="font-bold text-slate-800 text-sm mb-1">Whitelabel Member Hub</div><div class="text-sm text-slate-500">Branded self-service — payments, holidays &amp; statements</div></div>
+          <div class="bg-white border border-slate-100 rounded-xl p-4"><div class="font-bold text-slate-800 text-sm mb-1">Gen AI Personalisation</div><div class="text-sm text-slate-500">Hyper-personalised engagement across all channels</div></div>
+        </div>
+        <div class="mt-6 text-center"><a href="/platform/act" class="inline-flex items-center gap-2 text-sm font-semibold text-orange-600 hover:text-orange-800 transition-colors">Learn more about Act <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a></div>
+      </div>
+    </div>
+
+    <!-- ========== PERFORMANCE ========== -->
+    <div id="feat-performance" class="module-feat-panel hidden">
+      <div class="grid lg:grid-cols-5 gap-10 items-start mb-10">
+        <div class="lg:col-span-2">
+          <div class="inline-flex items-center gap-2 bg-purple-100 text-purple-700 text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full mb-5"><span class="w-2 h-2 rounded-full bg-purple-500"></span>Performance</div>
+          <h3 class="text-2xl font-extrabold text-slate-900 mb-4">Real-time insights across the full portfolio</h3>
+          <p class="text-slate-500 leading-relaxed">Dashboards span origination to collections with IFRS9, board-ready packs and regulatory reporting — insights surfaced.</p>
+        </div>
+        <div class="lg:col-span-3">
+          <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-xl">
+            <div class="bg-slate-50 border-b border-slate-200 px-4 py-2.5 flex items-center justify-between">
+              <span class="text-xs font-bold text-slate-700">Analytics Dashboard</span>
+              <div class="flex gap-1.5">
+                <span class="text-[9px] bg-purple-100 text-purple-700 font-bold px-2 py-0.5 rounded-full">Live</span>
+                <span class="text-[9px] bg-slate-100 text-slate-500 font-bold px-2 py-0.5 rounded-full">Last 30 days</span>
+              </div>
+            </div>
+            <!-- Top row: KPI cards -->
+            <div class="px-3 pt-3 grid grid-cols-4 gap-2">
+              <div class="bg-violet-50 border border-violet-100 rounded-lg p-2.5 text-center"><div class="text-lg font-extrabold text-violet-700">1,842</div><div class="text-[9px] text-slate-500">Applications</div></div>
+              <div class="bg-emerald-50 border border-emerald-100 rounded-lg p-2.5 text-center"><div class="text-lg font-extrabold text-emerald-600">67%</div><div class="text-[9px] text-slate-500">Approval Rate</div></div>
+              <div class="bg-blue-50 border border-blue-100 rounded-lg p-2.5 text-center"><div class="text-lg font-extrabold text-blue-600">78%</div><div class="text-[9px] text-slate-500">Auto-decisioned</div></div>
+              <div class="bg-cyan-50 border border-cyan-100 rounded-lg p-2.5 text-center"><div class="text-lg font-extrabold text-cyan-600">94%</div><div class="text-[9px] text-slate-500">Collection Rate</div></div>
+            </div>
+            <!-- Charts row -->
+            <div class="px-3 py-3 grid grid-cols-3 gap-2">
+              <!-- Funnel chart -->
+              <div class="bg-slate-50 border border-slate-100 rounded-lg p-2.5">
+                <div class="text-[9px] font-bold text-slate-500 uppercase tracking-wider mb-2">Application Funnel</div>
+                <svg viewBox="0 0 120 80" class="w-full">
+                  <polygon points="10,5 110,5 100,22 20,22" fill="#8b5cf6" opacity="0.9"/><text x="60" y="16" text-anchor="middle" font-size="7" fill="white" font-weight="700">1,842</text>
+                  <polygon points="20,24 100,24 90,41 30,41" fill="#8b5cf6" opacity="0.7"/><text x="60" y="35" text-anchor="middle" font-size="7" fill="white" font-weight="700">1,234</text>
+                  <polygon points="30,43 90,43 82,60 38,60" fill="#8b5cf6" opacity="0.5"/><text x="60" y="54" text-anchor="middle" font-size="7" fill="white" font-weight="700">823</text>
+                  <polygon points="38,62 82,62 76,77 44,77" fill="#8b5cf6" opacity="0.35"/><text x="60" y="72" text-anchor="middle" font-size="7" fill="#8b5cf6" font-weight="700">714</text>
+                  <text x="60" y="6" text-anchor="middle" font-size="5" fill="#94a3b8"></text>
+                </svg>
+                <div class="flex justify-between text-[8px] text-slate-400 mt-1"><span>Applied</span><span>Approved</span><span>Accepted</span><span>Funded</span></div>
+              </div>
+              <!-- Bar chart - monthly applications -->
+              <div class="bg-slate-50 border border-slate-100 rounded-lg p-2.5">
+                <div class="text-[9px] font-bold text-slate-500 uppercase tracking-wider mb-2">Monthly Applications</div>
+                <svg viewBox="0 0 120 70" class="w-full">
+                  <line x1="10" y1="65" x2="115" y2="65" stroke="#e2e8f0" stroke-width="0.5"/>
+                  <line x1="10" y1="45" x2="115" y2="45" stroke="#e2e8f0" stroke-width="0.5" stroke-dasharray="2"/>
+                  <line x1="10" y1="25" x2="115" y2="25" stroke="#e2e8f0" stroke-width="0.5" stroke-dasharray="2"/>
+                  <rect x="12" y="42" width="7" height="23" rx="1.5" fill="#c4b5fd"/><rect x="21" y="38" width="7" height="27" rx="1.5" fill="#c4b5fd"/><rect x="30" y="35" width="7" height="30" rx="1.5" fill="#a78bfa"/><rect x="39" y="30" width="7" height="35" rx="1.5" fill="#a78bfa"/><rect x="48" y="28" width="7" height="37" rx="1.5" fill="#8b5cf6"/><rect x="57" y="25" width="7" height="40" rx="1.5" fill="#8b5cf6"/><rect x="66" y="22" width="7" height="43" rx="1.5" fill="#7c3aed"/><rect x="75" y="18" width="7" height="47" rx="1.5" fill="#7c3aed"/><rect x="84" y="15" width="7" height="50" rx="1.5" fill="#6d28d9"/><rect x="93" y="20" width="7" height="45" rx="1.5" fill="#7c3aed"/><rect x="102" y="12" width="7" height="53" rx="1.5" fill="#6d28d9"/>
+                  <text x="8" y="68" font-size="5" fill="#94a3b8">Jan</text><text x="44" y="68" font-size="5" fill="#94a3b8">May</text><text x="80" y="68" font-size="5" fill="#94a3b8">Sep</text><text x="105" y="68" font-size="5" fill="#94a3b8">Nov</text>
+                </svg>
+              </div>
+              <!-- Donut/pie chart -->
+              <div class="bg-slate-50 border border-slate-100 rounded-lg p-2.5">
+                <div class="text-[9px] font-bold text-slate-500 uppercase tracking-wider mb-2">Decision Breakdown</div>
+                <svg viewBox="0 0 120 75" class="w-full">
+                  <circle cx="45" cy="38" r="28" fill="none" stroke="#e2e8f0" stroke-width="10"/>
+                  <circle cx="45" cy="38" r="28" fill="none" stroke="#22c55e" stroke-width="10" stroke-dasharray="114 62" stroke-dashoffset="0" transform="rotate(-90 45 38)"/>
+                  <circle cx="45" cy="38" r="28" fill="none" stroke="#f59e0b" stroke-width="10" stroke-dasharray="26.4 149.6" stroke-dashoffset="-114" transform="rotate(-90 45 38)"/>
+                  <circle cx="45" cy="38" r="28" fill="none" stroke="#ef4444" stroke-width="10" stroke-dasharray="35.2 140.8" stroke-dashoffset="-140.4" transform="rotate(-90 45 38)"/>
+                  <text x="45" y="36" text-anchor="middle" font-size="8" font-weight="800" fill="#1e293b">67%</text>
+                  <text x="45" y="44" text-anchor="middle" font-size="5" fill="#94a3b8">Approved</text>
+                  <circle cx="92" cy="22" r="3" fill="#22c55e"/><text x="97" y="24" font-size="6" fill="#64748b">Approved 67%</text>
+                  <circle cx="92" cy="34" r="3" fill="#f59e0b"/><text x="97" y="36" font-size="6" fill="#64748b">Referred 15%</text>
+                  <circle cx="92" cy="46" r="3" fill="#ef4444"/><text x="97" y="48" font-size="6" fill="#64748b">Declined 18%</text>
+                </svg>
+              </div>
+            </div>
+            <!-- Line chart: arrears trend -->
+            <div class="px-3 pb-2">
+              <div class="bg-slate-50 border border-slate-100 rounded-lg p-2.5">
+                <div class="flex items-center justify-between mb-2"><div class="text-[9px] font-bold text-slate-500 uppercase tracking-wider">Arrears Rate Trend</div><div class="flex gap-3"><span class="flex items-center gap-1 text-[8px] text-slate-500"><span class="w-2 h-0.5 bg-red-400 inline-block"></span>Arrears %</span><span class="flex items-center gap-1 text-[8px] text-slate-500"><span class="w-2 h-0.5 bg-blue-400 inline-block"></span>Target</span></div></div>
+                <svg viewBox="0 0 300 50" class="w-full">
+                  <line x1="0" y1="42" x2="300" y2="42" stroke="#e2e8f0" stroke-width="0.5"/>
+                  <line x1="0" y1="25" x2="300" y2="25" stroke="#e2e8f0" stroke-width="0.5" stroke-dasharray="3"/>
+                  <line x1="0" y1="15" x2="300" y2="15" stroke="#93c5fd" stroke-width="1" stroke-dasharray="4 2" opacity="0.6"/>
+                  <polyline points="0,30 27,28 54,32 81,27 108,25 135,22 162,20 189,18 216,22 243,19 270,16 297,14" fill="none" stroke="#f87171" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <polyline points="0,30 27,28 54,32 81,27 108,25 135,22 162,20 189,18 216,22 243,19 270,16 297,14" fill="url(#arrears-grad)" opacity="0.15"/>
+                  <defs><linearGradient id="arrears-grad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#f87171"/><stop offset="100%" stop-color="#f87171" stop-opacity="0"/></linearGradient></defs>
+                  <circle cx="297" cy="14" r="2.5" fill="#f87171"/><text x="297" y="10" text-anchor="end" font-size="6" fill="#f87171" font-weight="700">0.9%</text>
+                  <text x="0" y="48" font-size="5" fill="#94a3b8">Jan</text><text x="81" y="48" font-size="5" fill="#94a3b8">Apr</text><text x="162" y="48" font-size="5" fill="#94a3b8">Jul</text><text x="243" y="48" font-size="5" fill="#94a3b8">Oct</text><text x="290" y="48" font-size="5" fill="#94a3b8">Dec</text>
+                </svg>
+              </div>
+            </div>
+            <!-- Strategy Agent -->
+            <div class="mx-3 mb-3 bg-canary/10 border border-canary/30 rounded-xl p-3">
+              <div class="flex items-center gap-2 mb-1"><span class="w-2 h-2 rounded-full bg-purple-500" style="animation:pulse-dot 2s ease-in-out infinite"></span><span class="text-[11px] font-bold text-slate-700">Strategy Agent</span></div>
+              <div class="text-[11px] text-slate-500">Decline-to-fund conversion dropped 4% this month. 223 declined applicants match your secured product profile — recommend a targeted counter-offer campaign.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">Key Features</div>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3">
+          <div class="bg-white border border-slate-100 rounded-xl p-4"><div class="font-bold text-slate-800 text-sm mb-1">Portfolio Dashboards</div><div class="text-sm text-slate-500">Standardised &amp; customisable views across the full lifecycle</div></div>
+          <div class="bg-white border border-slate-100 rounded-xl p-4"><div class="font-bold text-slate-800 text-sm mb-1">Regulatory Reporting</div><div class="text-sm text-slate-500">IFRS9, board packs &amp; bureau reporting — all standardised</div></div>
+          <div class="bg-white border border-slate-100 rounded-xl p-4"><div class="font-bold text-slate-800 text-sm mb-1">Strategy Agent</div><div class="text-sm text-slate-500">AI that surfaces insights &amp; optimisation areas automatically</div></div>
+          <div class="bg-white border border-slate-100 rounded-xl p-4"><div class="font-bold text-slate-800 text-sm mb-1">Granular Breakdowns</div><div class="text-sm text-slate-500">Drill from portfolio trends to individual cohorts &amp; borrowers</div></div>
+        </div>
+        <div class="mt-6 text-center"><a href="/platform/performance" class="inline-flex items-center gap-2 text-sm font-semibold text-purple-600 hover:text-purple-800 transition-colors">Learn more about Performance <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================================================================ CASE STUDY ================================================================ -->
+<section class="py-24 bg-slate-900 overflow-hidden relative">
+  <div class="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-navy/40 blur-3xl pointer-events-none -translate-y-1/2 translate-x-1/4"></div>
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 relative">
+    <div class="max-w-4xl mx-auto">
+        <!-- Badge -->
+        <div class="mb-5"><span class="chip-dark chip">Case Study</span></div>
+        <!-- Logo -->
+        <div class="mb-10">
+          <div class="bg-white rounded-2xl overflow-hidden" style="width:160px;height:80px;display:flex;align-items:center;justify-content:center;padding:12px;">
+            <img decoding="async" loading="lazy" width="180" height="118" src="images/credit-unions-img-10.png" alt="GMB Credit Union" style="display:block;width:auto;height:auto;max-width:100%;max-height:100%;object-fit:contain;object-position:center;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div style="display:none" class="items-center gap-2">
+              <div class="w-8 h-8 rounded-lg bg-orange-500 flex items-center justify-center"><span class="text-white font-extrabold text-xs">GMB</span></div>
+              <span class="font-bold text-slate-800 text-sm">GMB Credit Union</span>
+            </div>
+          </div>
+        </div>
+        <h2 class="text-3xl lg:text-4xl font-extrabold text-white leading-tight mb-6">A record year — with no extra staff or marketing.</h2>
+        <p class="text-slate-400 text-lg leading-relaxed mb-10">GMB Credit Union streamlined onboarding, automated underwriting and sharpened credit risk rules — their best year.</p>
+        <!-- Stats — 3 columns -->
+        <div class="grid sm:grid-cols-3 gap-4 mb-10">
+          <div class="flex items-start gap-4 p-5 rounded-2xl" style="background:rgba(255,255,255,.05)">
+            <div class="w-9 h-9 rounded-xl bg-canary flex-shrink-0 flex items-center justify-center"><svg class="w-4 h-4 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg></div>
+            <div><div class="text-white font-bold mb-0.5">28% increase in new lending</div><div class="text-slate-400 text-sm">A record year driven by automation and smarter decisioning.</div></div>
+          </div>
+          <div class="flex items-start gap-4 p-5 rounded-2xl" style="background:rgba(255,255,255,.05)">
+            <div class="w-9 h-9 rounded-xl bg-canary flex-shrink-0 flex items-center justify-center"><svg class="w-4 h-4 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+            <div><div class="text-white font-bold mb-0.5">13,000 hours of admin saved</div><div class="text-slate-400 text-sm">Automated underwriting freed the team to focus on members.</div></div>
+          </div>
+          <div class="flex items-start gap-4 p-5 rounded-2xl" style="background:rgba(255,255,255,.05)">
+            <div class="w-9 h-9 rounded-xl bg-canary flex-shrink-0 flex items-center justify-center"><svg class="w-4 h-4 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"/></svg></div>
+            <div><div class="text-white font-bold mb-0.5">50% lower origination costs</div><div class="text-slate-400 text-sm">Every part of the journey got cheaper — onboarding to collection.</div></div>
+          </div>
+        </div>
+        <a href="/case-studies/gmb-credit-union" class="inline-flex items-center gap-2 bg-canary text-navy font-bold px-6 py-3.5 rounded-xl hover:bg-canary-dark text-sm">
+          Read the full case study <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
+      </div>
+  </div>
+</section>
+
+<!-- ===================== API & DEVELOPERS ===================== -->
+<section class="py-20 bg-white">
+  <div class="max-w-5xl mx-auto px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <div class="inline-flex items-center gap-2 bg-navy/8 text-navy text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full mb-6">
+        <span class="w-2 h-2 rounded-full bg-navy"></span>For Developers
+      </div>
+      <h2 class="text-4xl font-extrabold text-slate-900 leading-tight mb-4">Developers love working with us</h2>
+      <p class="text-xl text-slate-500 max-w-2xl mx-auto">A clean REST API, comprehensive documentation and dedicated support from day one. Integration in days, not months.</p>
+    </div>
+
+    <!-- Three feature cards -->
+    <div class="grid lg:grid-cols-3 gap-8 mb-12">
+      <div class="ai-card p-6">
+        <div class="w-10 h-10 bg-navy/10 rounded-lg flex items-center justify-center mb-4">
+          <svg class="w-5 h-5 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4m0 0l-4 4m4-4H3"/></svg>
+        </div>
+        <h3 class="text-lg font-bold text-slate-900 mb-2">REST API</h3>
+        <p class="text-sm text-slate-600">Clean, well-documented REST API with predictable resource-oriented URLs, JSON request bodies and standard HTTP response codes.</p>
+      </div>
+
+      <div class="ai-card p-6">
+        <div class="w-10 h-10 bg-navy/10 rounded-lg flex items-center justify-center mb-4">
+          <svg class="w-5 h-5 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        </div>
+        <h3 class="text-lg font-bold text-slate-900 mb-2">Webhooks & Events</h3>
+        <p class="text-sm text-slate-600">Real-time event streaming for platform actions. Subscribe to events and build reactive workflows in your systems.</p>
+      </div>
+
+      <div class="ai-card p-6">
+        <div class="w-10 h-10 bg-navy/10 rounded-lg flex items-center justify-center mb-4">
+          <svg class="w-5 h-5 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C6.5 6.253 1 10.998 1 16.5S6.5 26.5 12 26.5s11-4.747 11-10.5S17.5 6.253 12 6.253z"/></svg>
+        </div>
+        <h3 class="text-lg font-bold text-slate-900 mb-2">Developer Documentation</h3>
+        <p class="text-sm text-slate-600">Comprehensive guides, API references and code examples. Plus a sandbox environment to test integrations before going live.</p>
+      </div>
+    </div>
+
+    <!-- Code snippet -->
+
+    <!-- CTA -->
+    <div class="text-center">
+      <a href="/developers" class="inline-flex items-center gap-2 bg-navy text-white font-semibold px-6 py-3 rounded-xl hover:bg-navy-dark shadow-lg transition-all">
+        View Documentation <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CTA ===================== -->
+<section class="py-20 bg-navy relative overflow-hidden">
+  <div class="absolute inset-0 pointer-events-none">
+    <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-canary/6 blur-3xl"></div>
+    <div class="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-blue-500/5 blur-3xl"></div>
+  </div>
+  <div class="max-w-3xl mx-auto px-6 lg:px-8 text-center relative">
+    <h2 class="text-4xl font-extrabold text-white mb-4">Ready to see it in action?</h2>
+    <p class="text-lg text-slate-400 mb-8">Book a 30-minute demo tailored to your use case — we'll show you exactly how Credit Canary fits your team.</p>
+    <div class="flex flex-col sm:flex-row gap-3 justify-center">
+      <a href="/demo" class="inline-flex items-center justify-center gap-2 bg-canary text-navy text-sm font-extrabold px-8 py-4 rounded-xl hover:bg-canary-dark shadow-lg shadow-canary/20 transition-all">
+        Book a Demo <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      </a>
+      <a href="/demo" class="inline-flex items-center justify-center gap-2 bg-white/10 text-white text-sm font-semibold px-8 py-4 rounded-xl hover:bg-white/15 border border-white/15 transition-all">
+        See all features
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================ FOOTER ================================================================ -->
+<footer class="bg-slate-900 text-slate-400">
+  <div class="max-w-screen-2xl mx-auto px-8 lg:px-16 pt-12 pb-6">
+    <div class="flex flex-col lg:flex-row gap-12 mb-10">
+      <!-- Brand -->
+      <div class="flex-shrink-0 lg:w-64">
+        <svg class="mb-4" height="40" style="width:auto;" viewBox="0 0 533 177" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M216.959 78.6696C211.295 78.6696 206.423 77.4747 202.343 75.0856C198.287 72.6723 195.166 69.3272 192.982 65.0501C190.822 60.7736 189.742 55.8512 189.742 50.2841C189.742 44.6452 190.834 39.6992 193.018 35.4462C195.227 31.1692 198.359 27.836 202.414 25.4467C206.471 23.0334 211.295 21.8268 216.887 21.8268C221.711 21.8268 225.935 22.6989 229.559 24.4432C233.183 26.1874 236.051 28.6365 238.163 31.7904C240.275 34.9444 241.439 38.6479 241.656 42.9009H227.183C226.775 40.1532 225.695 37.943 223.943 36.2705C222.215 34.5741 219.947 33.7258 217.139 33.7258C214.763 33.7258 212.687 34.371 210.911 35.6612C209.159 36.9276 207.791 38.7793 206.807 41.2165C205.823 43.6536 205.331 46.6044 205.331 50.069C205.331 53.5815 205.811 56.5684 206.771 59.0293C207.755 61.4902 209.135 63.3658 210.911 64.6559C212.687 65.9461 214.763 66.5915 217.139 66.5915C218.891 66.5915 220.463 66.2332 221.855 65.5161C223.271 64.7995 224.435 63.7599 225.347 62.398C226.283 61.0125 226.895 59.3517 227.183 57.4161H241.656C241.416 61.6214 240.263 65.3249 238.199 68.527C236.159 71.7045 233.339 74.1896 229.739 75.9816C226.139 77.7736 221.879 78.6696 216.959 78.6696ZM251.475 77.5947V22.5436H266.343V32.1488H266.919C267.927 28.732 269.619 26.1516 271.995 24.4073C274.371 22.6392 277.107 21.7551 280.204 21.7551C280.971 21.7551 281.799 21.8029 282.687 21.8985C283.575 21.9941 284.356 22.1255 285.027 22.2928V35.8404C284.307 35.6254 283.311 35.4342 282.039 35.267C280.767 35.0997 279.603 35.0161 278.547 35.0161C276.291 35.0161 274.275 35.5059 272.499 36.4856C270.747 37.4413 269.355 38.7793 268.323 40.4996C267.315 42.22 266.811 44.2032 266.811 46.4491V77.5947H251.475ZM315.583 78.6696C309.895 78.6696 304.999 77.523 300.895 75.2291C296.814 72.9112 293.67 69.6378 291.463 65.409C289.254 61.1555 288.15 56.126 288.15 50.3199C288.15 44.6571 289.254 39.6873 291.463 35.4103C293.67 31.1334 296.779 27.8002 300.787 25.4108C304.819 23.0215 309.547 21.8268 314.971 21.8268C318.619 21.8268 322.015 22.4122 325.159 23.583C328.327 24.7298 331.087 26.4621 333.439 28.7799C335.816 31.0975 337.664 34.0125 338.984 37.5249C340.303 41.0133 340.963 45.0992 340.963 49.7823V53.9757H294.27V44.5138H326.527C326.527 42.3156 326.047 40.3683 325.087 38.6718C324.127 36.9753 322.795 35.6493 321.091 34.6935C319.411 33.7139 317.455 33.2241 315.223 33.2241C312.895 33.2241 310.831 33.7617 309.031 34.8369C307.255 35.8882 305.863 37.3098 304.855 39.1018C303.847 40.87 303.331 42.8412 303.306 45.0155V54.0116C303.306 56.7355 303.811 59.0887 304.819 61.0719C305.851 63.0551 307.303 64.5842 309.175 65.6596C311.047 66.735 313.267 67.2722 315.835 67.2722C317.539 67.2722 319.099 67.0333 320.515 66.5556C321.931 66.0779 323.143 65.3608 324.151 64.4053C325.159 63.4493 325.927 62.2786 326.455 60.8931L340.64 61.825C339.92 65.2178 338.444 68.1805 336.212 70.7132C334.003 73.2218 331.147 75.1815 327.643 76.5911C324.163 77.9766 320.143 78.6696 315.583 78.6696ZM371.348 78.4907C367.148 78.4907 363.344 77.4153 359.936 75.265C356.552 73.0906 353.864 69.9008 351.872 65.6955C349.904 61.4661 348.92 56.2813 348.92 50.1407C348.92 43.8328 349.94 38.5882 351.98 34.4068C354.02 30.2015 356.732 27.0595 360.116 24.9808C363.524 22.8781 367.256 21.8268 371.312 21.8268C374.408 21.8268 376.988 22.3525 379.052 23.4038C381.141 24.4312 382.82 25.7215 384.092 27.2745C385.388 28.8037 386.372 30.309 387.044 31.7904H387.512V4.19331H402.813V77.5947H387.692V68.7777H387.044C386.324 70.3067 385.304 71.824 383.984 73.3295C382.688 74.8108 380.996 76.0416 378.908 77.0211C376.844 78.0007 374.324 78.4907 371.348 78.4907ZM376.208 66.3403C378.68 66.3403 380.768 65.6714 382.473 64.3335C384.201 62.9716 385.52 61.0719 386.433 58.6351C387.369 56.1977 387.837 53.3426 387.837 50.069C387.837 46.7956 387.38 43.9523 386.469 41.539C385.556 39.1258 384.237 37.2621 382.508 35.9479C380.78 34.6338 378.68 33.9767 376.208 33.9767C373.688 33.9767 371.564 34.6577 369.836 36.0196C368.108 37.3816 366.8 39.2691 365.912 41.6824C365.024 44.0956 364.58 46.8912 364.58 50.069C364.58 53.2708 365.024 56.1024 365.912 58.5633C366.824 61.0002 368.132 62.9116 369.836 64.2977C371.564 65.6596 373.688 66.3403 376.208 66.3403ZM415.422 77.5947V22.5436H430.758V77.5947H415.422ZM423.126 15.4472C420.846 15.4472 418.89 14.6946 417.258 13.1893C415.65 11.6601 414.846 9.83219 414.846 7.70567C414.846 5.60303 415.65 3.79908 417.258 2.29379C418.89 0.764597 420.846 0 423.126 0C425.406 0 427.35 0.764597 428.958 2.29379C430.591 3.79908 431.406 5.60303 431.406 7.70567C431.406 9.83219 430.591 11.6601 428.958 13.1893C427.35 14.6946 425.406 15.4472 423.126 15.4472ZM472.456 22.5436V34.0125H439.155V22.5436H472.456ZM446.716 9.35436H462.052V60.6778C462.052 62.0874 462.268 63.1863 462.7 63.9753C463.132 64.7395 463.732 65.2772 464.5 65.5878C465.292 65.8985 466.204 66.0538 467.236 66.0538C467.956 66.0538 468.676 65.9943 469.396 65.8749C470.116 65.7314 470.668 65.6237 471.052 65.5519L473.465 76.9135C472.696 77.1523 471.616 77.4271 470.224 77.7377C468.832 78.0724 467.14 78.2754 465.148 78.3472C461.452 78.4907 458.212 78.0007 455.428 76.8776C452.668 75.7545 450.52 74.0102 448.984 71.6451C447.448 69.2795 446.692 66.2926 446.716 62.6851V9.35436Z" fill="white"/>
+<path d="M217.273 157.131C211.441 157.131 206.437 155.937 202.261 153.547C198.109 151.158 194.916 147.837 192.684 143.583C190.452 139.306 189.336 134.36 189.336 128.745C189.336 123.106 190.452 118.16 192.684 113.908C194.94 109.631 198.145 106.298 202.297 103.908C206.473 101.519 211.453 100.324 217.237 100.324C222.349 100.324 226.801 101.244 230.593 103.084C234.409 104.923 237.385 107.528 239.521 110.897C241.681 114.242 242.821 118.173 242.941 122.689H226.489C226.153 119.869 225.193 117.659 223.609 116.058C222.049 114.457 220.009 113.657 217.489 113.657C215.449 113.657 213.66 114.23 212.125 115.377C210.589 116.5 209.389 118.173 208.525 120.395C207.684 122.593 207.265 125.317 207.265 128.567C207.265 131.816 207.684 134.564 208.525 136.809C209.389 139.032 210.589 140.716 212.125 141.863C213.66 142.986 215.449 143.547 217.489 143.547C219.121 143.547 220.561 143.201 221.809 142.508C223.081 141.815 224.125 140.8 224.941 139.462C225.757 138.1 226.273 136.451 226.489 134.516H242.941C242.773 139.056 241.633 143.022 239.521 146.415C237.433 149.808 234.493 152.448 230.701 154.335C226.933 156.199 222.457 157.131 217.273 157.131ZM267.539 157.023C264.01 157.023 260.878 156.438 258.142 155.267C255.43 154.073 253.282 152.281 251.699 149.891C250.139 147.478 249.358 144.456 249.358 140.824C249.358 137.765 249.899 135.185 250.978 133.082C252.059 130.98 253.547 129.271 255.442 127.957C257.339 126.643 259.523 125.651 261.995 124.983C264.467 124.29 267.107 123.824 269.915 123.585C273.059 123.298 275.591 122.999 277.511 122.689C279.431 122.354 280.823 121.888 281.687 121.291C282.575 120.67 283.019 119.797 283.019 118.675V118.495C283.019 116.656 282.383 115.234 281.111 114.23C279.839 113.227 278.123 112.725 275.963 112.725C273.635 112.725 271.763 113.227 270.347 114.23C268.931 115.234 268.031 116.62 267.647 118.388L251.41 117.814C251.89 114.469 253.126 111.483 255.118 108.854C257.135 106.202 259.894 104.123 263.399 102.618C266.927 101.089 271.163 100.324 276.107 100.324C279.635 100.324 282.887 100.742 285.863 101.579C288.839 102.391 291.431 103.586 293.639 105.163C295.847 106.715 297.551 108.627 298.752 110.897C299.975 113.167 300.588 115.76 300.588 118.675V156.092H284.027V148.422H283.595C282.611 150.285 281.351 151.863 279.815 153.153C278.303 154.443 276.515 155.411 274.451 156.056C272.411 156.701 270.107 157.023 267.539 157.023ZM272.975 145.555C274.871 145.555 276.575 145.172 278.087 144.408C279.623 143.643 280.847 142.592 281.759 141.254C282.671 139.892 283.127 138.315 283.127 136.523V131.29C282.623 131.553 282.011 131.792 281.291 132.007C280.595 132.222 279.827 132.425 278.987 132.617C278.147 132.808 277.283 132.975 276.395 133.118C275.507 133.261 274.655 133.393 273.839 133.513C272.183 133.775 270.767 134.181 269.591 134.731C268.439 135.28 267.551 135.997 266.927 136.881C266.327 137.741 266.027 138.769 266.027 139.963C266.027 141.78 266.674 143.166 267.971 144.121C269.291 145.077 270.959 145.555 272.975 145.555ZM328.956 124.695V156.092H311.352V101.041H328.092V111.148H328.704C329.928 107.779 332.016 105.139 334.968 103.227C337.92 101.292 341.436 100.324 345.516 100.324C349.405 100.324 352.776 101.196 355.633 102.94C358.513 104.661 360.745 107.074 362.329 110.18C363.937 113.263 364.728 116.87 364.705 121.004V156.092H347.1V124.445C347.124 121.386 346.344 118.997 344.76 117.277C343.2 115.556 341.028 114.696 338.244 114.696C336.396 114.696 334.764 115.102 333.348 115.915C331.956 116.703 330.876 117.838 330.108 119.319C329.364 120.801 328.98 122.593 328.956 124.695ZM391.192 157.023C387.664 157.023 384.532 156.438 381.796 155.267C379.084 154.073 376.936 152.281 375.352 149.891C373.792 147.478 373.012 144.456 373.012 140.824C373.012 137.765 373.552 135.185 374.632 133.082C375.712 130.98 377.2 129.271 379.096 127.957C380.992 126.643 383.176 125.651 385.648 124.983C388.12 124.29 390.76 123.824 393.568 123.585C396.712 123.298 399.244 122.999 401.164 122.689C403.084 122.354 404.476 121.888 405.34 121.291C406.229 120.67 406.672 119.797 406.672 118.675V118.495C406.672 116.656 406.037 115.234 404.764 114.23C403.493 113.227 401.776 112.725 399.617 112.725C397.288 112.725 395.416 113.227 394 114.23C392.584 115.234 391.684 116.62 391.3 118.388L375.064 117.814C375.544 114.469 376.78 111.483 378.772 108.854C380.788 106.202 383.548 104.123 387.052 102.618C390.58 101.089 394.816 100.324 399.76 100.324C403.289 100.324 406.541 100.742 409.517 101.579C412.493 102.391 415.085 103.586 417.293 105.163C419.501 106.715 421.205 108.627 422.405 110.897C423.629 113.167 424.241 115.76 424.241 118.675V156.092H407.681V148.422H407.249C406.265 150.285 405.005 151.863 403.468 153.153C401.957 154.443 400.168 155.411 398.104 156.056C396.064 156.701 393.76 157.023 391.192 157.023ZM396.628 145.555C398.524 145.555 400.228 145.172 401.74 144.408C403.276 143.643 404.501 142.592 405.413 141.254C406.324 139.892 406.781 138.315 406.781 136.523V131.29C406.277 131.553 405.664 131.792 404.944 132.007C404.248 132.222 403.481 132.425 402.64 132.617C401.801 132.808 400.936 132.975 400.048 133.118C399.16 133.261 398.308 133.393 397.492 133.513C395.836 133.775 394.42 134.181 393.244 134.731C392.092 135.28 391.204 135.997 390.58 136.881C389.98 137.741 389.68 138.769 389.68 139.963C389.68 141.78 390.328 143.166 391.624 144.121C392.944 145.077 394.612 145.555 396.628 145.555ZM435.005 156.092V101.041H452.106V111.076H452.681C453.689 107.444 455.333 104.745 457.614 102.976C459.894 101.184 462.546 100.288 465.57 100.288C466.386 100.288 467.226 100.348 468.09 100.468C468.954 100.563 469.758 100.718 470.502 100.933V116.166C469.662 115.879 468.558 115.652 467.19 115.485C465.846 115.317 464.645 115.234 463.589 115.234C461.502 115.234 459.618 115.7 457.938 116.631C456.282 117.539 454.973 118.818 454.014 120.467C453.078 122.091 452.61 124.002 452.61 126.201V156.092H435.005ZM490.122 176.736C488.01 176.736 486.018 176.568 484.146 176.234C482.274 175.924 480.666 175.505 479.322 174.98L483.21 162.256C484.938 162.83 486.498 163.164 487.89 163.26C489.306 163.355 490.518 163.128 491.526 162.579C492.558 162.053 493.35 161.109 493.902 159.747L494.586 158.099L474.93 101.041H493.362L503.55 140.322H504.127L514.459 101.041H532.999L512.155 161.36C511.146 164.371 509.719 167.023 507.871 169.317C506.047 171.635 503.682 173.45 500.778 174.765C497.899 176.079 494.346 176.736 490.122 176.736Z" fill="#FFD600"/>
+<path d="M70.4013 157.962C109.283 157.962 140.803 126.582 140.803 87.8739C140.803 49.1655 109.283 17.7861 70.4013 17.7861C31.5198 17.7861 0 49.1655 0 87.8739C0 126.582 31.5198 157.962 70.4013 157.962Z" fill="#FFD600"/>
+<path d="M129.548 29.23L123.101 60.3269L98.3125 35.649L129.548 29.23Z" fill="white"/>
+        </svg>
+        <p class="text-sm text-slate-400 leading-relaxed max-w-xs mb-4">AI-first credit risk and payments — unified for optimal business performance.</p>
+        <a href="/demo" class="inline-flex items-center gap-2 bg-canary text-navy text-sm font-bold px-4 py-2 rounded-xl hover:bg-canary-dark">Book a Demo →</a>
+      </div>
+      <div class="flex-1 grid grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Platform & Industries -->
+      <div>
+        <div class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3">Platform</div>
+        <ul class="space-y-2 mb-6">
+          <li><a href="/platform"   class="text-sm text-slate-400 hover:text-white transition-colors whitespace-nowrap">Platform</a></li>
+          <li><a href="/developers" class="text-sm text-slate-400 hover:text-white transition-colors whitespace-nowrap">Developer Documentation</a></li>
+        </ul>
+        <div class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3">Industries</div>
+        <ul class="space-y-2">
+          <li><a href="/audience/banks"              class="text-sm text-slate-400 hover:text-white transition-colors whitespace-nowrap">Banks</a></li>
+          <li><a href="/audience/brokers"            class="text-sm text-slate-400 hover:text-white transition-colors whitespace-nowrap">Brokers</a></li>
+          <li><a href="/audience/building-societies" class="text-sm text-slate-400 hover:text-white transition-colors whitespace-nowrap">Building Societies</a></li>
+          <li><a href="/audience/credit-unions"        class="text-sm text-slate-400 hover:text-white transition-colors whitespace-nowrap">Credit Unions</a></li>
+          <li><a href="/audience/direct-lenders"     class="text-sm text-slate-400 hover:text-white transition-colors whitespace-nowrap">Direct Lenders</a></li>
+          <li><a href="/audience/marketplaces"       class="text-sm text-slate-400 hover:text-white transition-colors whitespace-nowrap">Marketplaces</a></li>
+          <li><a href="/audience/sme-lenders"        class="text-sm text-slate-400 hover:text-white transition-colors whitespace-nowrap">SME Lenders</a></li>
+          <li><a href="/audience/utilities"          class="text-sm text-slate-400 hover:text-white transition-colors whitespace-nowrap">Utilities</a></li>
+        </ul>
+      </div>
+      <!-- Use Cases -->
+      <div>
+        <div class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3">Use Cases</div>
+        <ul class="space-y-2">
+          <li><a href="/use-cases/income-identification"       class="text-sm text-slate-400 hover:text-white transition-colors whitespace-nowrap">Income Identification</a></li>
+          <li><a href="/use-cases/affordability-analysis"      class="text-sm text-slate-400 hover:text-white transition-colors whitespace-nowrap">Affordability Analysis</a></li>
+          <li><a href="/use-cases/collections-optimisation"    class="text-sm text-slate-400 hover:text-white transition-colors whitespace-nowrap">Collections Optimisation</a></li>
+          <li><a href="/use-cases/complex-case-decisioning"    class="text-sm text-slate-400 hover:text-white transition-colors whitespace-nowrap">Complex Case Decisioning</a></li>
+          <li><a href="/use-cases/payments-automation"         class="text-sm text-slate-400 hover:text-white transition-colors whitespace-nowrap">Payments Automation</a></li>
+          <li><a href="/use-cases/straight-through-processing" class="text-sm text-slate-400 hover:text-white transition-colors whitespace-nowrap">Straight Through Processing</a></li>
+          <li><a href="/use-cases/smart-origination"           class="text-sm text-slate-400 hover:text-white transition-colors whitespace-nowrap">Smart Origination</a></li>
+        </ul>
+      </div>
+      <!-- Company -->
+      <div>
+        <div class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3">Company</div>
+        <ul class="space-y-2">
+          <li><a href="/resources/news" class="text-sm text-slate-400 hover:text-white transition-colors whitespace-nowrap">Resources</a></li>
+          <li><a href="/about"     class="text-sm text-slate-400 hover:text-white transition-colors whitespace-nowrap">About</a></li>
+          <li><a href="/careers"   class="text-sm text-slate-400 hover:text-white transition-colors whitespace-nowrap">Join the Team</a></li>
+          <li><a href="/privacy"   class="text-sm text-slate-400 hover:text-white transition-colors whitespace-nowrap">Privacy Policy</a></li>
+          <li><a href="/terms"     class="text-sm text-slate-400 hover:text-white transition-colors whitespace-nowrap">Terms of Use</a></li>
+        </ul>
+      </div>
+
+      <!-- Connect with us -->
+      <div>
+        <div class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-4">Connect with us</div>
+        <ul class="space-y-3">
+          <li>
+            <a aria-label="LinkedIn" href="https://www.linkedin.com/company/credit-canary/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2.5 text-sm text-slate-400 hover:text-white transition-colors group">
+              <span class="w-7 h-7 rounded-lg bg-slate-800 border border-slate-700 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0A66C2] group-hover:border-[#0A66C2] transition-colors">
+                <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </span>
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a href="mailto:hello@creditcanary.co.uk" class="flex items-center gap-2.5 text-sm text-slate-400 hover:text-white transition-colors group">
+              <span class="w-7 h-7 rounded-lg bg-slate-800 border border-slate-700 flex items-center justify-center flex-shrink-0 group-hover:bg-navy group-hover:border-navy transition-colors">
+                <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              </span>
+              hello@creditcanary.co.uk
+            </a>
+          </li>
+        </ul>
+      </div>
+      </div><!-- /nav grid -->
+    </div><!-- /footer flex row -->
+
+    <!-- Footer security badges row -->
+    <div class="border-t border-slate-800 pt-6 pb-4">
+      <div class="flex flex-wrap items-center gap-4">
+        <p class="text-xs text-slate-400">© 2026 Credit Canary Limited. All Rights Reserved. Credit Canary Limited is registered in England &amp; Wales under company number 14117508.</p></div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ================================================================ JS ================================================================ -->
+<script>
+  function switchAgent(id) {
+    /* Batch all DOM writes to avoid forced reflow */
+    requestAnimationFrame(function(){
+      document.querySelectorAll('.ai-tab-btn').forEach(function(b){ b.classList.remove('active'); });
+      document.querySelectorAll('.ai-panel').forEach(function(p){ p.classList.remove('active'); });
+      var panel = document.getElementById('panel-' + id);
+      if(panel) panel.classList.add('active');
+      var match = "switchAgent('"+id+"')";
+      document.querySelectorAll('.ai-tab-btn').forEach(function(b){ if(b.getAttribute('onclick') === match) b.classList.add('active'); });
+    });
+  }
+</script>
+
+  <script>
+    function switchFeat(id) {
+    var colorMap = {
+      originate:   { bg:'#7c3aed', light:'#f5f3ff', text:'#6d28d9' },
+      unify:       { bg:'#0d9488', light:'#f0fdfa', text:'#0f766e' },
+      decide:      { bg:'#2563eb', light:'#eff6ff', text:'#1d4ed8' },
+      pay:         { bg:'#0891b2', light:'#ecfeff', text:'#0e7490' },
+      act:         { bg:'#ea580c', light:'#fff7ed', text:'#c2410c' },
+      performance: { bg:'#9333ea', light:'#faf5ff', text:'#7e22ce' }
+    };
+    // Hide all panels
+    document.querySelectorAll('.module-feat-panel').forEach(function(p){ p.classList.add('hidden'); });
+    // Reset all tabs to inactive
+    document.querySelectorAll('.module-feat-tab').forEach(function(b){
+      var m = b.getAttribute('data-module');
+      var c = colorMap[m];
+      if (c) { b.style.background = c.light; b.style.color = c.text; b.style.boxShadow = 'none'; }
+      b.classList.remove('active');
+    });
+    // Show active panel
+    var panel = document.getElementById('feat-' + id);
+    if (panel) { panel.classList.remove('hidden'); }
+    // Style active tab
+    var btn = document.querySelector('.module-feat-tab[data-module="'+id+'"]');
+    var c = colorMap[id];
+    if (btn && c) { btn.style.background = c.bg; btn.style.color = '#ffffff'; btn.style.boxShadow = '0 4px 14px -3px ' + c.bg + '66'; btn.classList.add('active'); }
+  }
+  function switchModule(moduleName) {
+      // Hide all module sections
+      document.querySelectorAll('.module-section').forEach(section => {
+        section.classList.remove('active');
+      });
+      
+      // Deactivate all tabs
+      document.querySelectorAll('.module-tab').forEach(tab => {
+        tab.classList.remove('active');
+      });
+      
+      // Show the selected module section
+      const section = document.getElementById(moduleName) || document.getElementById('section-' + moduleName);
+      if (section) {
+        section.classList.add('active');
+      }
+      
+      // Activate the corresponding tab
+      const tab = document.getElementById('tab-' + moduleName);
+      if (tab) {
+        tab.classList.add('active');
+      }
+      
+      // Scroll to module content if on mobile
+      if (window.innerWidth < 1024) {
+        const scrollTarget = section || tab;
+        if (scrollTarget) {
+          scrollTarget.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+      }
+    }
+  </script>
+
+  <script>
+  </script>
+
+<script>
+(function(){
+  var btn=document.getElementById('mobile-menu-btn');
+  var menu=document.getElementById('mobile-menu');
+  var hIcon=document.getElementById('hamburger-icon');
+  var cIcon=document.getElementById('close-icon');
+  if(!btn||!menu)return;
+  var scrollY=0;
+  function preventBodyScroll(e){
+    if(menu.contains(e.target))return;
+    e.preventDefault();
+  }
+  btn.addEventListener('click',function(){
+    var open=!menu.classList.contains('hidden');
+    menu.classList.toggle('hidden');
+    hIcon.classList.toggle('hidden');
+    cIcon.classList.toggle('hidden');
+    /* Lock/unlock body scroll when mobile menu is open */
+    if(!open){
+      scrollY=window.pageYOffset;
+      document.body.style.overflow='hidden';
+      document.body.style.position='fixed';
+      document.body.style.top='-'+scrollY+'px';
+      document.body.style.left='0';
+      document.body.style.right='0';
+      document.body.style.width='100%';
+      document.addEventListener('touchmove',preventBodyScroll,{passive:false});
+    } else {
+      document.body.style.overflow='';
+      document.body.style.position='';
+      document.body.style.top='';
+      document.body.style.left='';
+      document.body.style.right='';
+      document.body.style.width='';
+      window.scrollTo(0,scrollY);
+      document.removeEventListener('touchmove',preventBodyScroll);
+    }
+  });
+  var accBtns=document.querySelectorAll('.mobile-acc-btn');
+  accBtns.forEach(function(b){
+    b.addEventListener('click',function(){
+      var panel=b.nextElementSibling;
+      var chev=b.querySelector('.mobile-acc-chevron');
+      var wasOpen=!panel.classList.contains('hidden');
+      /* Close all other accordions first */
+      accBtns.forEach(function(ob){
+        if(ob!==b){
+          var op=ob.nextElementSibling;
+          var oc=ob.querySelector('.mobile-acc-chevron');
+          op.classList.add('hidden');
+          oc.style.transform='';
+          ob.setAttribute('aria-expanded','false');
+        }
+      });
+      /* Toggle this one */
+      if(wasOpen){panel.classList.add('hidden');chev.style.transform='';b.setAttribute('aria-expanded','false');}
+      else{panel.classList.remove('hidden');chev.style.transform='rotate(180deg)';b.setAttribute('aria-expanded','true');}
+    });
+  });
+  /* Desktop mega-dropdown: toggle aria-expanded on hover */
+  document.querySelectorAll('.mega-trigger, .dropdown-trigger').forEach(function(t){
+    var btn=t.querySelector('button');
+    if(!btn)return;
+    t.addEventListener('mouseenter',function(){btn.setAttribute('aria-expanded','true');});
+    t.addEventListener('mouseleave',function(){btn.setAttribute('aria-expanded','false');});
+  });
+})();
+</script>
+
+<!-- ============ COOKIE CONSENT BANNER ============ -->
+<div id="cookie-banner" style="display:none; position:fixed; bottom:0; left:0; right:0; z-index:9999; background:#002244; border-top:1px solid rgba(255,255,255,.1); padding:16px 24px; font-family:'Inter',sans-serif;">
+  <div style="max-width:1280px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:24px; flex-wrap:wrap;">
+    <p style="margin:0; color:#cbd5e1; font-size:14px; line-height:1.5; flex:1; min-width:240px;">We use cookies to analyse site traffic and improve your experience. See our <a href="/privacy" style="color:#FFD600; text-decoration:underline; text-underline-offset:2px;">Privacy Policy</a>.</p>
+    <div style="display:flex; gap:10px; flex-shrink:0;">
+      <button onclick="setCookieConsent('rejected')" style="background:transparent; border:1px solid rgba(255,255,255,.2); color:#e2e8f0; font-size:13px; font-weight:600; padding:8px 18px; border-radius:10px; cursor:pointer; font-family:'Inter',sans-serif; transition:border-color .2s;" onmouseover="this.style.borderColor='#FFD600';this.style.color='#FFD600'" onmouseout="this.style.borderColor='rgba(255,255,255,.2)';this.style.color='#e2e8f0'">Reject All</button>
+      <button onclick="setCookieConsent('accepted')" style="background:#FFD600; border:none; color:#002244; font-size:13px; font-weight:700; padding:8px 18px; border-radius:10px; cursor:pointer; font-family:'Inter',sans-serif; transition:background .2s;" onmouseover="this.style.background='#e6c100'" onmouseout="this.style.background='#FFD600'">Accept All</button>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  function getCookie(n){var m=document.cookie.match(new RegExp('(^| )'+n+'=([^;]+)'));return m?m[2]:null;}
+  function setCookieConsent(v){
+    document.cookie='cc_consent='+v+';path=/;max-age='+60*60*24*365+';SameSite=Lax';
+    document.getElementById('cookie-banner').style.display='none';
+  }
+  window.setCookieConsent=setCookieConsent;
+  if(!getCookie('cc_consent')){document.getElementById('cookie-banner').style.display='block';}
+})();
+</script>
+<!-- ============ END COOKIE CONSENT ============ -->
+</body>
+</html>
