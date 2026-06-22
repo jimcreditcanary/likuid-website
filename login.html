@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="theme-color" content="#08090a" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="robots" content="noindex" />
+  <meta name="description" content="Sign in to Likuid." />
+  <title>Sign in — Likuid</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      fontFamily: { sans: ['Inter','sans-serif'] },
+      colors: { ink:{DEFAULT:'#08090a',900:'#0a0b0d',800:'#101113',700:'#16181b',600:'#1d1f23'}, brand:{cyan:'#44D9DE',sky:'#43CFE2',blue:'#3FA9F5'}, mute:'#8a8f98' },
+      boxShadow: { glow:'0 0 80px -20px rgba(63,169,245,0.45)' } } } };
+  </script>
+  <link rel="stylesheet" href="/css/likuid.css">
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body class="bg-ink text-slate-100 antialiased selection:bg-brand-blue/30 grain">
+
+<div class="min-h-screen flex flex-col items-center justify-center px-6 py-12">
+  <a href="/" aria-label="Likuid home" class="mb-8"><img src="/logo.svg" alt="Likuid" style="height:30px;width:auto;display:block;" /></a>
+
+  <div class="w-full max-w-sm">
+    <div class="relative rounded-3xl overflow-hidden hairline bg-gradient-to-b from-white/[0.05] to-white/[0.01] p-8">
+      <div class="absolute -top-16 left-1/2 -translate-x-1/2 w-72 h-40 bg-brand-blue/20 blur-3xl rounded-full pointer-events-none"></div>
+      <div class="relative">
+        <h1 class="text-2xl font-extrabold text-white mb-1 text-center">Welcome back</h1>
+        <p class="text-sm text-slate-400 text-center mb-7">Sign in to your Likuid console.</p>
+
+        <form id="login-form" novalidate>
+          <div class="mb-4"><label class="lbl" for="l-email">Work email</label><input id="l-email" type="email" required autocomplete="email" placeholder="you@company.com" class="fld" /></div>
+          <div class="mb-2"><label class="lbl" for="l-pass">Password</label><input id="l-pass" type="password" required autocomplete="current-password" placeholder="••••••••" class="fld" /></div>
+          <div class="flex justify-end mb-5"><a href="#" class="text-xs text-slate-400 hover:text-white">Forgot password?</a></div>
+          <button type="submit" class="btn-primary w-full inline-flex items-center justify-center gap-2 font-semibold px-6 py-3.5 rounded-xl text-sm">Sign in
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></button>
+          <p id="login-msg" class="text-sm text-center min-h-[20px] mt-3 text-slate-400" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+
+    <p class="text-center text-sm text-slate-500 mt-6">Don't have an account? <a href="/demo" class="text-brand-blue hover:underline font-semibold">Book a demo</a></p>
+  </div>
+</div>
+
+<script>
+  (function(){
+    var f=document.getElementById('login-form'), m=document.getElementById('login-msg');
+    f.addEventListener('submit',function(e){ e.preventDefault(); m.style.color='#8a8f98'; m.textContent='This is a demo sign-in — the console isn’t connected yet.'; });
+  })();
+</script>
+</body>
+</html>

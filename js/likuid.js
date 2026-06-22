@@ -1,6 +1,6 @@
-/* Likuid shared JS — mobile menu + lead-capture form. */
+/* Likuid shared JS — mobile menu, tab switchers, lead-capture form. */
 (function () {
-  // Mobile menu
+  // ---- Mobile menu ----
   var btn = document.getElementById('mobile-menu-btn');
   var menu = document.getElementById('mobile-menu');
   var hIcon = document.getElementById('hamburger-icon');
@@ -20,12 +20,46 @@
     });
   }
 
-  // Lead capture → /api/subscribe (Veepveep CRM). Any page with #lead-form.
+  // ---- AI agents tab switcher (home) ----
+  window.switchAgent = function (id) {
+    document.querySelectorAll('.ai-panel').forEach(function (p) { p.style.display = 'none'; p.classList.remove('active'); });
+    document.querySelectorAll('.ai-tab').forEach(function (b) { b.classList.remove('active'); });
+    var panel = document.getElementById('panel-' + id);
+    if (panel) { panel.style.display = 'grid'; panel.classList.add('active'); }
+    var match = "switchAgent('" + id + "')";
+    document.querySelectorAll('.ai-tab').forEach(function (b) { if (b.getAttribute('onclick') === match) b.classList.add('active'); });
+  };
+
+  // ---- Module feature tab switcher (platform) ----
+  window.switchFeat = function (id) {
+    document.querySelectorAll('.feat-panel').forEach(function (p) { p.classList.remove('active'); });
+    document.querySelectorAll('.feat-tab').forEach(function (b) { b.classList.remove('active'); });
+    var panel = document.getElementById('feat-' + id);
+    if (panel) panel.classList.add('active');
+    var match = "switchFeat('" + id + "')";
+    document.querySelectorAll('.feat-tab').forEach(function (b) { if (b.getAttribute('onclick') === match) b.classList.add('active'); });
+  };
+
+  // ---- Lead capture → /api/subscribe (Veepveep CRM) ----
   var form = document.getElementById('lead-form');
   if (!form) return;
   var msg = document.getElementById('lead-message');
   var submit = document.getElementById('lead-submit');
+  var success = document.getElementById('lead-success');   // takeover panel (optional)
+  var again = document.getElementById('lead-again');        // "submit another" button (optional)
+
   function val(n) { var el = form.querySelector('[name="' + n + '"]'); return el ? el.value.trim() : ''; }
+
+  if (again && success) {
+    again.addEventListener('click', function () {
+      success.classList.add('hidden');
+      form.classList.remove('hidden');
+      form.reset();
+      var first = form.querySelector('input:not([type=hidden]):not([tabindex="-1"])');
+      if (first) first.focus();
+    });
+  }
+
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     var data = {
@@ -38,25 +72,25 @@
     };
     var required = ['firstName', 'lastName', 'jobTitle', 'company', 'email', 'mobile'];
     for (var i = 0; i < required.length; i++) {
-      if (!data[required[i]]) { msg.textContent = 'Please complete all fields.'; msg.style.color = '#fda4af'; return; }
+      if (!data[required[i]]) { if (msg) { msg.textContent = 'Please complete all fields.'; msg.style.color = '#fda4af'; } return; }
     }
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) { msg.textContent = 'Please enter a valid email address.'; msg.style.color = '#fda4af'; return; }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) { if (msg) { msg.textContent = 'Please enter a valid email address.'; msg.style.color = '#fda4af'; } return; }
     submit.disabled = true; submit.style.opacity = '0.6';
-    msg.textContent = 'Sending…'; msg.style.color = '#8a8f98';
+    if (msg) { msg.textContent = 'Sending…'; msg.style.color = '#8a8f98'; }
     fetch('/api/subscribe', {
       method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data)
     }).then(function (r) { return r.json().then(function (d) { return { ok: r.ok, d: d }; }); })
       .then(function (res) {
         if (res.ok) {
+          if (msg) msg.textContent = '';
           form.reset();
-          msg.textContent = form.getAttribute('data-success') || 'Thanks — we\'ll be in touch shortly.';
-          msg.style.color = '#44D9DE';
-          if (form.getAttribute('data-mode') === 'rapid') { setTimeout(function () { msg.textContent = ''; var f = form.querySelector('input'); if (f) f.focus(); }, 1800); }
-        } else {
+          if (success) { form.classList.add('hidden'); success.classList.remove('hidden'); success.scrollIntoView({ block: 'nearest' }); }
+          else if (msg) { msg.textContent = "Thanks — we'll be in touch shortly."; msg.style.color = '#44D9DE'; }
+        } else if (msg) {
           msg.textContent = (res.d && res.d.error) || 'Something went wrong. Please email hello@likuid.ai.'; msg.style.color = '#fda4af';
         }
       }).catch(function () {
-        msg.textContent = 'Something went wrong. Please email hello@likuid.ai.'; msg.style.color = '#fda4af';
+        if (msg) { msg.textContent = 'Something went wrong. Please email hello@likuid.ai.'; msg.style.color = '#fda4af'; }
       }).finally(function () { submit.disabled = false; submit.style.opacity = '1'; });
   });
 })();
