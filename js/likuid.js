@@ -1,5 +1,30 @@
-/* Likuid shared JS — mobile menu, tab switchers, lead-capture form. */
+/* Likuid shared JS — mobile menu, tab switchers, lead-capture form, motion. */
 (function () {
+  // ---- Header strengthens on scroll ----
+  var header = document.querySelector('header');
+  if (header) {
+    var onScroll = function () { header.classList.toggle('scrolled', window.scrollY > 8); };
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+  }
+
+  // ---- Scroll-reveal (sections fade/slide in) ----
+  try {
+    document.documentElement.classList.add('js-reveal');
+    var targets = [];
+    document.querySelectorAll('main > section').forEach(function (s, i) { if (i > 0) targets.push(s); });
+    var footer = document.querySelector('body > footer');
+    if (footer) targets.push(footer);
+    if ('IntersectionObserver' in window && targets.length) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); } });
+      }, { rootMargin: '0px 0px -7% 0px', threshold: 0.06 });
+      targets.forEach(function (t) { t.classList.add('reveal'); io.observe(t); });
+    } else {
+      document.documentElement.classList.remove('js-reveal');
+    }
+  } catch (e) { document.documentElement.classList.remove('js-reveal'); }
+
   // ---- Mobile menu ----
   var btn = document.getElementById('mobile-menu-btn');
   var menu = document.getElementById('mobile-menu');
