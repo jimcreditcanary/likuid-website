@@ -90,6 +90,7 @@
     var data = {
       firstName: val('firstName'), lastName: val('lastName'), jobTitle: val('jobTitle'),
       company: val('company'), email: val('email'), mobile: val('mobile'),
+      notes: val('notes'),
       website: val('website'),
       source: form.getAttribute('data-source') || 'likuid-website',
       asset: form.getAttribute('data-asset') || 'Website enquiry',

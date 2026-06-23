@@ -65,7 +65,7 @@ function buildText() {
 }
 
 // Push the lead into the Veepveep CRM. Fail-open: never throws.
-async function pushLeadToCrm({ email, name, jobTitle, company, phone, source, asset, pageUrl }) {
+async function pushLeadToCrm({ email, name, jobTitle, company, phone, source, asset, message, pageUrl }) {
   const key = (process.env.LEAD_API_KEY || "").trim();
   if (!key) {
     console.warn("LEAD_API_KEY not set — skipping CRM lead push");
@@ -81,6 +81,7 @@ async function pushLeadToCrm({ email, name, jobTitle, company, phone, source, as
       source: source || "likuid-website",
       asset: asset || "Website enquiry",
       kind: "enquiry",
+      message: message || undefined,
       url: pageUrl || `${SITE_URL}/`,
     };
     const crmRes = await fetch("https://www.veepveep.co.uk/api/leads", {
@@ -165,6 +166,7 @@ module.exports = async function handler(req, res) {
   const phone = str(body.mobile || body.phone);
   const source = str(body.source);
   const asset = str(body.asset);
+  const message = str(body.notes || body.message);
   const pageUrl = str(body.url);
   const honeypot = str(body.website);
 
@@ -181,7 +183,7 @@ module.exports = async function handler(req, res) {
 
   try {
     // CRM push + optional confirmation email, both fail-open.
-    await pushLeadToCrm({ email, name, jobTitle, company, phone, source, asset, pageUrl });
+    await pushLeadToCrm({ email, name, jobTitle, company, phone, source, asset, message, pageUrl });
     await sendConfirmation(email, company);
     res.status(200).json({ ok: true });
   } catch (err) {
