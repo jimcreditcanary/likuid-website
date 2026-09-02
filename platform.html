@@ -18,26 +18,9 @@
   <meta name="twitter:description" content="One connected system for credit risk and payments." />
   <title>Platform — Likuid</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: { sans: ['Inter', 'sans-serif'] },
-          colors: {
-            ink:   { DEFAULT: '#08090a', 900: '#0a0b0d', 800: '#101113', 700: '#16181b', 600: '#1d1f23' },
-            brand: { cyan: '#44D9DE', sky: '#43CFE2', blue: '#3FA9F5' },
-            mute:  '#8a8f98',
-          },
-          boxShadow: { glow: '0 0 80px -20px rgba(63,169,245,0.45)' },
-        },
-      },
-    };
-  </script>
+  <link rel="stylesheet" href="/dist/tailwind.css">
 
   <style>
     html { scroll-behavior: smooth; }
@@ -88,7 +71,7 @@
 <header class="fixed top-0 inset-x-0 z-50 border-b border-white/5 bg-ink/70 backdrop-blur-xl">
   <div class="max-w-7xl mx-auto px-6 lg:px-8">
     <div class="flex items-center justify-between h-16">
-      <a href="/" class="flex items-center flex-shrink-0" aria-label="Likuid home"><img src="/logo.svg" alt="Likuid" style="height:26px;width:auto;display:block;" /></a>
+      <a href="/" class="flex items-center flex-shrink-0" aria-label="Likuid home"><img src="/logo.svg" width="1907" height="425" alt="Likuid" style="height:26px;width:auto;display:block;" /></a>
       <div class="flex items-center gap-5 lg:gap-6">
         <nav class="hidden lg:flex items-center gap-7" aria-label="Main">
           <a href="/platform" class="nav-link">Platform</a>
@@ -189,24 +172,24 @@
         <div class="rounded-xl border border-white/10 bg-white/[0.03] p-4">
           <div class="flex items-center justify-between mb-3"><div class="font-bold text-brand-cyan text-sm">Data Marketplace</div><span class="text-xs text-slate-500">New integrations added regularly</span></div>
           <div class="flex flex-wrap gap-2">
-            <span class="w-11 h-11 rounded-lg bg-white flex items-center justify-center p-1.5"><img src="images/platform-img-1.png" alt="Open Banking" loading="lazy" class="max-w-full max-h-full object-contain" /></span>
-            <span class="w-11 h-11 rounded-lg bg-white flex items-center justify-center p-1.5"><img src="images/home-img-21.jpg" alt="ID Verification" loading="lazy" class="max-w-full max-h-full object-contain" /></span>
-            <span class="w-11 h-11 rounded-lg bg-white flex items-center justify-center p-1.5"><img src="images/platform-img-3.png" alt="Experian" loading="lazy" class="max-w-full max-h-full object-contain" /></span>
-            <span class="w-11 h-11 rounded-lg bg-white flex items-center justify-center p-1.5"><img src="images/home-img-22.jpg" alt="Companies House" loading="lazy" class="max-w-full max-h-full object-contain" /></span>
-            <span class="w-11 h-11 rounded-lg bg-white flex items-center justify-center p-1.5"><img src="images/platform-img-5.jpg" alt="Finastra" loading="lazy" class="max-w-full max-h-full object-contain" /></span>
-            <span class="w-11 h-11 rounded-lg bg-white flex items-center justify-center p-1.5"><img src="images/platform-img-6.jpg" alt="Salt Edge" loading="lazy" class="max-w-full max-h-full object-contain" /></span>
-            <span class="w-11 h-11 rounded-lg bg-white flex items-center justify-center p-1.5"><img src="images/home-img-24.jpg" alt="TransUnion" loading="lazy" class="max-w-full max-h-full object-contain" /></span>
-            <span class="w-11 h-11 rounded-lg bg-white flex items-center justify-center p-1.5"><img src="images/home-img-25.jpg" alt="HMRC" loading="lazy" class="max-w-full max-h-full object-contain" /></span>
-            <span class="w-11 h-11 rounded-lg bg-white flex items-center justify-center p-1.5"><img src="images/platform-img-9.webp" alt="Postcoder" loading="lazy" class="max-w-full max-h-full object-contain" /></span>
+            <span class="w-11 h-11 rounded-lg bg-white flex items-center justify-center p-1.5"><img src="images/platform-img-1.png" width="225" height="225" alt="Open Banking" loading="lazy" class="max-w-full max-h-full object-contain" /></span>
+            <span class="w-11 h-11 rounded-lg bg-white flex items-center justify-center p-1.5"><img src="images/home-img-21.jpg" width="90" height="90" alt="ID Verification" loading="lazy" class="max-w-full max-h-full object-contain" /></span>
+            <span class="w-11 h-11 rounded-lg bg-white flex items-center justify-center p-1.5"><img src="images/platform-img-3.png" width="316" height="316" alt="Experian" loading="lazy" class="max-w-full max-h-full object-contain" /></span>
+            <span class="w-11 h-11 rounded-lg bg-white flex items-center justify-center p-1.5"><img src="images/home-img-22.jpg" width="400" height="400" alt="Companies House" loading="lazy" class="max-w-full max-h-full object-contain" /></span>
+            <span class="w-11 h-11 rounded-lg bg-white flex items-center justify-center p-1.5"><img src="images/platform-img-5.jpg" width="400" height="400" alt="Finastra" loading="lazy" class="max-w-full max-h-full object-contain" /></span>
+            <span class="w-11 h-11 rounded-lg bg-white flex items-center justify-center p-1.5"><img src="images/platform-img-6.jpg" width="179" height="179" alt="Salt Edge" loading="lazy" class="max-w-full max-h-full object-contain" /></span>
+            <span class="w-11 h-11 rounded-lg bg-white flex items-center justify-center p-1.5"><img src="images/home-img-24.jpg" width="400" height="400" alt="TransUnion" loading="lazy" class="max-w-full max-h-full object-contain" /></span>
+            <span class="w-11 h-11 rounded-lg bg-white flex items-center justify-center p-1.5"><img src="images/home-img-25.jpg" width="400" height="400" alt="HMRC" loading="lazy" class="max-w-full max-h-full object-contain" /></span>
+            <span class="w-11 h-11 rounded-lg bg-white flex items-center justify-center p-1.5"><img src="images/platform-img-9.webp" width="500" height="500" alt="Postcoder" loading="lazy" class="max-w-full max-h-full object-contain" /></span>
             </div>
         </div>
         <div class="rounded-xl border border-white/10 bg-white/[0.03] p-4">
           <div class="flex items-center justify-between mb-3"><div class="font-bold text-brand-blue text-sm">Integrations</div><span class="text-xs text-slate-500">Connect to your stack</span></div>
           <div class="grid grid-cols-2 gap-2.5">
-            <div class="flex items-center gap-2.5"><span class="w-9 h-9 rounded-lg bg-white flex items-center justify-center p-1.5 flex-shrink-0"><img src="images/platform-img-11.png" alt="REST API" loading="lazy" class="max-w-full max-h-full object-contain" /></span><span class="text-sm font-semibold text-slate-200">REST API</span></div>
-            <div class="flex items-center gap-2.5"><span class="w-9 h-9 rounded-lg bg-white flex items-center justify-center p-1.5 flex-shrink-0"><img src="images/platform-img-12.jpg" alt="Webhooks" loading="lazy" class="max-w-full max-h-full object-contain" /></span><span class="text-sm font-semibold text-slate-200">Webhooks</span></div>
-            <div class="flex items-center gap-2.5"><span class="w-9 h-9 rounded-lg bg-white flex items-center justify-center p-1.5 flex-shrink-0"><img src="images/platform-img-13.jpg" alt="Platforms" loading="lazy" class="max-w-full max-h-full object-contain" /></span><span class="text-sm font-semibold text-slate-200">Platforms</span></div>
-            <div class="flex items-center gap-2.5"><span class="w-9 h-9 rounded-lg bg-white flex items-center justify-center p-1.5 flex-shrink-0"><img src="images/platform-img-14.png" alt="Core Banking & LMS" loading="lazy" class="max-w-full max-h-full object-contain" /></span><span class="text-sm font-semibold text-slate-200">Core Banking</span></div>
+            <div class="flex items-center gap-2.5"><span class="w-9 h-9 rounded-lg bg-white flex items-center justify-center p-1.5 flex-shrink-0"><img src="images/platform-img-11.png" width="220" height="220" alt="REST API" loading="lazy" class="max-w-full max-h-full object-contain" /></span><span class="text-sm font-semibold text-slate-200">REST API</span></div>
+            <div class="flex items-center gap-2.5"><span class="w-9 h-9 rounded-lg bg-white flex items-center justify-center p-1.5 flex-shrink-0"><img src="images/platform-img-12.jpg" width="1200" height="1200" alt="Webhooks" loading="lazy" class="max-w-full max-h-full object-contain" /></span><span class="text-sm font-semibold text-slate-200">Webhooks</span></div>
+            <div class="flex items-center gap-2.5"><span class="w-9 h-9 rounded-lg bg-white flex items-center justify-center p-1.5 flex-shrink-0"><img src="images/platform-img-13.jpg" width="360" height="360" alt="Platforms" loading="lazy" class="max-w-full max-h-full object-contain" /></span><span class="text-sm font-semibold text-slate-200">Platforms</span></div>
+            <div class="flex items-center gap-2.5"><span class="w-9 h-9 rounded-lg bg-white flex items-center justify-center p-1.5 flex-shrink-0"><img src="images/platform-img-14.png" width="220" height="220" alt="Core Banking & LMS" loading="lazy" class="max-w-full max-h-full object-contain" /></span><span class="text-sm font-semibold text-slate-200">Core Banking</span></div>
           </div>
         </div>
       </div>
@@ -387,7 +370,7 @@
   <div class="max-w-7xl mx-auto px-6 lg:px-8 py-12">
     <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-8">
       <div class="max-w-xs">
-        <img src="/logo.svg" alt="Likuid" style="height:26px;width:auto;" class="mb-4" />
+        <img src="/logo.svg" width="1907" height="425" alt="Likuid" style="height:26px;width:auto;" class="mb-4" />
         <p class="text-sm text-slate-500 leading-relaxed">AI credit decisioning and payments infrastructure — unified on one platform.</p>
       </div>
       <nav class="flex flex-wrap gap-x-8 gap-y-2 text-sm" aria-label="Footer">

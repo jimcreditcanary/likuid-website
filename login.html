@@ -11,16 +11,8 @@
   <meta name="robots" content="noindex" />
   <meta name="description" content="Sign in to Likuid." />
   <title>Sign in — Likuid</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = { theme: { extend: {
-      fontFamily: { sans: ['Inter','sans-serif'] },
-      colors: { ink:{DEFAULT:'#08090a',900:'#0a0b0d',800:'#101113',700:'#16181b',600:'#1d1f23'}, brand:{cyan:'#44D9DE',sky:'#43CFE2',blue:'#3FA9F5'}, mute:'#8a8f98' },
-      boxShadow: { glow:'0 0 80px -20px rgba(63,169,245,0.45)' } } } };
-  </script>
+  <link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/dist/tailwind.css">
   <link rel="stylesheet" href="/css/likuid.css">
   <script defer src="/_vercel/insights/script.js"></script>
   <script defer src="/_vercel/speed-insights/script.js"></script>
@@ -28,7 +20,7 @@
 <body class="bg-ink text-slate-100 antialiased selection:bg-brand-blue/30 grain">
 
 <div class="min-h-screen flex flex-col items-center justify-center px-6 py-12">
-  <a href="/" aria-label="Likuid home" class="mb-8"><img src="/logo.svg" alt="Likuid" style="height:30px;width:auto;display:block;" /></a>
+  <a href="/" aria-label="Likuid home" class="mb-8"><img src="/logo.svg" width="1907" height="425" alt="Likuid" style="height:30px;width:auto;display:block;" /></a>
 
   <div class="w-full max-w-sm">
     <div class="relative rounded-3xl overflow-hidden hairline bg-gradient-to-b from-white/[0.05] to-white/[0.01] p-8">
