@@ -1,0 +1,24 @@
+# Likuid
+
+> Likuid is an all-in-one financial platform for managing risk, making smarter
+> decisions, and getting paid — AI credit decisioning and payments
+> infrastructure, unified on one platform.
+
+## Product
+
+- [Platform](https://www.likuid.ai/platform): Originate, Unify, Decide, Pay,
+  Act and measure Performance — AI agents native to every module.
+- [Developers](https://www.likuid.ai/developers): One API for data,
+  decisioning and payments.
+- [Book a demo](https://www.likuid.ai/demo): See risk and payments working as
+  one, on your use case.
+
+## Company
+
+- [About](https://www.likuid.ai/about): Team and company information.
+- Contact: hello@likuid.ai
+
+## Legal
+
+- [Privacy Policy](https://www.likuid.ai/privacy)
+- [Terms of Use](https://www.likuid.ai/terms)

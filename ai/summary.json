@@ -1,0 +1,15 @@
+{
+  "name": "Likuid",
+  "legalName": "Likuid Limited",
+  "url": "https://www.likuid.ai/",
+  "description": "Likuid is an all-in-one financial platform for managing risk, making smarter decisions, and getting paid — AI credit decisioning and payments infrastructure, unified on one platform.",
+  "contact": "hello@likuid.ai",
+  "pages": [
+    { "title": "Platform", "url": "https://www.likuid.ai/platform" },
+    { "title": "Developers", "url": "https://www.likuid.ai/developers" },
+    { "title": "Book a demo", "url": "https://www.likuid.ai/demo" },
+    { "title": "About", "url": "https://www.likuid.ai/about" },
+    { "title": "Privacy Policy", "url": "https://www.likuid.ai/privacy" },
+    { "title": "Terms of Use", "url": "https://www.likuid.ai/terms" }
+  ]
+}

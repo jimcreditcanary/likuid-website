@@ -1,0 +1,11 @@
+# Likuid — AI agent discovery
+# Machine-readable site summary and structured data for AI agents and
+# answer engines. See also /llms.txt for the human-readable overview.
+
+Site: Likuid
+URL: https://www.likuid.ai/
+Summary: https://www.likuid.ai/ai/summary.json
+FAQ: https://www.likuid.ai/ai/faq.json
+Service: https://www.likuid.ai/ai/service.json
+Sitemap: https://www.likuid.ai/sitemap.xml
+Contact: hello@likuid.ai

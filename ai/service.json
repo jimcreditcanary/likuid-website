@@ -1,0 +1,9 @@
+{
+  "name": "Likuid",
+  "category": "Credit decisioning and payments infrastructure platform",
+  "url": "https://www.likuid.ai/platform",
+  "modules": ["Originate", "Unify", "Decide", "Pay", "Act", "Performance"],
+  "description": "The Likuid platform — one connected system for credit risk and payments, with AI agents native to every module.",
+  "contact": "hello@likuid.ai",
+  "demo": "https://www.likuid.ai/demo"
+}

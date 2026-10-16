@@ -10,9 +10,50 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <meta name="description" content="Likuid privacy policy." />
   <title>Privacy Policy — Likuid</title>
+  <link rel="canonical" href="https://www.likuid.ai/privacy">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.likuid.ai/#organization",
+      "name": "Likuid",
+      "legalName": "Likuid Limited",
+      "url": "https://www.likuid.ai/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.likuid.ai/logo.svg"
+      },
+      "email": "hello@likuid.ai"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.likuid.ai/#website",
+      "url": "https://www.likuid.ai/",
+      "name": "Likuid",
+      "publisher": {
+        "@id": "https://www.likuid.ai/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.likuid.ai/privacy#webpage",
+      "url": "https://www.likuid.ai/privacy",
+      "name": "Privacy Policy \u2014 Likuid",
+      "description": "Likuid privacy policy.",
+      "isPartOf": {
+        "@id": "https://www.likuid.ai/#website"
+      },
+      "publisher": {
+        "@id": "https://www.likuid.ai/#organization"
+      }
+    }
+  ]
+}
+  </script>
   <link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/dist/tailwind.css">
-  <link rel="stylesheet" href="/css/likuid.css">
+  <link rel="stylesheet" href="/dist/app.css">
   <script defer src="/_vercel/insights/script.js"></script>
   <script defer src="/_vercel/speed-insights/script.js"></script>
 </head>
@@ -51,7 +92,7 @@
 <main class="pt-28 pb-20">
   <div class="max-w-3xl mx-auto px-6 lg:px-8 prose-likuid">
     <h1 class="text-4xl font-extrabold text-white mb-2">Privacy Policy</h1>
-    <p class="text-sm text-slate-500 mb-8">Last updated: 22 June 2026</p>
+    <p class="text-sm text-slate-400 mb-8">Last updated: 22 June 2026</p>
 
     <h2>1. About Likuid</h2>
     <p>Likuid is a trading name of <strong>Likuid Limited</strong>, a company registered in England &amp; Wales under company number <strong>17095414</strong>, whose registered office is at 14 Vanbrugh Road, London, England, W4 1JB.</p>
@@ -113,7 +154,7 @@
     <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-8">
       <div class="max-w-xs">
         <img src="/logo.svg" width="1907" height="425" alt="Likuid" style="height:26px;width:auto;" class="mb-4" />
-        <p class="text-sm text-slate-500 leading-relaxed">AI credit decisioning and payments infrastructure — unified on one platform.</p>
+        <p class="text-sm text-slate-400 leading-relaxed">AI credit decisioning and payments infrastructure — unified on one platform.</p>
       </div>
       <nav class="flex flex-wrap gap-x-8 gap-y-2 text-sm" aria-label="Footer">
         <a href="/platform" class="text-slate-400 hover:text-white transition-colors">Platform</a>
@@ -125,8 +166,8 @@
       </nav>
     </div>
     <div class="border-t border-white/5 mt-10 pt-6 flex flex-col sm:flex-row gap-2 sm:items-center sm:justify-between">
-      <p class="text-xs text-slate-500">&copy; 2026 Likuid Limited. Registered in England &amp; Wales, company no. 17095414.</p>
-      <p class="text-xs text-slate-500"><a href="/privacy" class="hover:text-white">Privacy</a> &middot; <a href="/terms" class="hover:text-white">Terms</a></p>
+      <p class="text-xs text-slate-400">&copy; 2026 Likuid Limited. Registered in England &amp; Wales, company no. 17095414.</p>
+      <p class="text-xs text-slate-400"><a href="/privacy" class="hover:text-white">Privacy</a> &middot; <a href="/terms" class="hover:text-white">Terms</a></p>
     </div>
   </div>
 </footer>
