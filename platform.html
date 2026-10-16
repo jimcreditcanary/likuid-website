@@ -8,19 +8,61 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <meta name="description" content="The Likuid platform — one connected system for credit risk and payments. Originate, Unify, Decide, Pay, Act and measure Performance, with AI agents native to every module." />
+  <meta name="description" content="The Likuid platform — one connected system for credit risk and payments." />
   <meta property="og:title" content="Platform — Likuid" />
   <meta property="og:description" content="One connected system for credit risk and payments — from onboarding and decisioning to payments and collections." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://likuid.ai/platform" />
+  <meta property="og:url" content="https://www.likuid.ai/platform" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Platform — Likuid" />
   <meta name="twitter:description" content="One connected system for credit risk and payments." />
   <title>Platform — Likuid</title>
+  <link rel="canonical" href="https://www.likuid.ai/platform">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.likuid.ai/#organization",
+      "name": "Likuid",
+      "legalName": "Likuid Limited",
+      "url": "https://www.likuid.ai/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.likuid.ai/logo.svg"
+      },
+      "email": "hello@likuid.ai"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.likuid.ai/#website",
+      "url": "https://www.likuid.ai/",
+      "name": "Likuid",
+      "publisher": {
+        "@id": "https://www.likuid.ai/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.likuid.ai/platform#webpage",
+      "url": "https://www.likuid.ai/platform",
+      "name": "Platform \u2014 Likuid",
+      "description": "The Likuid platform \u2014 one connected system for credit risk and payments.",
+      "isPartOf": {
+        "@id": "https://www.likuid.ai/#website"
+      },
+      "publisher": {
+        "@id": "https://www.likuid.ai/#organization"
+      }
+    }
+  ]
+}
+  </script>
 
   <link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 
-  <link rel="stylesheet" href="/dist/tailwind.css">
+  <link rel="stylesheet" href="/dist/app.css">
 
   <style>
     html { scroll-behavior: smooth; }
@@ -61,7 +103,6 @@
     .feat-panel { display: none; }
     .feat-panel.active { display: block; }
   </style>
-  <link rel="stylesheet" href="/css/likuid.css">
   <script defer src="/_vercel/insights/script.js"></script>
   <script defer src="/_vercel/speed-insights/script.js"></script>
 </head>
@@ -128,7 +169,7 @@
 <section class="py-16 border-t border-white/5">
   <div class="max-w-6xl mx-auto px-6 lg:px-8">
     <div class="text-center mb-12">
-      <span class="inline-block text-xs font-bold uppercase tracking-widest text-slate-500 mb-3">One platform</span>
+      <span class="inline-block text-xs font-bold uppercase tracking-widest text-slate-400 mb-3">One platform</span>
       <h2 class="text-3xl lg:text-4xl font-extrabold text-white mb-4">Modular by design, <span class="text-brand-gradient">powerful when combined.</span></h2>
       <p class="text-lg text-slate-400 max-w-2xl mx-auto">A single point of connectivity into a framework of modules — deploy one, or run the whole credit journey end to end.</p>
     </div>
@@ -149,7 +190,7 @@
       <div class="mb-5 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3">
         <div>
           <h3 class="inline-block text-lg font-extrabold text-white border-b-2 border-brand-blue/60 pb-1">The Likuid platform</h3>
-          <p class="text-xs text-slate-500 mt-2">Six modules — deploy one, or run the whole credit journey.</p>
+          <p class="text-xs text-slate-400 mt-2">Six modules — deploy one, or run the whole credit journey.</p>
         </div>
         <div class="flex items-center gap-4 flex-shrink-0">
           <span class="inline-flex items-center gap-2 text-xs font-semibold text-white"><span class="dot pulse"></span>AI agents native</span>
@@ -170,7 +211,7 @@
       <!-- Bottom row: Data Marketplace + Integrations -->
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-3">
         <div class="rounded-xl border border-white/10 bg-white/[0.03] p-4">
-          <div class="flex items-center justify-between mb-3"><div class="font-bold text-brand-cyan text-sm">Data Marketplace</div><span class="text-xs text-slate-500">New integrations added regularly</span></div>
+          <div class="flex items-center justify-between mb-3"><div class="font-bold text-brand-cyan text-sm">Data Marketplace</div><span class="text-xs text-slate-400">New integrations added regularly</span></div>
           <div class="flex flex-wrap gap-2">
             <span class="w-11 h-11 rounded-lg bg-white flex items-center justify-center p-1.5"><img src="images/platform-img-1.png" width="225" height="225" alt="Open Banking" loading="lazy" class="max-w-full max-h-full object-contain" /></span>
             <span class="w-11 h-11 rounded-lg bg-white flex items-center justify-center p-1.5"><img src="images/home-img-21.jpg" width="90" height="90" alt="ID Verification" loading="lazy" class="max-w-full max-h-full object-contain" /></span>
@@ -184,7 +225,7 @@
             </div>
         </div>
         <div class="rounded-xl border border-white/10 bg-white/[0.03] p-4">
-          <div class="flex items-center justify-between mb-3"><div class="font-bold text-brand-blue text-sm">Integrations</div><span class="text-xs text-slate-500">Connect to your stack</span></div>
+          <div class="flex items-center justify-between mb-3"><div class="font-bold text-brand-blue text-sm">Integrations</div><span class="text-xs text-slate-400">Connect to your stack</span></div>
           <div class="grid grid-cols-2 gap-2.5">
             <div class="flex items-center gap-2.5"><span class="w-9 h-9 rounded-lg bg-white flex items-center justify-center p-1.5 flex-shrink-0"><img src="images/platform-img-11.png" width="220" height="220" alt="REST API" loading="lazy" class="max-w-full max-h-full object-contain" /></span><span class="text-sm font-semibold text-slate-200">REST API</span></div>
             <div class="flex items-center gap-2.5"><span class="w-9 h-9 rounded-lg bg-white flex items-center justify-center p-1.5 flex-shrink-0"><img src="images/platform-img-12.jpg" width="1200" height="1200" alt="Webhooks" loading="lazy" class="max-w-full max-h-full object-contain" /></span><span class="text-sm font-semibold text-slate-200">Webhooks</span></div>
@@ -323,24 +364,24 @@
   <div class="max-w-5xl mx-auto px-6 lg:px-8">
     <div class="grid lg:grid-cols-2 gap-10 items-center">
       <div>
-        <span class="inline-block text-xs font-bold uppercase tracking-widest text-slate-500 mb-3">Built for developers</span>
+        <span class="inline-block text-xs font-bold uppercase tracking-widest text-slate-400 mb-3">Built for developers</span>
         <h2 class="text-3xl font-extrabold text-white mb-4">One API. Every capability.</h2>
         <p class="text-slate-400 leading-relaxed mb-6">Connect once and access the whole platform — data, decisioning and payments — through a single, well-documented REST API with webhooks and SDKs.</p>
         <a href="/demo" class="btn-ghost inline-flex items-center gap-2 font-semibold px-5 py-3 rounded-xl text-sm">Talk to our team</a>
       </div>
       <div class="card p-5 font-mono text-xs leading-relaxed overflow-x-auto">
-        <div class="text-slate-500 mb-2"># Decision in one call</div>
+        <div class="text-slate-400 mb-2"># Decision in one call</div>
         <div class="text-slate-300"><span class="text-brand-cyan">POST</span> https://api.likuid.ai/v1/decisions</div>
-        <div class="text-slate-500 mt-3">{</div>
+        <div class="text-slate-400 mt-3">{</div>
         <div class="text-slate-300 pl-4">"applicant_id": <span class="text-brand-blue">"app_8f3k2"</span>,</div>
         <div class="text-slate-300 pl-4">"amount": <span class="text-brand-blue">2000</span>,</div>
         <div class="text-slate-300 pl-4">"term_months": <span class="text-brand-blue">24</span></div>
-        <div class="text-slate-500">}</div>
-        <div class="text-slate-500 mt-3">→ {</div>
+        <div class="text-slate-400">}</div>
+        <div class="text-slate-400 mt-3">→ {</div>
         <div class="text-slate-300 pl-4">"decision": <span class="text-brand-cyan">"approve"</span>,</div>
         <div class="text-slate-300 pl-4">"confidence": <span class="text-brand-blue">0.94</span>,</div>
         <div class="text-slate-300 pl-4">"latency_ms": <span class="text-brand-blue">1400</span></div>
-        <div class="text-slate-500">}</div>
+        <div class="text-slate-400">}</div>
       </div>
     </div>
   </div>
@@ -371,7 +412,7 @@
     <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-8">
       <div class="max-w-xs">
         <img src="/logo.svg" width="1907" height="425" alt="Likuid" style="height:26px;width:auto;" class="mb-4" />
-        <p class="text-sm text-slate-500 leading-relaxed">AI credit decisioning and payments infrastructure — unified on one platform.</p>
+        <p class="text-sm text-slate-400 leading-relaxed">AI credit decisioning and payments infrastructure — unified on one platform.</p>
       </div>
       <nav class="flex flex-wrap gap-x-8 gap-y-2 text-sm" aria-label="Footer">
         <a href="/platform" class="text-slate-400 hover:text-white transition-colors">Platform</a>
@@ -383,8 +424,8 @@
       </nav>
     </div>
     <div class="border-t border-white/5 mt-10 pt-6 flex flex-col sm:flex-row gap-2 sm:items-center sm:justify-between">
-      <p class="text-xs text-slate-500">&copy; 2026 Likuid Limited. Registered in England &amp; Wales, company no. 17095414.</p>
-      <p class="text-xs text-slate-500"><a href="/privacy" class="hover:text-white">Privacy</a> &middot; <a href="/terms" class="hover:text-white">Terms</a></p>
+      <p class="text-xs text-slate-400">&copy; 2026 Likuid Limited. Registered in England &amp; Wales, company no. 17095414.</p>
+      <p class="text-xs text-slate-400"><a href="/privacy" class="hover:text-white">Privacy</a> &middot; <a href="/terms" class="hover:text-white">Terms</a></p>
     </div>
   </div>
 </footer>
