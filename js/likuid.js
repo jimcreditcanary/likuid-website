@@ -142,7 +142,7 @@
   bar.innerHTML =
     '<div class="m-3 sm:m-4 rounded-xl hairline p-3.5 flex items-start gap-3" style="background:rgba(16,17,19,0.94);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 12px 36px -16px rgba(0,0,0,.6);">' +
       '<p class="text-xs text-slate-400 leading-relaxed flex-1">We use cookies to understand how this site is used. By continuing to browse you agree — see our <a href="/privacy" class="text-brand-blue hover:underline">Privacy Policy</a>.</p>' +
-      '<button type="button" id="cookie-accept" class="btn-primary text-xs font-semibold px-3 py-1.5 rounded-lg flex-shrink-0">Got it</button>' +
+      '<button type="button" id="cookie-accept" class="btn-primary font-semibold px-2.5 py-1 rounded-md flex-shrink-0" style="font-size:11px;line-height:1.2;">Got it</button>' +
     '</div>';
   document.body.appendChild(bar);
   requestAnimationFrame(function () { requestAnimationFrame(function () { bar.style.transform = 'translateY(0)'; }); });
