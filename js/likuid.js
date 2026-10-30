@@ -137,23 +137,20 @@
   bar.id = 'cookie-banner';
   bar.setAttribute('role', 'dialog');
   bar.setAttribute('aria-label', 'Cookie consent');
-  bar.style.cssText = 'position:fixed;left:0;bottom:0;z-index:60;max-width:22rem;transform:translateY(140%);transition:transform .5s cubic-bezier(.16,1,.3,1);';
+  bar.style.cssText = 'position:fixed;left:0;right:0;bottom:0;z-index:60;max-width:22rem;transform:translateY(140%);transition:transform .5s cubic-bezier(.16,1,.3,1);';
+  // Implied consent (auto opt-in): continuing to use the site counts as acceptance.
   bar.innerHTML =
-    '<div class="m-3 sm:m-4 rounded-xl hairline p-4" style="background:rgba(16,17,19,0.94);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 12px 36px -16px rgba(0,0,0,.6);">' +
-      '<p class="text-xs text-slate-400 leading-relaxed mb-3">We use cookies to understand how this site is used. See our <a href="/privacy" class="text-brand-blue hover:underline">Privacy Policy</a>.</p>' +
-      '<div class="flex gap-2">' +
-        '<button type="button" id="cookie-decline" class="text-xs font-semibold px-3 py-1.5 rounded-lg" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.4);color:#fff;">Decline</button>' +
-        '<button type="button" id="cookie-accept" class="btn-primary text-xs font-semibold px-3 py-1.5 rounded-lg">Accept</button>' +
-      '</div>' +
+    '<div class="m-3 sm:m-4 rounded-xl hairline p-3.5 flex items-start gap-3" style="background:rgba(16,17,19,0.94);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 12px 36px -16px rgba(0,0,0,.6);">' +
+      '<p class="text-xs text-slate-400 leading-relaxed flex-1">We use cookies to understand how this site is used. By continuing to browse you agree — see our <a href="/privacy" class="text-brand-blue hover:underline">Privacy Policy</a>.</p>' +
+      '<button type="button" id="cookie-accept" class="btn-primary text-xs font-semibold px-3 py-1.5 rounded-lg flex-shrink-0">Got it</button>' +
     '</div>';
   document.body.appendChild(bar);
   requestAnimationFrame(function () { requestAnimationFrame(function () { bar.style.transform = 'translateY(0)'; }); });
 
-  function dismiss(choice) {
-    setConsent(choice);
-    bar.style.transform = 'translateY(120%)';
+  function dismiss() {
+    setConsent('accepted');
+    bar.style.transform = 'translateY(140%)';
     setTimeout(function () { if (bar.parentNode) bar.parentNode.removeChild(bar); }, 500);
   }
-  bar.querySelector('#cookie-accept').addEventListener('click', function () { dismiss('accepted'); });
-  bar.querySelector('#cookie-decline').addEventListener('click', function () { dismiss('rejected'); });
+  bar.querySelector('#cookie-accept').addEventListener('click', dismiss);
 })();
