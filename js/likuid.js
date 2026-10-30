@@ -137,13 +137,13 @@
   bar.id = 'cookie-banner';
   bar.setAttribute('role', 'dialog');
   bar.setAttribute('aria-label', 'Cookie consent');
-  bar.style.cssText = 'position:fixed;left:0;right:0;bottom:0;z-index:60;transform:translateY(120%);transition:transform .5s cubic-bezier(.16,1,.3,1);';
+  bar.style.cssText = 'position:fixed;left:0;bottom:0;z-index:60;max-width:22rem;transform:translateY(140%);transition:transform .5s cubic-bezier(.16,1,.3,1);';
   bar.innerHTML =
-    '<div class="max-w-4xl mx-auto m-3 sm:m-4 rounded-2xl hairline p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-5" style="background:rgba(16,17,19,0.96);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:0 20px 60px -20px rgba(0,0,0,.7);">' +
-      '<p class="text-sm text-slate-300 leading-relaxed flex-1">We use cookies to understand how this site is used. See our <a href="/privacy" class="text-brand-blue hover:underline">Privacy Policy</a>.</p>' +
-      '<div class="flex gap-2 flex-shrink-0">' +
-        '<button type="button" id="cookie-decline" class="text-sm font-semibold px-4 py-2.5 rounded-xl" style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.45);color:#fff;">Decline</button>' +
-        '<button type="button" id="cookie-accept" class="btn-primary text-sm font-semibold px-4 py-2.5 rounded-xl">Accept</button>' +
+    '<div class="m-3 sm:m-4 rounded-xl hairline p-4" style="background:rgba(16,17,19,0.94);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 12px 36px -16px rgba(0,0,0,.6);">' +
+      '<p class="text-xs text-slate-400 leading-relaxed mb-3">We use cookies to understand how this site is used. See our <a href="/privacy" class="text-brand-blue hover:underline">Privacy Policy</a>.</p>' +
+      '<div class="flex gap-2">' +
+        '<button type="button" id="cookie-decline" class="text-xs font-semibold px-3 py-1.5 rounded-lg" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.4);color:#fff;">Decline</button>' +
+        '<button type="button" id="cookie-accept" class="btn-primary text-xs font-semibold px-3 py-1.5 rounded-lg">Accept</button>' +
       '</div>' +
     '</div>';
   document.body.appendChild(bar);
